@@ -69,10 +69,10 @@
         <p><a href="https://github.com/ArielDrabkin">Ariel's GitHub</a></p>
         <p><a href="https://www.linkedin.com/in/ariel-drabkin-6b361212a">Ariel's LinkedIn profile</a></p>
 </div>
-<div style="background-color:#00AA6C; text-align:center; color:#00AA6C">space_holder</div>
+<div style="background-color:#00AA6C; text-align:center; color:#00AA6C"></div>
 <div style="background-color:#000000; text-align:center; padding:20px">
     <img src="https://media.licdn.com/dms/image/C4D03AQGoE8meIrOy1Q/profile-displayphoto-shrink_800_800/0/1655661599542?e=1684368000&v=beta&t=d3FckhqY3t4eca_wY-TIbBWJcyHRukO4gIukw7urZQE" alt height="100" width="100">
         <h3>Yoni Abrams</h3>
         <p><a href="https://www.linkedin.com/in/yabrams/">LinkedIn profile</a></p>
 </div>
-<div style="background-color:#00AA6C; text-align:center; color:#00AA6C">space_holder</div>
+<div style="background-color:#00AA6C; text-align:center; color:#00AA6C"></div>
