@@ -8,7 +8,7 @@ import time
 
 UA = UserAgent()
 
-# load configure file
+# Load config data
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
@@ -25,6 +25,7 @@ logger = logging.getLogger("scrape-log")
 def get_next_page_arrow(soup):
     """Take a BeautifulSoup soup object from a trip advisor page as input.
     return the element of a BeautifulSoup soup object of the arrow."""
+    # find next page
     try:
         arrow_elements = soup.find_all("div", class_="UCacc")  # there are 2 arrows, 1 for prev_page, 1 for next_page
         if arrow_elements is None:
@@ -139,11 +140,12 @@ def get_response_then_get_soup(url):
     return soup
 
 
-def get_all_top_links(url):
+def get_all_top_links(url, NUM_ATTRACTIONS):
     """
-    Take the "homepage" of top attractions in Paris, and traverse all the pages of attractions to get
-    a url for each of them
+    Take the "homepage" of top attractions in Paris, and traverse the specified number of attractions in NUM_ATTRACTIONS
+    to get a url for each of them.
     :param url:
+    :NUM_ATTRACTIONS:
     :return: all_urls: a list of urls.
     """
     # 1. get response obj. ==> 2. get html code. ==> 3. get soup obj.
