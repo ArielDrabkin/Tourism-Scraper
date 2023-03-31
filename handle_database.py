@@ -9,7 +9,7 @@ HOST = config["host"]
 USER = config["user"]
 PASSWORD = config["password"]
 
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 # TODO HIDE PASSWORD SOMEHOW
 # TODO add Pandas to requirements.
