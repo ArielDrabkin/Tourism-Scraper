@@ -1,18 +1,21 @@
-import grequests
+import requests
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import logging
 import json
 import csv
+import time
 
+UA = UserAgent()
+
+# load configure file
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
-UA = UserAgent()
+# define global variables
 BASE_URL = config_data["urls"]["base_url_tripadvisor"]
 LOG_FORMAT = config_data["logger_format_string"]
-
-NUM_ATTRACTIONS = 420
+NUM_ATTRACTIONS = 30
 TIMEOUT = 5
 
 # Initialize a logger object
@@ -63,12 +66,11 @@ def get_next_page_html(soup):
         headers = {"User-Agent": UA.random}
         while True:
             logger.debug("requesting...")
-            req = grequests.get(next_page_url, headers=headers, timeout=TIMEOUT).send()
-            next_page_response = grequests.map([req])[0]
-            if next_page_response is not None and next_page_response.status_code == 200:
+            req = requests.get(next_page_url, headers=headers, timeout=TIMEOUT)
+            if req.status_code == 200:
                 break
-        return next_page_response.text
-
+        print("got next page")
+        return req.text
     else:
         logger.debug("Failed to get next page html.")
         return None
@@ -115,9 +117,9 @@ def get_links_from_page(soup):
 
 def get_response_then_get_soup(url):
     """
-    Motivation: Often, getting a response from a website using the grequests library can take a long time.
+    Motivation: Often, getting a response from a website using the requests library can take a long time.
     It is more efficient to try again after a certain short time-period, especially with a website like Tripadvisor
-    which has an unstable servor.
+    which has an unstable server.
     After getting a response, this function will then generate a soup object from the BeautifulSoup library
     Param: a url.
     Returns: a soup object of the BeautifulSoup library.
@@ -125,11 +127,13 @@ def get_response_then_get_soup(url):
     headers = {"User-Agent": UA.random}
     while True:
         logger.debug("requesting...")
-        req = grequests.get(url, headers=headers, timeout=TIMEOUT).send()
-        response = grequests.map([req])[0]
-        if response is not None and response.status_code == 200:
-            break
-
+        try:
+            response = requests.get(url, headers=headers, timeout=TIMEOUT)
+            if response.status_code == 200:
+                break
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Request error: {str(e)}")
+        time.sleep(3)
     html = response.text
     soup = BeautifulSoup(html, features="html.parser")
     return soup
