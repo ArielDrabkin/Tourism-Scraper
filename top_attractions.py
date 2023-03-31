@@ -7,13 +7,14 @@ import csv
 
 UA = UserAgent()
 
+# Load config data
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
+# Constants
 BASE_URL = config_data["urls"]["base_url_tripadvisor"]
 LOG_FORMAT = config_data["logger_format_string"]
-
-NUM_ATTRACTIONS = 420
+NUM_ATTRACTIONS = 30
 TIMEOUT = 5
 
 # Initialize a logger object
@@ -21,8 +22,10 @@ logger = logging.getLogger("scrape-log")
 
 
 def get_next_page_arrow(soup):
-    """Take a BeautifulSoup soup object from a trip advisor page as input.
-    return the element of a BeautifulSoup soup object of the arrow."""
+    """
+    Take a BeautifulSoup soup object from a trip advisor page as input.
+    return the element of a BeautifulSoup soup object of the arrow.
+    """
     logger.info("Beginning to find next page arrow element")
     try:
         arrow_elements = soup.find_all("div", class_="UCacc")  # there are 2 arrows, 1 for prev_page, 1 for next_page
@@ -32,7 +35,8 @@ def get_next_page_arrow(soup):
 
     next_page_arrow = None  # if code finds next page then it will be defined.
     if arrow_elements:
-        for element in arrow_elements:  # find the next page
+        # find the next page
+        for element in arrow_elements:
             if element.a["aria-label"] == "Next page":
                 next_page_arrow = element
                 logger.info("Found next-page icon.")
@@ -89,7 +93,7 @@ def get_next_page_soup(soup):
 
 def get_links_from_page(soup):
     """
-    froma  single page on tripadvisor.com, get the ~30 urls to attractions.
+    from a single page on tripadvisor.com, get the ~30 urls to attractions.
     :param soup: a BeautifulSoup object
     :return: a list of ~30 urls.
     """
@@ -104,11 +108,12 @@ def get_links_from_page(soup):
     return urls
 
 
-def get_all_top_links(url):
+def get_all_top_links(url, NUM_ATTRACTIONS):
     """
-    Take the "homepage" of top attractions in Paris, and traverse all the pages of attractions to get
-    a url for each of them
+    Take the "homepage" of top attractions in Paris, and traverse the specified number of attractions in NUM_ATTRACTIONS
+    to get a url for each of them.
     :param url:
+    :NUM_ATTRACTIONS:
     :return: all_urls: a list of urls.
     """
     logger.info("Started from main page, looking for all top links.")
