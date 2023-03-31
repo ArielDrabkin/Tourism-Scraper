@@ -1,13 +1,12 @@
-\{
+{
   "urls":
   {
-    "paris_top_url": "https://www.tripadvisor.com/Attractions-g187147-Activities-oa0-Paris_Ile_de_France.html",
-    "buenos_aires_top_url": "https://www.tripadvisor.com/Attractions-g312741-Activities-oa0-Buenos_Aires_Capital_Federal_District.html",
-    "washington_top_url": "https://www.tripadvisor.com/Attractions-g28970-Activities-oa0-Washington_DC_District_of_Columbia.html",
-    "seoul_top_url": "https://www.tripadvisor.com/Attractions-g294197-Activities-oa0-Seoul.html",
-    "cairo_top_url": "https://www.tripadvisor.com/Attractions-g294201-Activities-oa0-Cairo_Cairo_Governorate.html",
-    "base_url_tripadvisor": "https://www.tripadvisor.com/",
-	"yoni name": ["Yoni Abrams", "Arel Drabkin"]
+    "Paris_top_url": "https://www.tripadvisor.com/Attractions-g187147-Activities-oa0-Paris_Ile_de_France.html",
+    "Buenos_Aires_top_url": "https://www.tripadvisor.com/Attractions-g312741-Activities-oa0-Buenos_Aires_Capital_Federal_District.html",
+    "Washington_top_url": "https://www.tripadvisor.com/Attractions-g28970-Activities-oa0-Washington_DC_District_of_Columbia.html",
+    "Seoul_top_url": "https://www.tripadvisor.com/Attractions-g294197-Activities-oa0-Seoul.html",
+    "Cairo_top_url": "https://www.tripadvisor.com/Attractions-g294201-Activities-oa0-Cairo_Cairo_Governorate.html",
+    "base_url_tripadvisor": "https://www.tripadvisor.com/"
   },
   "logger_format_string": "%(asctime)s %(name)s %(levelname)s - %(funcName)s - %(message)s"
 }

@@ -9,16 +9,17 @@ import grequests
 
 TIMEOUT = 5
 BATCH_SIZE = 10
+
 # Dismiss warnings for updating packages
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+# Read configuration data from a json file
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
 LOG_FORMAT = config_data["logger_format_string"]
 
-# Set up logging to write messages to a file
-# with a specific format and logging level.
+# Set up logging to write messages to a file with a specific format and logging level.
 logger = logging.getLogger("scrape-log")
 """
 logger.setLevel(logging.INFO)
@@ -36,20 +37,27 @@ headers = {"User-Agent": ua.random}
 
 def tripadvisor_name_rate(soup):
     """
-        Extracts the name, location, and TripAdvisor rating of an attraction from its TripAdvisor page.
-        Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
-        Returns: dict: A dictionary containing the attraction's name, location, and TripAdvisor rating.
-        """
+    Extracts the name, location, and TripAdvisor rating of an attraction from its TripAdvisor page.
+    Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
+    Returns: dict: A dictionary containing the attraction's name, location, and TripAdvisor rating.
+    """
     # Find the main section tag that contains the needed data
     main_tag = soup.find('section', "vwOfI nlaXM")
+
     # Get rate, city name, tags and attraction's name info
     try:
         rate = main_tag.find('div', class_='biGQs _P pZUbB KxBGd').text.strip()
     except AttributeError:
         rate = ['empty']
-    rate_tag, city = int(rate.split()[0][1:]), rate.split()[-1]
+    try:
+        rate_tag = int(rate.split()[0][1:]),
+    except IndexError:
+        rate_tag = None
+    city = rate.split()[-1]
     name = soup.find('h1', "biGQs _P fiohW eIegw").text.strip()
     main_tag = soup.find('div', "qWPrE XCaFq bSHRx")  # Find the main div tag that contains attraction descriptions
+
+    # Find the main div tag that contains attraction descriptions and scrape attraction tags
     try:
         popular_mentions = [elem.text.strip() for elem in
                             main_tag.findAll('span', class_='biGQs _P vvmrG')]  # scrapes attraction tags
@@ -61,11 +69,11 @@ def tripadvisor_name_rate(soup):
 
 def attraction_stats(soup):
     """
-       Extracts various statistics about an attraction from its TripAdvisor page.
-       Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
-       Returns: dict: A dictionary containing the attraction's score, number of reviewers, and ratios of excellent, very good,
-           average, poor, and terrible ratings.
-       """
+    Extracts various statistics about an attraction from its TripAdvisor page.
+    Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
+    Returns: dict: A dictionary containing the attraction's score, number of reviewers, and ratios of excellent, very good,
+    average, poor, and terrible ratings.
+    """
     main_tag = soup.find('div', "yFKLG")  # Find the main div tag containing the statistics
 
     # Extract the number of reviewers and the score of the attraction
@@ -133,6 +141,7 @@ def attractions_data(lst, batch_size):
             attractions_dict = tripadvisor_name_rate(soup)
             stats = attraction_stats(soup)
             attractions_dict.update(stats)
+            attractions_dict['Url'] = attraction.url
             logger.debug(f"Successfully retrieved attraction #'{urls_counter}' stats")
 
             # Append the attraction data to the DataFrame
