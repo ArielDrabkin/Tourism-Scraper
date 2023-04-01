@@ -188,35 +188,35 @@ def main():
     logger.addHandler(handler)
     logger.propagate = False
 
-    urls_paris = get_all_top_links(paris_top_to_do_url)
+    urls_paris = get_all_top_links(paris_top_to_do_url, 120)
     with open("url_list.csv", "w") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(["Num", "URL"])
         for i, url in enumerate(urls_paris, start=1):
             writer.writerow((i, url))
 
-    urls_b_a = get_all_top_links(b_a_top_to_do_url)
+    urls_b_a = get_all_top_links(b_a_top_to_do_url, 120)
     with open("url_list_ba.csv", "w") as b_a_csv:
         writer = csv.writer(b_a_csv)
         writer.writerow(["Num", "URL"])
         for i, url in enumerate(urls_b_a, start=1):
             writer.writerow((i, url))
 
-    urls_cairo = get_all_top_links(cairo_top_to_do_url)
+    urls_cairo = get_all_top_links(cairo_top_to_do_url, 120)
     with open("url_list_cairo.csv", "w") as cairo_csv:
         writer = csv.writer(cairo_csv)
         writer.writerow(("Num", "URL"))
         for i, url in enumerate(urls_cairo, start=1):
             writer.writerow((i, url))
 
-    urls_wash = get_all_top_links(washington_top_to_do_url)
+    urls_wash = get_all_top_links(washington_top_to_do_url, 120)
     with open("url_list_wash.csv", "w") as wash_csv:
         writer = csv.writer(wash_csv)
         writer.writerow(("Num", "URL"))
         for i, url in enumerate(urls_wash, start=1):
             writer.writerow((i, url))
 
-    urls_seoul = get_all_top_links(seoul_top_to_do_url)
+    urls_seoul = get_all_top_links(seoul_top_to_do_url, 120)
     with open("url_list_seoul.csv", "w") as seoul_csv:
         writer = csv.writer(seoul_csv)
         writer.writerow(("Num", "URL"))
