@@ -8,7 +8,7 @@ import warnings
 import grequests
 
 TIMEOUT = 5
-BATCH_SIZE = 10
+BATCH_SIZE = 5
 
 # Dismiss warnings for updating packages
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -126,14 +126,21 @@ def attractions_data(lst, batch_size):
         batch, urls = urls[:batch_size], urls[batch_size:]
 
         # Send requests to retrieve attractions data asynchronously
-        response = [grequests.get(url, headers=headers, timeout=TIMEOUT) for url in batch]
-        response_unparsed = grequests.imap(response, size=batch_size)
-        for attraction in response_unparsed:
-            if attraction.status_code != 200 or attraction is None:  # Check if the request was successful
-                logger.error(f"Error retrieving attraction from {attraction}")
+        while True:  # try to get resonse from the batch until it works
+            try:
+                responses = [grequests.get(url, headers=headers, timeout=TIMEOUT) for url in batch]
+                response_unparsed = grequests.map(responses,
+                                                   size=batch_size)  # retrieve attractions data asynchronously
+                for response in response_unparsed:
+                    if response is None or response.status_code != 200:
+                        raise Exception("Couldn't get response from attraction.")
+                break
+            except Exception as e:
+                logger.error(e)
                 continue
-            else:
-                logger.info(f"Start retrieving attraction information from url #{urls_counter}")
+
+        for attraction in response_unparsed:
+            logger.info(f"Start retrieving attraction information from url #{urls_counter}")
             soup = BeautifulSoup(attraction.text, 'html.parser')  # Parse the HTML response using BeautifulSoup
             logger.debug(f"The response is parsed into a BeautifulSoup object")
 

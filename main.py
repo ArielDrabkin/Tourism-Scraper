@@ -14,7 +14,7 @@ with open("config.json", "r") as config_file:
 ALL_CITY_HOMEPAGES = configs["urls"]  # dictionary of urls for 5 cities
 
 LOG_FORMAT = configs["logger_format_string"]
-REQUEST_BATCH_SIZE = 10
+REQUEST_BATCH_SIZE = 5
 
 logger = logging.getLogger("scrape-log")
 logger.setLevel(logging.INFO)
