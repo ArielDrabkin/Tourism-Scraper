@@ -24,8 +24,9 @@ logger = logging.getLogger("scrape-log")
 def get_next_page_arrow(soup):
     """
     param: soup : a soup object of the beautifulsoup library.
-    The url from which it was generated is a Tripadvisor.com webpage with links to top attractions for a city.
-    return: next_page_arrow : the element of the webpage soup which directs you to the next page in the list.
+        (The url from which it was generated is a Tripadvisor.com
+        webpage with links to top attractions for a city.)
+    return: next_page_arrow - the element of the webpage soup which directs you to the next page in the list.
     """
     try:
         arrow_elements = soup.find_all("div", class_="UCacc")  # there are 2 arrows, 1 for prev_page, 1 for next_page
@@ -50,9 +51,9 @@ def get_next_page_arrow(soup):
 
 def get_next_page_html(soup):
     """
-    param : soup : a soup object of the beautifulsoup library from a tripadvisor webpage of top attractions.
+    param : soup -a soup object of the beautifulsoup library from a tripadvisor webpage of top attractions.
     return : html code for the following page in the tripadvisor list of top attractions.
-    (Returns None if there's an issue collecting the html.)
+        (Returns None if there's an issue collecting the html.)
     """
     logger.debug("Trying to get next page html.")
     try:
@@ -82,8 +83,8 @@ def get_next_page_html(soup):
 
 def get_next_page_soup(soup):
     """
-    param: soup : a soup object of the beautiful soup library from a webpage in tripadvisor
-    return : next_page_soup :  a soup object from the following webpage of tripadvisor.
+    param: soup - a soup object of the beautiful soup library from a webpage in tripadvisor
+    return : next_page_soup - a soup object from the following webpage of tripadvisor.
     """
     try:
         next_page_html = get_next_page_html(soup)
@@ -103,7 +104,7 @@ def get_next_page_soup(soup):
 
 def get_links_from_page(soup):
     """
-    :param soup: a soup object fo the beautifulsoup library from a webpage of top attractions for a city.
+    :param: soup - a soup object fo the beautifulsoup library from a webpage of top attractions for a city.
     :return: a list of ~30 urls from the webpage.
     """
     logger.debug("Trying to get links from page")
@@ -119,12 +120,13 @@ def get_links_from_page(soup):
 
 def get_response_then_get_soup(url):
     """
+    Param: url (str) a url from a ripadvisor webpage.
+    Returns: a soup object of the BeautifulSoup library.
+    
     [Motivation: Often, getting a response from a website using the grequests library can take a long time.
     It is more efficient to try again after a certain short time-period, especially with a website like Tripadvisor
     which has an unstable servor.
     After getting a response, this function will then generate a soup object from the BeautifulSoup library.]
-    Param: a url.
-    Returns: a soup object of the BeautifulSoup library.
     """
     headers = {"User-Agent": UA.random}
     while True:
@@ -141,10 +143,10 @@ def get_response_then_get_soup(url):
 
 def get_all_top_links(url, num_attractions):
     """
-    param url: the url for the homepage of top attractions for a particular city on tripadvisor.com
-    param num_attractions: the number of attraction-urls to gather starting from the homepage and continuing on to
-    the next page (and the ext page...)
-    :return: all_urls: a list of urls.
+    param: url (str) - the url for the homepage of top attractions for a particular city on tripadvisor.com
+    param: num_attractions (int) - the number of attraction-urls to gather starting from the homepage and continuing on to
+        the next page (and the ext page...)
+    return: all_urls (list) - a list of urls.
     """
     # 1. get response obj. ==> 2. get html code. ==> 3. get soup obj.
     front_page_soup = get_response_then_get_soup(url)
@@ -171,6 +173,7 @@ def get_all_top_links(url, num_attractions):
 
 
 def main():
+    """
     # grab home-page url for each city.
     paris_top_to_do_url = config_data["urls"]["Paris_top_url"]
     b_a_top_to_do_url = config_data["urls"]["Buenos_Aires_top_url"]
@@ -220,7 +223,7 @@ def main():
         writer.writerow(("Num", "URL"))
         for i, url in enumerate(urls_seoul, start=1):
             writer.writerow((i, url))
-
+    """
 
 if __name__ == '__main__':
     main()
