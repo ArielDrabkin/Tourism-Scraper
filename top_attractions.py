@@ -3,7 +3,6 @@ from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import logging
 import json
-import csv
 
 UA = UserAgent()
 
