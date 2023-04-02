@@ -11,15 +11,11 @@ PASSWORD = config["password"]
 
 DEBUG_MODE = False
 
-# TODO HIDE PASSWORD SOMEHOW
-# TODO add Pandas to requirements.
-# TODO add pymysql to requirements.
-
 
 def city_already_recorded(city):
     """
-    param: city: A string of the city name
-    return: Return True if the city is aleady in the cities table of the Attractions database
+    param: city (str) - a city name
+    return: (boolean) - Return True if the city is aleady in the cities table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -33,8 +29,8 @@ def city_already_recorded(city):
 
 def attraction_already_recorded(attraction):
     """
-    param: attraction: A string of the attraction name
-    return: Return True if the attraction is aleady in the attractions table of the Attractions database
+    param: attraction (str) - An attraction name
+    return: (boolean) - return True if the attraction is aleady in the attractions table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -48,8 +44,8 @@ def attraction_already_recorded(attraction):
 
 def popular_mention_already_recorded(popular_mention):
     """
-    param: popular_mention: A string of the popular_mention text
-    return: Return True if the popular_mention has already been recorded in the popular_mention table.
+    param: popular_mention (str) a "popular_mention"
+    return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -63,14 +59,12 @@ def popular_mention_already_recorded(popular_mention):
 
 def populate_tables(df):
     """
-    params: Pandas.DataFrame
-    return: None
-
-    Populate the tables in the Attractions database using additional lines of data from a pandas dataframe.
-    The structure of the dataframe is as follows (generated using * pd.DataFrame.columns *)
-    ['City', 'Name', 'Tripadvisor Rate', 'Popular Mentions', 'Score',
-       'Reviewers#', 'Excellent', 'Very good', 'Average', 'Poor', 'Terrible',
-       'Exellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio']
+    params: (Pandas.DataFrame) - the data which was created using an external script.
+        The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
+        ['City', 'Name', 'Tripadvisor Rate', 'Popular Mentions', 'Score',
+           'Reviewers#', 'Excellent', 'Very good', 'Average', 'Poor', 'Terrible',
+           'Exellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio']
+    return: no return    
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -130,6 +124,7 @@ def populate_tables(df):
 def create_database():
     """
     This function is used to create the Attractions database, whose design can be found
+    on the github repo of this project: https://github.com/yoniabrams/webscraper_tripadvisor
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD) as conn:
         cursor = conn.cursor()
@@ -185,6 +180,7 @@ def create_database():
 
 
 if __name__ == "__main__":
+    """
     with open("top_attractions.csv", "r", encoding="utf8") as file:
         df = pd.read_csv(file)
         populate_tables(df)
@@ -220,5 +216,5 @@ if __name__ == "__main__":
         print("ATTRACTION STATS")
         for r in results5:
             print(r)
-
-    #main()
+        """
+    
