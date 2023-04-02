@@ -2,6 +2,7 @@ import json
 import logging
 from top_attractions import get_all_top_links
 from attraction_mining import attractions_data
+from handle_database import populate_tables
 import argparse
 import pandas as pd
 
@@ -69,6 +70,7 @@ def main():
         logger.info(f"Recieved {len(city_attractions_urls)} urls for the attractions of {cities[i]}")
 
     urls = [url for sublist in urls for url in sublist]
+
     df = pd.DataFrame(urls)
     df.to_csv('urls.csv', index=False)
 
@@ -76,11 +78,13 @@ def main():
     data_df = attractions_data(urls, REQUEST_BATCH_SIZE)
 
     # filter the data frame by the given key_words
-    filtered_attractions = data_df[data_df["Popular Mentions"].apply(lambda x: all(word in x for word in key_words))]
+    # filtered_attractions = data_df[data_df["Popular Mentions"].apply(lambda x: all(word in x for word in key_words))]
 
     # write the two data frames to csv
-    data_df.to_csv('top_attractions.csv', index=False)
-    filtered_attractions.to_csv('filtered_attractions.csv', index=False)
+    # data_df.to_csv('top_attractions.csv', index=False)
+    # filtered_attractions.to_csv('filtered_attractions.csv', index=False)
+
+    populate_tables(data_df)
 
 
 if __name__ == "__main__":
