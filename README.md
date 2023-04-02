@@ -66,9 +66,9 @@
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Database structure:</h2>
 </div>
-    <p align="center">
-        <img src="db_diagram.jpg" alt="db_diagram" width="70%" height="70%">
-    </p>
+
+![image](https://user-images.githubusercontent.com/124047859/229366709-f54c0a51-df96-48ea-a3b4-8e1944b8d159.png)
+
 <div style="text-align:center">
     <p><strong>(Generated on dbdiagram.io)</strong></p>
 </div>
