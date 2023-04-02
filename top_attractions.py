@@ -1,21 +1,20 @@
-import requests
+import grequests
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import logging
 import json
 import csv
-import time
 
 UA = UserAgent()
 
-# Load config data
+# load config data
 with open("config.json", "r") as config_file:
     config_data = json.load(config_file)
 
-# define global variables
+# define global vars
 BASE_URL = config_data["urls"]["base_url_tripadvisor"]
 LOG_FORMAT = config_data["logger_format_string"]
-NUM_ATTRACTIONS = 30
+NUM_ATTRACTIONS = 420
 TIMEOUT = 5
 
 # Initialize a logger object
@@ -25,7 +24,6 @@ logger = logging.getLogger("scrape-log")
 def get_next_page_arrow(soup):
     """Take a BeautifulSoup soup object from a trip advisor page as input.
     return the element of a BeautifulSoup soup object of the arrow."""
-    # find next page
     try:
         arrow_elements = soup.find_all("div", class_="UCacc")  # there are 2 arrows, 1 for prev_page, 1 for next_page
         if arrow_elements is None:
@@ -67,11 +65,13 @@ def get_next_page_html(soup):
         headers = {"User-Agent": UA.random}
         while True:
             logger.debug("requesting...")
-            req = requests.get(next_page_url, headers=headers, timeout=TIMEOUT)
-            if req.status_code == 200:
+            req = grequests.get(next_page_url, headers=headers, timeout=TIMEOUT).send()
+            next_page_response = grequests.map([req])[0]
+            if next_page_response is not None and next_page_response.status_code == 200:
+                logger.debug("got")
                 break
-        print("got next page")
-        return req.text
+        return next_page_response.text
+
     else:
         logger.debug("Failed to get next page html.")
         return None
@@ -118,9 +118,9 @@ def get_links_from_page(soup):
 
 def get_response_then_get_soup(url):
     """
-    Motivation: Often, getting a response from a website using the requests library can take a long time.
+    Motivation: Often, getting a response from a website using the grequests library can take a long time.
     It is more efficient to try again after a certain short time-period, especially with a website like Tripadvisor
-    which has an unstable server.
+    which has an unstable servor.
     After getting a response, this function will then generate a soup object from the BeautifulSoup library
     Param: a url.
     Returns: a soup object of the BeautifulSoup library.
@@ -128,24 +128,21 @@ def get_response_then_get_soup(url):
     headers = {"User-Agent": UA.random}
     while True:
         logger.debug("requesting...")
-        try:
-            response = requests.get(url, headers=headers, timeout=TIMEOUT)
-            if response.status_code == 200:
-                break
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Request error: {str(e)}")
-        time.sleep(3)
+        req = grequests.get(url, headers=headers, timeout=TIMEOUT).send()
+        response = grequests.map([req])[0]
+        if response is not None and response.status_code == 200:
+            break
+
     html = response.text
     soup = BeautifulSoup(html, features="html.parser")
     return soup
 
 
-def get_all_top_links(url, NUM_ATTRACTIONS):
+def get_all_top_links(url, num_attractions):
     """
-    Take the "homepage" of top attractions in Paris, and traverse the specified number of attractions in NUM_ATTRACTIONS
-    to get a url for each of them.
+    Take the "homepage" of top attractions in Paris, and traverse all the pages of attractions to get
+    a url for each of them
     :param url:
-    :NUM_ATTRACTIONS:
     :return: all_urls: a list of urls.
     """
     # 1. get response obj. ==> 2. get html code. ==> 3. get soup obj.
@@ -157,7 +154,7 @@ def get_all_top_links(url, NUM_ATTRACTIONS):
         count += 1
         urls = get_links_from_page(front_page_soup)
         top_attractions_urls.extend(urls)
-        if len(top_attractions_urls) >= NUM_ATTRACTIONS:
+        if len(top_attractions_urls) >= num_attractions:
             break
             # otherwise, continue to get the next page!
         try:
@@ -174,11 +171,11 @@ def get_all_top_links(url, NUM_ATTRACTIONS):
 
 def main():
     # grab home-page url for each city.
-    paris_top_to_do_url = config_data["urls"]["paris_top_url"]
-    b_a_top_to_do_url = config_data["urls"]["buenos_aires_top_url"]
-    washington_top_to_do_url = config_data["urls"]["washington_top_url"]
-    seoul_top_to_do_url = config_data["urls"]["seoul_top_url"]
-    cairo_top_to_do_url = config_data["urls"]["cairo_top_url"]
+    paris_top_to_do_url = config_data["urls"]["Paris_top_url"]
+    b_a_top_to_do_url = config_data["urls"]["Buenos_Aires_top_url"]
+    washington_top_to_do_url = config_data["urls"]["Washington_top_url"]
+    seoul_top_to_do_url = config_data["urls"]["Seoul_top_url"]
+    cairo_top_to_do_url = config_data["urls"]["Cairo_top_url"]
 
     # configure logger
     logger.setLevel(logging.INFO)
@@ -188,35 +185,35 @@ def main():
     logger.addHandler(handler)
     logger.propagate = False
 
-    urls_paris = get_all_top_links(paris_top_to_do_url, 120)
+    urls_paris = get_all_top_links(paris_top_to_do_url, NUM_ATTRACTIONS)
     with open("url_list.csv", "w") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(["Num", "URL"])
         for i, url in enumerate(urls_paris, start=1):
             writer.writerow((i, url))
 
-    urls_b_a = get_all_top_links(b_a_top_to_do_url, 120)
+    urls_b_a = get_all_top_links(b_a_top_to_do_url, NUM_ATTRACTIONS)
     with open("url_list_ba.csv", "w") as b_a_csv:
         writer = csv.writer(b_a_csv)
         writer.writerow(["Num", "URL"])
         for i, url in enumerate(urls_b_a, start=1):
             writer.writerow((i, url))
 
-    urls_cairo = get_all_top_links(cairo_top_to_do_url, 120)
+    urls_cairo = get_all_top_links(cairo_top_to_do_url, NUM_ATTRACTIONS)
     with open("url_list_cairo.csv", "w") as cairo_csv:
         writer = csv.writer(cairo_csv)
         writer.writerow(("Num", "URL"))
         for i, url in enumerate(urls_cairo, start=1):
             writer.writerow((i, url))
 
-    urls_wash = get_all_top_links(washington_top_to_do_url, 120)
+    urls_wash = get_all_top_links(washington_top_to_do_url, NUM_ATTRACTIONS)
     with open("url_list_wash.csv", "w") as wash_csv:
         writer = csv.writer(wash_csv)
         writer.writerow(("Num", "URL"))
         for i, url in enumerate(urls_wash, start=1):
             writer.writerow((i, url))
 
-    urls_seoul = get_all_top_links(seoul_top_to_do_url, 120)
+    urls_seoul = get_all_top_links(seoul_top_to_do_url, NUM_ATTRACTIONS)
     with open("url_list_seoul.csv", "w") as seoul_csv:
         writer = csv.writer(seoul_csv)
         writer.writerow(("Num", "URL"))

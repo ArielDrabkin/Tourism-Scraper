@@ -16,6 +16,21 @@ DEBUG_MODE = False
 # TODO add pymysql to requirements.
 
 
+def city_already_recorded(city):
+    """
+    param: city: A string of the city name
+    return: Return True if the city is aleady in the cities table of the Attractions database
+    """
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+        c = conn.cursor()
+        c.execute('SELECT * FROM cities WHERE name="{}";'.format(city))
+        existing_records = c.fetchall()
+        if existing_records is None or len(existing_records) == 0:
+            return False
+        else:
+            return True
+
+
 def attraction_already_recorded(attraction):
     """
     param: attraction: A string of the attraction name
@@ -61,12 +76,15 @@ def populate_tables(df):
         c = conn.cursor()
 
         # 0) populate city table:
-        # TODO fill it from a csv
+        sql_insert_cities = (
+            " INSERT INTO cities (name) "
+            " VALUES (%s);"
+        )
 
         # 1) populate attractions table:
         sql_insert_attraction = (
             " INSERT INTO attractions (name, city_id) "
-            " VALUES (%s, (SELECT id FROM cities WHERE cities.name='Paris'));"
+            " VALUES (%s, (SELECT id FROM cities WHERE cities.name=%s));"
         )
 
         # 2) populate attraction_stats table:
@@ -92,11 +110,14 @@ def populate_tables(df):
             if attraction_already_recorded(attraction["Name"]):
                 continue # move to the next attraction
 
-            c.execute(sql_insert_attraction, (attraction["Name"],))
+            if not city_already_recorded(attraction["City"]):
+                c.execute(sql_insert_cities, (attraction["City"],))
+
+            c.execute(sql_insert_attraction, (attraction["Name"], attraction["City"]))
             c.execute(sql_insert_attraction_stats, (attraction["Name"], attraction["Tripadvisor Rate"], attraction["Reviewers#"], attraction["Excellent"], attraction["Very good"], attraction["Average"], attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
-            for popular_mention in eval(attraction["Popular Mentions"]):  # only add the record if it isn't there already
+            for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
                 if popular_mention_already_recorded(popular_mention):
                     c.execute(sql_insert_pop_mention_attraction, (attraction["Name"], popular_mention))
                     conn.commit()
