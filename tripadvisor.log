@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2023-03-20 18:59:00,603 scrape-log INFO - get_all_top_links - Started from main page, looking for all top links.
 2023-03-20 18:59:00,603 scrape-log INFO - get_all_top_links - requesting...
 2023-03-20 18:59:04,693 scrape-log INFO - get_links_from_page - Trying to get links from page
@@ -984,3 +985,1562 @@
 2023-03-20 19:08:15,770 scrape-log INFO - attractions_data - Data from url #415 successfully retrieved
 2023-03-20 19:08:15,770 scrape-log INFO - attractions_data - Start retrieving attraction information from url #416
 2023-03-20 19:08:16,333 scrape-log INFO - attractions_data - Data from url #416 successfully retrieved
+=======
+2023-04-01 23:34:27,453 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-01 23:34:31,008 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:34:31,297 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:34:31,297 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:34:31,297 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:34:31,502 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:34:31,502 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa30-Paris_Ile_de_France.html
+2023-04-01 23:34:31,502 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:34:33,247 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:34:33,738 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:34:33,738 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:34:33,855 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:34:33,855 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:34:33,855 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:34:33,999 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:34:33,999 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa60-Paris_Ile_de_France.html
+2023-04-01 23:34:33,999 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:34:44,198 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:34:54,452 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:04,634 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:14,891 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:25,106 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:35,368 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:45,551 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:51,846 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:35:52,278 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:35:52,278 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:35:52,403 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:35:52,403 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:35:52,403 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:35:52,512 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:35:52,512 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa90-Paris_Ile_de_France.html
+2023-04-01 23:35:52,512 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:54,855 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:35:55,284 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:35:55,284 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:35:55,403 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:35:55,403 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:35:55,403 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:35:55,517 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:35:55,517 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa120-Paris_Ile_de_France.html
+2023-04-01 23:35:55,517 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:35:57,793 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:35:58,286 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:35:58,286 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:35:58,411 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:35:58,411 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:35:58,411 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:35:58,522 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:35:58,522 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa150-Paris_Ile_de_France.html
+2023-04-01 23:35:58,522 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:00,528 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:00,961 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:00,961 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:01,089 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:01,089 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:01,089 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:01,207 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:01,207 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa180-Paris_Ile_de_France.html
+2023-04-01 23:36:01,207 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:03,559 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:03,976 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:03,991 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:04,118 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:04,118 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:04,118 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:04,228 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:04,228 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa210-Paris_Ile_de_France.html
+2023-04-01 23:36:04,228 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:06,986 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:07,555 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:07,555 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:07,679 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:07,679 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:07,679 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:07,821 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:07,821 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa240-Paris_Ile_de_France.html
+2023-04-01 23:36:07,821 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:10,152 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:10,611 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:10,611 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:10,756 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:10,770 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:10,770 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:10,880 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:10,880 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa270-Paris_Ile_de_France.html
+2023-04-01 23:36:10,880 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:13,592 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:14,016 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:14,016 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:14,136 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:14,136 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:14,136 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:14,255 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:14,255 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa300-Paris_Ile_de_France.html
+2023-04-01 23:36:14,255 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:16,282 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:16,843 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:16,843 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:16,983 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:16,983 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:16,983 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:17,109 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:17,109 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa330-Paris_Ile_de_France.html
+2023-04-01 23:36:17,109 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:19,449 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:36:19,852 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:36:19,852 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:36:19,963 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:36:19,978 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:36:19,978 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:36:20,091 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:36:20,091 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa360-Paris_Ile_de_France.html
+2023-04-01 23:36:20,091 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:30,223 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:40,406 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:36:50,803 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:00,966 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:11,210 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:21,361 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:31,644 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:41,844 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:37:52,188 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:02,330 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:05,526 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:05,969 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:05,969 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:06,090 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:06,095 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:06,095 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:06,215 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:06,215 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa390-Paris_Ile_de_France.html
+2023-04-01 23:38:06,215 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:08,789 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:09,400 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:09,400 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:09,522 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:09,522 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:09,522 scrape-log INFO - main - Recieved 420 urls for the attractions of Paris
+2023-04-01 23:38:09,522 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-01 23:38:12,217 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:12,335 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:12,335 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:12,335 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:12,445 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:12,445 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa30-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:12,445 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:14,842 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:15,229 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:15,229 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:15,386 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:15,386 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:15,386 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:15,577 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:15,578 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa60-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:15,578 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:18,286 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:18,783 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:18,783 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:18,909 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:18,909 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:18,909 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:19,019 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:19,019 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa90-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:19,019 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:21,604 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:21,990 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:21,990 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:22,100 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:22,100 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:22,100 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:22,226 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:22,226 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa120-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:22,226 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:24,112 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:24,594 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:24,594 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:24,720 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:24,720 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:24,720 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:24,839 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:24,839 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa150-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:24,839 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:26,994 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:27,407 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:27,409 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:27,525 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:27,525 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:27,525 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:27,646 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:27,646 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa180-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:27,646 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:29,959 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:38:30,376 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:38:30,376 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:38:30,499 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:38:30,499 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:38:30,499 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:38:30,617 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:38:30,617 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa210-Cairo_Cairo_Governorate.html
+2023-04-01 23:38:30,617 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:40,774 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:38:51,085 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:01,316 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:11,676 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:22,075 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:32,374 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:42,658 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:39:52,995 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:03,292 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:13,509 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:23,746 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:33,984 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:44,355 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:40:54,551 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:04,834 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:15,008 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:25,209 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:35,460 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:45,650 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:52,267 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:41:52,768 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:41:52,768 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:41:52,891 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:41:52,891 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:41:52,891 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:41:53,001 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:41:53,001 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa240-Cairo_Cairo_Governorate.html
+2023-04-01 23:41:53,001 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:55,419 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:41:55,797 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:41:55,797 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:41:55,918 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:41:55,918 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:41:55,918 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:41:56,026 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:41:56,026 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa270-Cairo_Cairo_Governorate.html
+2023-04-01 23:41:56,026 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:41:58,187 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:41:58,579 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:41:58,579 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:41:58,703 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:41:58,703 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:41:58,703 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:41:58,812 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:41:58,812 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa300-Cairo_Cairo_Governorate.html
+2023-04-01 23:41:58,812 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:00,798 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:42:01,285 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:42:01,285 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:42:01,447 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:42:01,447 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:42:01,447 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:42:01,581 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:42:01,581 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa330-Cairo_Cairo_Governorate.html
+2023-04-01 23:42:01,581 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:04,005 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:42:04,441 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:42:04,441 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:42:04,571 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:42:04,571 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:42:04,571 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:42:04,682 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:42:04,682 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa360-Cairo_Cairo_Governorate.html
+2023-04-01 23:42:04,682 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:07,088 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:42:07,477 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:42:07,477 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:42:07,600 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:42:07,600 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:42:07,600 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-01 23:42:07,719 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-01 23:42:07,719 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa390-Cairo_Cairo_Governorate.html
+2023-04-01 23:42:07,719 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:17,863 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:28,109 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:38,360 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:48,626 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:42:58,781 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:43:09,061 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:43:19,216 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:43:29,505 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:43:39,672 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:43:49,988 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:00,145 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:10,468 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:20,710 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:30,977 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:41,172 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:44:51,439 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:01,622 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:11,882 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:22,066 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:32,333 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:42,618 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:45:52,995 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:03,203 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:13,489 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:23,680 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:34,036 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:44,318 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:46:54,552 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:04,904 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:15,305 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:25,668 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:35,916 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:46,439 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:47:56,613 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:07,097 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:17,306 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:27,560 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:37,920 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:48,222 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:48:58,696 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:49:09,067 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:49:19,380 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:49:29,686 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:49:39,981 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:49:50,246 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:00,501 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:10,659 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:21,047 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:31,301 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:41,566 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:50:51,738 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:01,978 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:12,135 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:22,474 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:32,655 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:42,939 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:53,123 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-01 23:51:59,595 scrape-log DEBUG - get_next_page_html - got
+2023-04-01 23:52:00,140 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-01 23:52:00,140 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-01 23:52:00,249 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-01 23:52:00,250 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-01 23:52:00,250 scrape-log INFO - main - Recieved 420 urls for the attractions of Cairo
+2023-04-02 00:00:41,084 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:00:41,508 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:00:41,716 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:00:41,718 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:00:41,720 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:00:41,781 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:00:42,112 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:00:42,381 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:00:42,387 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:00:42,387 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:00:42,388 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:00:42,657 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:00:42,840 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:00:42,844 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:00:42,845 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:00:42,845 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:00:43,166 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:11:19,742 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:11:30,097 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:11:40,295 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:11:50,743 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:01,084 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:11,483 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:21,845 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:32,186 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:42,356 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:12:48,598 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:12:48,615 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:12:48,615 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:12:48,615 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:12:49,642 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:12:49,792 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:49,827 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:12:49,828 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:12:49,828 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:12:49,847 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:12:50,024 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,057 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:12:50,060 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:12:50,060 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:12:50,060 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:12:50,197 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,233 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:12:50,235 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:12:50,235 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:12:50,235 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:12:50,367 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,400 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'4' stats
+2023-04-02 00:12:50,402 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #4 to the DF
+2023-04-02 00:12:50,402 scrape-log INFO - attractions_data - Data from url #4 successfully retrieved
+2023-04-02 00:12:50,431 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-04-02 00:12:50,645 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,676 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'5' stats
+2023-04-02 00:12:50,678 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #5 to the DF
+2023-04-02 00:12:50,678 scrape-log INFO - attractions_data - Data from url #5 successfully retrieved
+2023-04-02 00:12:50,678 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-04-02 00:12:50,810 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,845 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'6' stats
+2023-04-02 00:12:50,848 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #6 to the DF
+2023-04-02 00:12:50,848 scrape-log INFO - attractions_data - Data from url #6 successfully retrieved
+2023-04-02 00:12:50,848 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-04-02 00:12:50,961 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:50,989 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'7' stats
+2023-04-02 00:12:50,991 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #7 to the DF
+2023-04-02 00:12:50,991 scrape-log INFO - attractions_data - Data from url #7 successfully retrieved
+2023-04-02 00:12:50,991 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-04-02 00:12:51,197 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:51,228 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'8' stats
+2023-04-02 00:12:51,230 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #8 to the DF
+2023-04-02 00:12:51,230 scrape-log INFO - attractions_data - Data from url #8 successfully retrieved
+2023-04-02 00:12:51,230 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-04-02 00:12:51,358 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:51,390 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'9' stats
+2023-04-02 00:12:51,392 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #9 to the DF
+2023-04-02 00:12:51,392 scrape-log INFO - attractions_data - Data from url #9 successfully retrieved
+2023-04-02 00:12:51,392 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-04-02 00:12:51,515 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:51,548 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'10' stats
+2023-04-02 00:12:51,550 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #10 to the DF
+2023-04-02 00:12:51,550 scrape-log INFO - attractions_data - Data from url #10 successfully retrieved
+2023-04-02 00:12:52,611 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-04-02 00:12:52,832 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:52,864 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'11' stats
+2023-04-02 00:12:52,866 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #11 to the DF
+2023-04-02 00:12:52,866 scrape-log INFO - attractions_data - Data from url #11 successfully retrieved
+2023-04-02 00:12:52,895 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-04-02 00:12:53,007 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,035 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'12' stats
+2023-04-02 00:12:53,036 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #12 to the DF
+2023-04-02 00:12:53,037 scrape-log INFO - attractions_data - Data from url #12 successfully retrieved
+2023-04-02 00:12:53,037 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-04-02 00:12:53,152 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,180 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'13' stats
+2023-04-02 00:12:53,183 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #13 to the DF
+2023-04-02 00:12:53,183 scrape-log INFO - attractions_data - Data from url #13 successfully retrieved
+2023-04-02 00:12:53,183 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-04-02 00:12:53,297 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,324 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'14' stats
+2023-04-02 00:12:53,326 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #14 to the DF
+2023-04-02 00:12:53,326 scrape-log INFO - attractions_data - Data from url #14 successfully retrieved
+2023-04-02 00:12:53,327 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-04-02 00:12:53,563 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,599 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'15' stats
+2023-04-02 00:12:53,601 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #15 to the DF
+2023-04-02 00:12:53,601 scrape-log INFO - attractions_data - Data from url #15 successfully retrieved
+2023-04-02 00:12:53,601 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-04-02 00:12:53,721 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,750 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'16' stats
+2023-04-02 00:12:53,752 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #16 to the DF
+2023-04-02 00:12:53,752 scrape-log INFO - attractions_data - Data from url #16 successfully retrieved
+2023-04-02 00:12:53,766 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-04-02 00:12:53,889 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:53,921 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'17' stats
+2023-04-02 00:12:53,923 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #17 to the DF
+2023-04-02 00:12:53,923 scrape-log INFO - attractions_data - Data from url #17 successfully retrieved
+2023-04-02 00:12:53,923 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-04-02 00:12:54,139 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:54,172 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'18' stats
+2023-04-02 00:12:54,174 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #18 to the DF
+2023-04-02 00:12:54,174 scrape-log INFO - attractions_data - Data from url #18 successfully retrieved
+2023-04-02 00:12:54,174 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-04-02 00:12:54,309 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:54,345 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'19' stats
+2023-04-02 00:12:54,347 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #19 to the DF
+2023-04-02 00:12:54,347 scrape-log INFO - attractions_data - Data from url #19 successfully retrieved
+2023-04-02 00:12:54,347 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-04-02 00:12:54,480 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:54,515 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'20' stats
+2023-04-02 00:12:54,517 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #20 to the DF
+2023-04-02 00:12:54,517 scrape-log INFO - attractions_data - Data from url #20 successfully retrieved
+2023-04-02 00:12:55,594 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-04-02 00:12:55,784 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:55,802 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'21' stats
+2023-04-02 00:12:55,804 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #21 to the DF
+2023-04-02 00:12:55,804 scrape-log INFO - attractions_data - Data from url #21 successfully retrieved
+2023-04-02 00:12:55,887 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-04-02 00:12:56,001 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,031 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'22' stats
+2023-04-02 00:12:56,033 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #22 to the DF
+2023-04-02 00:12:56,033 scrape-log INFO - attractions_data - Data from url #22 successfully retrieved
+2023-04-02 00:12:56,033 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-04-02 00:12:56,139 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,163 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'23' stats
+2023-04-02 00:12:56,165 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #23 to the DF
+2023-04-02 00:12:56,165 scrape-log INFO - attractions_data - Data from url #23 successfully retrieved
+2023-04-02 00:12:56,165 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-04-02 00:12:56,282 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,312 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'24' stats
+2023-04-02 00:12:56,313 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #24 to the DF
+2023-04-02 00:12:56,313 scrape-log INFO - attractions_data - Data from url #24 successfully retrieved
+2023-04-02 00:12:56,313 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-04-02 00:12:56,519 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,548 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'25' stats
+2023-04-02 00:12:56,550 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #25 to the DF
+2023-04-02 00:12:56,550 scrape-log INFO - attractions_data - Data from url #25 successfully retrieved
+2023-04-02 00:12:56,550 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-04-02 00:12:56,665 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,693 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'26' stats
+2023-04-02 00:12:56,695 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #26 to the DF
+2023-04-02 00:12:56,695 scrape-log INFO - attractions_data - Data from url #26 successfully retrieved
+2023-04-02 00:12:56,695 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-04-02 00:12:56,800 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:56,825 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'27' stats
+2023-04-02 00:12:56,826 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #27 to the DF
+2023-04-02 00:12:56,826 scrape-log INFO - attractions_data - Data from url #27 successfully retrieved
+2023-04-02 00:12:56,827 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-04-02 00:12:57,026 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:57,057 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'28' stats
+2023-04-02 00:12:57,059 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #28 to the DF
+2023-04-02 00:12:57,059 scrape-log INFO - attractions_data - Data from url #28 successfully retrieved
+2023-04-02 00:12:57,059 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-04-02 00:12:57,177 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:57,204 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'29' stats
+2023-04-02 00:12:57,206 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #29 to the DF
+2023-04-02 00:12:57,206 scrape-log INFO - attractions_data - Data from url #29 successfully retrieved
+2023-04-02 00:12:57,212 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-04-02 00:12:57,340 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:12:57,371 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'30' stats
+2023-04-02 00:12:57,373 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #30 to the DF
+2023-04-02 00:12:57,373 scrape-log INFO - attractions_data - Data from url #30 successfully retrieved
+2023-04-02 00:15:38,239 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:15:48,545 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:15:58,687 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:16:08,956 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:16:19,133 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:16:21,914 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:16:22,041 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:16:22,041 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:16:22,041 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:20:04,507 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:20:06,936 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:20:07,074 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:20:07,075 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:20:07,075 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:20:45,560 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:20:48,152 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:20:48,272 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:20:48,273 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:20:48,273 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:20:49,338 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:20:49,743 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:49,985 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:20:49,987 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:20:49,987 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:20:50,029 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:20:50,388 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:50,635 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:20:50,641 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:20:50,641 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:20:50,641 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:20:50,979 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:51,196 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:20:51,200 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:20:51,201 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:20:51,201 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:20:51,621 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:51,868 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'4' stats
+2023-04-02 00:20:51,873 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #4 to the DF
+2023-04-02 00:20:51,873 scrape-log INFO - attractions_data - Data from url #4 successfully retrieved
+2023-04-02 00:20:51,874 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-04-02 00:20:52,252 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:52,522 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'5' stats
+2023-04-02 00:20:52,527 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #5 to the DF
+2023-04-02 00:20:52,527 scrape-log INFO - attractions_data - Data from url #5 successfully retrieved
+2023-04-02 00:20:52,527 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-04-02 00:20:52,900 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:53,152 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'6' stats
+2023-04-02 00:20:53,156 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #6 to the DF
+2023-04-02 00:20:53,156 scrape-log INFO - attractions_data - Data from url #6 successfully retrieved
+2023-04-02 00:20:53,157 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-04-02 00:20:53,617 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:53,903 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'7' stats
+2023-04-02 00:20:53,908 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #7 to the DF
+2023-04-02 00:20:53,908 scrape-log INFO - attractions_data - Data from url #7 successfully retrieved
+2023-04-02 00:20:53,908 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-04-02 00:20:54,298 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:54,579 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'8' stats
+2023-04-02 00:20:54,584 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #8 to the DF
+2023-04-02 00:20:54,584 scrape-log INFO - attractions_data - Data from url #8 successfully retrieved
+2023-04-02 00:20:54,584 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-04-02 00:20:54,939 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:55,182 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'9' stats
+2023-04-02 00:20:55,187 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #9 to the DF
+2023-04-02 00:20:55,187 scrape-log INFO - attractions_data - Data from url #9 successfully retrieved
+2023-04-02 00:20:56,929 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-04-02 00:20:57,293 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:57,543 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'10' stats
+2023-04-02 00:20:57,548 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #10 to the DF
+2023-04-02 00:20:57,548 scrape-log INFO - attractions_data - Data from url #10 successfully retrieved
+2023-04-02 00:20:57,573 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-04-02 00:20:58,054 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:58,330 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'11' stats
+2023-04-02 00:20:58,334 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #11 to the DF
+2023-04-02 00:20:58,335 scrape-log INFO - attractions_data - Data from url #11 successfully retrieved
+2023-04-02 00:20:58,335 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-04-02 00:20:58,726 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:59,006 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'12' stats
+2023-04-02 00:20:59,011 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #12 to the DF
+2023-04-02 00:20:59,011 scrape-log INFO - attractions_data - Data from url #12 successfully retrieved
+2023-04-02 00:20:59,011 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-04-02 00:20:59,349 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:20:59,576 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'13' stats
+2023-04-02 00:20:59,580 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #13 to the DF
+2023-04-02 00:20:59,580 scrape-log INFO - attractions_data - Data from url #13 successfully retrieved
+2023-04-02 00:20:59,581 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-04-02 00:20:59,982 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:00,194 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'14' stats
+2023-04-02 00:21:00,199 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #14 to the DF
+2023-04-02 00:21:00,199 scrape-log INFO - attractions_data - Data from url #14 successfully retrieved
+2023-04-02 00:21:00,200 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-04-02 00:21:00,561 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:00,809 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'15' stats
+2023-04-02 00:21:00,814 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #15 to the DF
+2023-04-02 00:21:00,814 scrape-log INFO - attractions_data - Data from url #15 successfully retrieved
+2023-04-02 00:21:00,814 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-04-02 00:21:01,219 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:01,508 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'16' stats
+2023-04-02 00:21:01,513 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #16 to the DF
+2023-04-02 00:21:01,513 scrape-log INFO - attractions_data - Data from url #16 successfully retrieved
+2023-04-02 00:21:01,513 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-04-02 00:21:01,919 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:02,137 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'17' stats
+2023-04-02 00:21:02,141 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #17 to the DF
+2023-04-02 00:21:02,142 scrape-log INFO - attractions_data - Data from url #17 successfully retrieved
+2023-04-02 00:21:02,142 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-04-02 00:21:02,492 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:02,726 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'18' stats
+2023-04-02 00:21:02,731 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #18 to the DF
+2023-04-02 00:21:02,731 scrape-log INFO - attractions_data - Data from url #18 successfully retrieved
+2023-04-02 00:21:02,731 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-04-02 00:21:03,076 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:03,320 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'19' stats
+2023-04-02 00:21:03,325 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #19 to the DF
+2023-04-02 00:21:03,325 scrape-log INFO - attractions_data - Data from url #19 successfully retrieved
+2023-04-02 00:21:04,344 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-04-02 00:21:04,758 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:04,963 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'20' stats
+2023-04-02 00:21:04,969 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #20 to the DF
+2023-04-02 00:21:04,969 scrape-log INFO - attractions_data - Data from url #20 successfully retrieved
+2023-04-02 00:21:05,011 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-04-02 00:21:05,346 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:05,570 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'21' stats
+2023-04-02 00:21:05,574 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #21 to the DF
+2023-04-02 00:21:05,574 scrape-log INFO - attractions_data - Data from url #21 successfully retrieved
+2023-04-02 00:21:05,574 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-04-02 00:21:05,922 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:06,139 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'22' stats
+2023-04-02 00:21:06,144 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #22 to the DF
+2023-04-02 00:21:06,144 scrape-log INFO - attractions_data - Data from url #22 successfully retrieved
+2023-04-02 00:21:06,144 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-04-02 00:21:06,417 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:06,576 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'23' stats
+2023-04-02 00:21:06,581 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #23 to the DF
+2023-04-02 00:21:06,582 scrape-log INFO - attractions_data - Data from url #23 successfully retrieved
+2023-04-02 00:21:06,582 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-04-02 00:21:06,974 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:07,170 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'24' stats
+2023-04-02 00:21:07,175 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #24 to the DF
+2023-04-02 00:21:07,175 scrape-log INFO - attractions_data - Data from url #24 successfully retrieved
+2023-04-02 00:21:07,175 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-04-02 00:21:07,482 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:07,680 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'25' stats
+2023-04-02 00:21:07,684 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #25 to the DF
+2023-04-02 00:21:07,685 scrape-log INFO - attractions_data - Data from url #25 successfully retrieved
+2023-04-02 00:21:07,685 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-04-02 00:21:08,021 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:08,245 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'26' stats
+2023-04-02 00:21:08,249 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #26 to the DF
+2023-04-02 00:21:08,249 scrape-log INFO - attractions_data - Data from url #26 successfully retrieved
+2023-04-02 00:21:08,249 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-04-02 00:21:08,668 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:08,913 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'27' stats
+2023-04-02 00:21:08,918 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #27 to the DF
+2023-04-02 00:21:08,918 scrape-log INFO - attractions_data - Data from url #27 successfully retrieved
+2023-04-02 00:21:08,918 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-04-02 00:21:09,262 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:09,488 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'28' stats
+2023-04-02 00:21:09,492 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #28 to the DF
+2023-04-02 00:21:09,492 scrape-log INFO - attractions_data - Data from url #28 successfully retrieved
+2023-04-02 00:21:09,493 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-04-02 00:21:09,858 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:21:10,112 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'29' stats
+2023-04-02 00:21:10,117 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #29 to the DF
+2023-04-02 00:21:10,117 scrape-log INFO - attractions_data - Data from url #29 successfully retrieved
+2023-04-02 00:22:09,369 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:22:19,716 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:22:29,946 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:22:32,209 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:22:32,336 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:22:32,336 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:22:32,336 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:22:33,486 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:22:33,890 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:34,131 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:22:34,132 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:22:34,132 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:22:34,278 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:22:34,681 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:34,977 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:22:34,983 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:22:34,983 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:22:34,983 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:22:35,360 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:35,618 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:22:35,624 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:22:35,624 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:22:35,624 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:22:36,096 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:36,372 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'4' stats
+2023-04-02 00:22:36,377 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #4 to the DF
+2023-04-02 00:22:36,377 scrape-log INFO - attractions_data - Data from url #4 successfully retrieved
+2023-04-02 00:22:36,377 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-04-02 00:22:36,731 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:36,962 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'5' stats
+2023-04-02 00:22:36,967 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #5 to the DF
+2023-04-02 00:22:36,968 scrape-log INFO - attractions_data - Data from url #5 successfully retrieved
+2023-04-02 00:22:36,968 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-04-02 00:22:37,368 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:37,651 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'6' stats
+2023-04-02 00:22:37,657 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #6 to the DF
+2023-04-02 00:22:37,657 scrape-log INFO - attractions_data - Data from url #6 successfully retrieved
+2023-04-02 00:22:37,657 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-04-02 00:22:38,126 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:38,414 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'7' stats
+2023-04-02 00:22:38,419 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #7 to the DF
+2023-04-02 00:22:38,419 scrape-log INFO - attractions_data - Data from url #7 successfully retrieved
+2023-04-02 00:22:38,419 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-04-02 00:22:38,783 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:39,036 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'8' stats
+2023-04-02 00:22:39,041 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #8 to the DF
+2023-04-02 00:22:39,041 scrape-log INFO - attractions_data - Data from url #8 successfully retrieved
+2023-04-02 00:22:39,041 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-04-02 00:22:39,416 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:39,679 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'9' stats
+2023-04-02 00:22:39,684 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #9 to the DF
+2023-04-02 00:22:39,684 scrape-log INFO - attractions_data - Data from url #9 successfully retrieved
+2023-04-02 00:22:39,685 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-04-02 00:22:40,042 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:40,284 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'10' stats
+2023-04-02 00:22:40,289 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #10 to the DF
+2023-04-02 00:22:40,289 scrape-log INFO - attractions_data - Data from url #10 successfully retrieved
+2023-04-02 00:22:41,497 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-04-02 00:22:41,823 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:42,032 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'11' stats
+2023-04-02 00:22:42,037 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #11 to the DF
+2023-04-02 00:22:42,037 scrape-log INFO - attractions_data - Data from url #11 successfully retrieved
+2023-04-02 00:22:42,102 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-04-02 00:22:42,493 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:42,782 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'12' stats
+2023-04-02 00:22:42,786 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #12 to the DF
+2023-04-02 00:22:42,787 scrape-log INFO - attractions_data - Data from url #12 successfully retrieved
+2023-04-02 00:22:42,787 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-04-02 00:22:43,128 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:43,376 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'13' stats
+2023-04-02 00:22:43,381 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #13 to the DF
+2023-04-02 00:22:43,381 scrape-log INFO - attractions_data - Data from url #13 successfully retrieved
+2023-04-02 00:22:43,381 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-04-02 00:22:43,847 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:44,127 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'14' stats
+2023-04-02 00:22:44,132 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #14 to the DF
+2023-04-02 00:22:44,132 scrape-log INFO - attractions_data - Data from url #14 successfully retrieved
+2023-04-02 00:22:44,132 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-04-02 00:22:44,465 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:44,688 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'15' stats
+2023-04-02 00:22:44,693 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #15 to the DF
+2023-04-02 00:22:44,693 scrape-log INFO - attractions_data - Data from url #15 successfully retrieved
+2023-04-02 00:22:44,693 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-04-02 00:22:45,020 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:45,239 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'16' stats
+2023-04-02 00:22:45,244 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #16 to the DF
+2023-04-02 00:22:45,244 scrape-log INFO - attractions_data - Data from url #16 successfully retrieved
+2023-04-02 00:22:45,244 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-04-02 00:22:45,680 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:45,929 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'17' stats
+2023-04-02 00:22:45,934 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #17 to the DF
+2023-04-02 00:22:45,934 scrape-log INFO - attractions_data - Data from url #17 successfully retrieved
+2023-04-02 00:22:45,934 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-04-02 00:22:46,280 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:46,510 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'18' stats
+2023-04-02 00:22:46,515 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #18 to the DF
+2023-04-02 00:22:46,515 scrape-log INFO - attractions_data - Data from url #18 successfully retrieved
+2023-04-02 00:22:46,516 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-04-02 00:22:46,916 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:47,200 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'19' stats
+2023-04-02 00:22:47,205 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #19 to the DF
+2023-04-02 00:22:47,205 scrape-log INFO - attractions_data - Data from url #19 successfully retrieved
+2023-04-02 00:22:47,205 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-04-02 00:22:47,632 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:47,878 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'20' stats
+2023-04-02 00:22:47,884 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #20 to the DF
+2023-04-02 00:22:47,884 scrape-log INFO - attractions_data - Data from url #20 successfully retrieved
+2023-04-02 00:22:48,966 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-04-02 00:22:49,311 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:49,534 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'21' stats
+2023-04-02 00:22:49,538 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #21 to the DF
+2023-04-02 00:22:49,539 scrape-log INFO - attractions_data - Data from url #21 successfully retrieved
+2023-04-02 00:22:49,579 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-04-02 00:22:49,855 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:50,012 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'22' stats
+2023-04-02 00:22:50,017 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #22 to the DF
+2023-04-02 00:22:50,017 scrape-log INFO - attractions_data - Data from url #22 successfully retrieved
+2023-04-02 00:22:50,017 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-04-02 00:22:50,393 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:50,650 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'23' stats
+2023-04-02 00:22:50,655 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #23 to the DF
+2023-04-02 00:22:50,655 scrape-log INFO - attractions_data - Data from url #23 successfully retrieved
+2023-04-02 00:22:50,655 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-04-02 00:22:51,097 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:51,321 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'24' stats
+2023-04-02 00:22:51,325 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #24 to the DF
+2023-04-02 00:22:51,325 scrape-log INFO - attractions_data - Data from url #24 successfully retrieved
+2023-04-02 00:22:51,325 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-04-02 00:22:51,666 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:51,890 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'25' stats
+2023-04-02 00:22:51,894 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #25 to the DF
+2023-04-02 00:22:51,895 scrape-log INFO - attractions_data - Data from url #25 successfully retrieved
+2023-04-02 00:22:51,895 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-04-02 00:22:52,221 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:52,426 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'26' stats
+2023-04-02 00:22:52,431 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #26 to the DF
+2023-04-02 00:22:52,431 scrape-log INFO - attractions_data - Data from url #26 successfully retrieved
+2023-04-02 00:22:52,431 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-04-02 00:22:52,819 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:53,018 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'27' stats
+2023-04-02 00:22:53,024 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #27 to the DF
+2023-04-02 00:22:53,024 scrape-log INFO - attractions_data - Data from url #27 successfully retrieved
+2023-04-02 00:22:53,024 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-04-02 00:22:53,372 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:53,598 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'28' stats
+2023-04-02 00:22:53,602 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #28 to the DF
+2023-04-02 00:22:53,602 scrape-log INFO - attractions_data - Data from url #28 successfully retrieved
+2023-04-02 00:22:53,602 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-04-02 00:22:53,951 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:54,171 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'29' stats
+2023-04-02 00:22:54,176 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #29 to the DF
+2023-04-02 00:22:54,176 scrape-log INFO - attractions_data - Data from url #29 successfully retrieved
+2023-04-02 00:22:54,176 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-04-02 00:22:54,480 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:22:54,676 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'30' stats
+2023-04-02 00:22:54,681 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #30 to the DF
+2023-04-02 00:22:54,681 scrape-log INFO - attractions_data - Data from url #30 successfully retrieved
+2023-04-02 00:27:38,031 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:27:40,514 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:27:40,535 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:27:40,535 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:27:40,536 scrape-log INFO - main - Recieved 30 urls for the attractions of Washington
+2023-04-02 00:27:41,518 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:27:41,669 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:41,707 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:27:41,708 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:27:41,708 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:27:41,734 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:27:41,915 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:41,951 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:27:41,954 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:27:41,954 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:27:41,954 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:27:42,089 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:42,122 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:27:42,124 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:27:42,124 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:27:42,125 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:27:42,251 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:42,283 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'4' stats
+2023-04-02 00:27:42,285 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #4 to the DF
+2023-04-02 00:27:42,285 scrape-log INFO - attractions_data - Data from url #4 successfully retrieved
+2023-04-02 00:27:42,285 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-04-02 00:27:42,483 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:42,516 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'5' stats
+2023-04-02 00:27:42,517 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #5 to the DF
+2023-04-02 00:27:42,518 scrape-log INFO - attractions_data - Data from url #5 successfully retrieved
+2023-04-02 00:27:42,518 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-04-02 00:27:42,650 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:42,685 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'6' stats
+2023-04-02 00:27:42,687 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #6 to the DF
+2023-04-02 00:27:42,687 scrape-log INFO - attractions_data - Data from url #6 successfully retrieved
+2023-04-02 00:27:42,687 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-04-02 00:27:42,805 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:42,834 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'7' stats
+2023-04-02 00:27:42,836 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #7 to the DF
+2023-04-02 00:27:42,836 scrape-log INFO - attractions_data - Data from url #7 successfully retrieved
+2023-04-02 00:27:42,848 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-04-02 00:27:43,057 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:43,091 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'8' stats
+2023-04-02 00:27:43,093 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #8 to the DF
+2023-04-02 00:27:43,093 scrape-log INFO - attractions_data - Data from url #8 successfully retrieved
+2023-04-02 00:27:43,093 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-04-02 00:27:43,220 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:43,253 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'9' stats
+2023-04-02 00:27:43,255 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #9 to the DF
+2023-04-02 00:27:43,255 scrape-log INFO - attractions_data - Data from url #9 successfully retrieved
+2023-04-02 00:27:43,255 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-04-02 00:27:43,394 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:43,427 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'10' stats
+2023-04-02 00:27:43,429 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #10 to the DF
+2023-04-02 00:27:43,429 scrape-log INFO - attractions_data - Data from url #10 successfully retrieved
+2023-04-02 00:27:44,454 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-04-02 00:27:44,685 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:44,724 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'11' stats
+2023-04-02 00:27:44,726 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #11 to the DF
+2023-04-02 00:27:44,726 scrape-log INFO - attractions_data - Data from url #11 successfully retrieved
+2023-04-02 00:27:44,759 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-04-02 00:27:44,881 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:44,911 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'12' stats
+2023-04-02 00:27:44,913 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #12 to the DF
+2023-04-02 00:27:44,913 scrape-log INFO - attractions_data - Data from url #12 successfully retrieved
+2023-04-02 00:27:44,913 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-04-02 00:27:45,051 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:45,085 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'13' stats
+2023-04-02 00:27:45,087 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #13 to the DF
+2023-04-02 00:27:45,088 scrape-log INFO - attractions_data - Data from url #13 successfully retrieved
+2023-04-02 00:27:45,088 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-04-02 00:27:45,215 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:45,247 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'14' stats
+2023-04-02 00:27:45,250 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #14 to the DF
+2023-04-02 00:27:45,250 scrape-log INFO - attractions_data - Data from url #14 successfully retrieved
+2023-04-02 00:27:45,250 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-04-02 00:27:45,471 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:45,502 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'15' stats
+2023-04-02 00:27:45,505 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #15 to the DF
+2023-04-02 00:27:45,505 scrape-log INFO - attractions_data - Data from url #15 successfully retrieved
+2023-04-02 00:27:45,505 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-04-02 00:27:45,633 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:45,667 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'16' stats
+2023-04-02 00:27:45,669 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #16 to the DF
+2023-04-02 00:27:45,669 scrape-log INFO - attractions_data - Data from url #16 successfully retrieved
+2023-04-02 00:27:45,669 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-04-02 00:27:45,785 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:45,813 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'17' stats
+2023-04-02 00:27:45,815 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #17 to the DF
+2023-04-02 00:27:45,815 scrape-log INFO - attractions_data - Data from url #17 successfully retrieved
+2023-04-02 00:27:45,815 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-04-02 00:27:46,025 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:46,062 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'18' stats
+2023-04-02 00:27:46,064 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #18 to the DF
+2023-04-02 00:27:46,064 scrape-log INFO - attractions_data - Data from url #18 successfully retrieved
+2023-04-02 00:27:46,071 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-04-02 00:27:46,214 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:46,253 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'19' stats
+2023-04-02 00:27:46,254 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #19 to the DF
+2023-04-02 00:27:46,254 scrape-log INFO - attractions_data - Data from url #19 successfully retrieved
+2023-04-02 00:27:46,254 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-04-02 00:27:46,376 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:46,404 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'20' stats
+2023-04-02 00:27:46,407 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #20 to the DF
+2023-04-02 00:27:46,407 scrape-log INFO - attractions_data - Data from url #20 successfully retrieved
+2023-04-02 00:27:47,299 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-04-02 00:27:47,487 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:47,509 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'21' stats
+2023-04-02 00:27:47,511 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #21 to the DF
+2023-04-02 00:27:47,512 scrape-log INFO - attractions_data - Data from url #21 successfully retrieved
+2023-04-02 00:27:47,538 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-04-02 00:27:47,647 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:47,672 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'22' stats
+2023-04-02 00:27:47,674 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #22 to the DF
+2023-04-02 00:27:47,674 scrape-log INFO - attractions_data - Data from url #22 successfully retrieved
+2023-04-02 00:27:47,674 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-04-02 00:27:47,793 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:47,823 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'23' stats
+2023-04-02 00:27:47,825 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #23 to the DF
+2023-04-02 00:27:47,825 scrape-log INFO - attractions_data - Data from url #23 successfully retrieved
+2023-04-02 00:27:47,825 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-04-02 00:27:47,945 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:47,973 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'24' stats
+2023-04-02 00:27:47,975 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #24 to the DF
+2023-04-02 00:27:47,975 scrape-log INFO - attractions_data - Data from url #24 successfully retrieved
+2023-04-02 00:27:47,975 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-04-02 00:27:48,200 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:48,235 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'25' stats
+2023-04-02 00:27:48,237 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #25 to the DF
+2023-04-02 00:27:48,237 scrape-log INFO - attractions_data - Data from url #25 successfully retrieved
+2023-04-02 00:27:48,237 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-04-02 00:27:48,352 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:48,380 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'26' stats
+2023-04-02 00:27:48,382 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #26 to the DF
+2023-04-02 00:27:48,382 scrape-log INFO - attractions_data - Data from url #26 successfully retrieved
+2023-04-02 00:27:48,382 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-04-02 00:27:48,509 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:48,540 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'27' stats
+2023-04-02 00:27:48,542 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #27 to the DF
+2023-04-02 00:27:48,542 scrape-log INFO - attractions_data - Data from url #27 successfully retrieved
+2023-04-02 00:27:48,555 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-04-02 00:27:48,753 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:48,781 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'28' stats
+2023-04-02 00:27:48,783 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #28 to the DF
+2023-04-02 00:27:48,783 scrape-log INFO - attractions_data - Data from url #28 successfully retrieved
+2023-04-02 00:27:48,783 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-04-02 00:27:48,906 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:48,935 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'29' stats
+2023-04-02 00:27:48,937 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #29 to the DF
+2023-04-02 00:27:48,937 scrape-log INFO - attractions_data - Data from url #29 successfully retrieved
+2023-04-02 00:27:48,937 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-04-02 00:27:49,057 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:27:49,086 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'30' stats
+2023-04-02 00:27:49,088 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #30 to the DF
+2023-04-02 00:27:49,088 scrape-log INFO - attractions_data - Data from url #30 successfully retrieved
+2023-04-02 00:36:22,320 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:36:32,650 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:36:42,813 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:36:53,062 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:03,235 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:13,518 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:23,681 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:33,892 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:44,092 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:37:54,433 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:04,631 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:14,890 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:25,076 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:35,324 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:45,520 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:38:55,789 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:02,074 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:12,338 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:22,691 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:32,878 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:43,163 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:39:53,322 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:03,641 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:13,818 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:24,113 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:34,299 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:44,565 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:40:54,769 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:41:01,554 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:41:01,676 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:41:01,676 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:41:01,676 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-02 00:41:01,796 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-02 00:41:01,796 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g28970-Activities-oa30-Washington_DC_District_of_Columbia.html
+2023-04-02 00:41:01,796 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-02 00:41:03,749 scrape-log DEBUG - get_next_page_html - got
+2023-04-02 00:41:04,201 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-02 00:41:04,201 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:41:04,319 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:41:04,319 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:41:14,019 scrape-log INFO - main - Recieved 60 urls for the attractions of Washington
+2023-04-02 00:41:14,019 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:41:16,317 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:41:16,430 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:41:16,431 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:41:16,431 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-02 00:41:16,542 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-02 00:41:16,542 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g294201-Activities-oa30-Cairo_Cairo_Governorate.html
+2023-04-02 00:41:16,542 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-02 00:41:18,617 scrape-log DEBUG - get_next_page_html - got
+2023-04-02 00:41:19,059 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-02 00:41:19,059 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:41:19,177 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:41:19,177 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:41:23,204 scrape-log INFO - main - Recieved 60 urls for the attractions of Cairo
+2023-04-02 00:41:23,204 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:41:33,449 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:41:43,697 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:41:53,897 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:42:04,152 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:42:14,398 scrape-log DEBUG - get_response_then_get_soup - requesting...
+2023-04-02 00:42:17,149 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:42:17,273 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:42:17,274 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:42:17,274 scrape-log DEBUG - get_next_page_html - Trying to get next page html.
+2023-04-02 00:42:17,402 scrape-log INFO - get_next_page_arrow - Found next-page icon.
+2023-04-02 00:42:17,402 scrape-log DEBUG - get_next_page_html - url of next_page: https://www.tripadvisor.com//Attractions-g187147-Activities-oa30-Paris_Ile_de_France.html
+2023-04-02 00:42:17,402 scrape-log DEBUG - get_next_page_html - requesting...
+2023-04-02 00:42:19,611 scrape-log DEBUG - get_next_page_html - got
+2023-04-02 00:42:20,045 scrape-log DEBUG - get_next_page_soup - Successfully got next page soup.
+2023-04-02 00:42:20,045 scrape-log DEBUG - get_links_from_page - Trying to get links from page
+2023-04-02 00:42:20,169 scrape-log DEBUG - get_links_from_page - Got 30 more urls.
+2023-04-02 00:42:20,169 scrape-log DEBUG - get_links_from_page - Finished gathering urls from page.
+2023-04-02 00:42:20,169 scrape-log INFO - main - Recieved 60 urls for the attractions of Paris
+2023-04-02 00:59:38,532 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-04-02 00:59:38,905 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:39,162 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'1' stats
+2023-04-02 00:59:39,165 scrape-log DEBUG - attractions_data - Successfully created the DF for river attractions data
+2023-04-02 00:59:39,165 scrape-log INFO - attractions_data - Data from url #1 successfully retrieved
+2023-04-02 00:59:39,212 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-04-02 00:59:39,640 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:39,908 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'2' stats
+2023-04-02 00:59:39,914 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #2 to the DF
+2023-04-02 00:59:39,914 scrape-log INFO - attractions_data - Data from url #2 successfully retrieved
+2023-04-02 00:59:39,914 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-04-02 00:59:40,296 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:40,569 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'3' stats
+2023-04-02 00:59:40,574 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #3 to the DF
+2023-04-02 00:59:40,574 scrape-log INFO - attractions_data - Data from url #3 successfully retrieved
+2023-04-02 00:59:40,574 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-04-02 00:59:40,946 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:41,204 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'4' stats
+2023-04-02 00:59:41,208 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #4 to the DF
+2023-04-02 00:59:41,209 scrape-log INFO - attractions_data - Data from url #4 successfully retrieved
+2023-04-02 00:59:41,209 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-04-02 00:59:41,670 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:41,944 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'5' stats
+2023-04-02 00:59:41,949 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #5 to the DF
+2023-04-02 00:59:41,949 scrape-log INFO - attractions_data - Data from url #5 successfully retrieved
+2023-04-02 00:59:41,949 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-04-02 00:59:42,343 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:42,635 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'6' stats
+2023-04-02 00:59:42,641 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #6 to the DF
+2023-04-02 00:59:42,641 scrape-log INFO - attractions_data - Data from url #6 successfully retrieved
+2023-04-02 00:59:42,641 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-04-02 00:59:42,977 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:43,227 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'7' stats
+2023-04-02 00:59:43,232 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #7 to the DF
+2023-04-02 00:59:43,232 scrape-log INFO - attractions_data - Data from url #7 successfully retrieved
+2023-04-02 00:59:43,232 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-04-02 00:59:43,775 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:44,098 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'8' stats
+2023-04-02 00:59:44,103 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #8 to the DF
+2023-04-02 00:59:44,104 scrape-log INFO - attractions_data - Data from url #8 successfully retrieved
+2023-04-02 00:59:44,104 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-04-02 00:59:44,505 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:44,757 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'9' stats
+2023-04-02 00:59:44,762 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #9 to the DF
+2023-04-02 00:59:44,762 scrape-log INFO - attractions_data - Data from url #9 successfully retrieved
+2023-04-02 00:59:44,762 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-04-02 00:59:45,185 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:45,456 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'10' stats
+2023-04-02 00:59:45,461 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #10 to the DF
+2023-04-02 00:59:45,461 scrape-log INFO - attractions_data - Data from url #10 successfully retrieved
+2023-04-02 00:59:46,566 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-04-02 00:59:47,016 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:47,258 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'11' stats
+2023-04-02 00:59:47,263 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #11 to the DF
+2023-04-02 00:59:47,263 scrape-log INFO - attractions_data - Data from url #11 successfully retrieved
+2023-04-02 00:59:47,307 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-04-02 00:59:47,636 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:47,873 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'12' stats
+2023-04-02 00:59:47,880 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #12 to the DF
+2023-04-02 00:59:47,881 scrape-log INFO - attractions_data - Data from url #12 successfully retrieved
+2023-04-02 00:59:47,881 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-04-02 00:59:48,347 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:48,667 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'13' stats
+2023-04-02 00:59:48,674 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #13 to the DF
+2023-04-02 00:59:48,674 scrape-log INFO - attractions_data - Data from url #13 successfully retrieved
+2023-04-02 00:59:48,674 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-04-02 00:59:49,128 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:49,390 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'14' stats
+2023-04-02 00:59:49,395 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #14 to the DF
+2023-04-02 00:59:49,395 scrape-log INFO - attractions_data - Data from url #14 successfully retrieved
+2023-04-02 00:59:49,395 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-04-02 00:59:49,722 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:49,942 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'15' stats
+2023-04-02 00:59:49,947 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #15 to the DF
+2023-04-02 00:59:49,947 scrape-log INFO - attractions_data - Data from url #15 successfully retrieved
+2023-04-02 00:59:49,947 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-04-02 00:59:50,290 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:50,535 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'16' stats
+2023-04-02 00:59:50,540 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #16 to the DF
+2023-04-02 00:59:50,540 scrape-log INFO - attractions_data - Data from url #16 successfully retrieved
+2023-04-02 00:59:50,540 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-04-02 00:59:50,932 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:51,212 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'17' stats
+2023-04-02 00:59:51,217 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #17 to the DF
+2023-04-02 00:59:51,217 scrape-log INFO - attractions_data - Data from url #17 successfully retrieved
+2023-04-02 00:59:51,217 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-04-02 00:59:51,650 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:51,896 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'18' stats
+2023-04-02 00:59:51,900 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #18 to the DF
+2023-04-02 00:59:51,900 scrape-log INFO - attractions_data - Data from url #18 successfully retrieved
+2023-04-02 00:59:51,901 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-04-02 00:59:52,231 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:52,463 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'19' stats
+2023-04-02 00:59:52,468 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #19 to the DF
+2023-04-02 00:59:52,468 scrape-log INFO - attractions_data - Data from url #19 successfully retrieved
+2023-04-02 00:59:52,468 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-04-02 00:59:52,881 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:53,188 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'20' stats
+2023-04-02 00:59:53,192 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #20 to the DF
+2023-04-02 00:59:53,192 scrape-log INFO - attractions_data - Data from url #20 successfully retrieved
+2023-04-02 00:59:54,147 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-04-02 00:59:54,631 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:54,866 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'21' stats
+2023-04-02 00:59:54,871 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #21 to the DF
+2023-04-02 00:59:54,871 scrape-log INFO - attractions_data - Data from url #21 successfully retrieved
+2023-04-02 00:59:54,921 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-04-02 00:59:55,235 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:55,433 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'22' stats
+2023-04-02 00:59:55,437 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #22 to the DF
+2023-04-02 00:59:55,437 scrape-log INFO - attractions_data - Data from url #22 successfully retrieved
+2023-04-02 00:59:55,438 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-04-02 00:59:55,771 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:55,995 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'23' stats
+2023-04-02 00:59:56,000 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #23 to the DF
+2023-04-02 00:59:56,000 scrape-log INFO - attractions_data - Data from url #23 successfully retrieved
+2023-04-02 00:59:56,000 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-04-02 00:59:56,431 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:56,655 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'24' stats
+2023-04-02 00:59:56,660 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #24 to the DF
+2023-04-02 00:59:56,660 scrape-log INFO - attractions_data - Data from url #24 successfully retrieved
+2023-04-02 00:59:56,660 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-04-02 00:59:56,928 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:57,090 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'25' stats
+2023-04-02 00:59:57,096 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #25 to the DF
+2023-04-02 00:59:57,096 scrape-log INFO - attractions_data - Data from url #25 successfully retrieved
+2023-04-02 00:59:57,096 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-04-02 00:59:57,418 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:57,631 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'26' stats
+2023-04-02 00:59:57,635 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #26 to the DF
+2023-04-02 00:59:57,636 scrape-log INFO - attractions_data - Data from url #26 successfully retrieved
+2023-04-02 00:59:57,636 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-04-02 00:59:57,961 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:58,184 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'27' stats
+2023-04-02 00:59:58,191 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #27 to the DF
+2023-04-02 00:59:58,191 scrape-log INFO - attractions_data - Data from url #27 successfully retrieved
+2023-04-02 00:59:58,191 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-04-02 00:59:58,900 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:59,148 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'28' stats
+2023-04-02 00:59:59,154 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #28 to the DF
+2023-04-02 00:59:59,154 scrape-log INFO - attractions_data - Data from url #28 successfully retrieved
+2023-04-02 00:59:59,154 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-04-02 00:59:59,577 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 00:59:59,852 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'29' stats
+2023-04-02 00:59:59,857 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #29 to the DF
+2023-04-02 00:59:59,857 scrape-log INFO - attractions_data - Data from url #29 successfully retrieved
+2023-04-02 00:59:59,857 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-04-02 01:00:00,202 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:00,443 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'30' stats
+2023-04-02 01:00:00,448 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #30 to the DF
+2023-04-02 01:00:00,449 scrape-log INFO - attractions_data - Data from url #30 successfully retrieved
+2023-04-02 01:00:01,421 scrape-log INFO - attractions_data - Start retrieving attraction information from url #31
+2023-04-02 01:00:01,870 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:02,119 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'31' stats
+2023-04-02 01:00:02,124 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #31 to the DF
+2023-04-02 01:00:02,124 scrape-log INFO - attractions_data - Data from url #31 successfully retrieved
+2023-04-02 01:00:02,171 scrape-log INFO - attractions_data - Start retrieving attraction information from url #32
+2023-04-02 01:00:02,485 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:02,691 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'32' stats
+2023-04-02 01:00:02,696 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #32 to the DF
+2023-04-02 01:00:02,696 scrape-log INFO - attractions_data - Data from url #32 successfully retrieved
+2023-04-02 01:00:02,696 scrape-log INFO - attractions_data - Start retrieving attraction information from url #33
+2023-04-02 01:00:03,001 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:03,211 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'33' stats
+2023-04-02 01:00:03,218 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #33 to the DF
+2023-04-02 01:00:03,218 scrape-log INFO - attractions_data - Data from url #33 successfully retrieved
+2023-04-02 01:00:03,219 scrape-log INFO - attractions_data - Start retrieving attraction information from url #34
+2023-04-02 01:00:03,529 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:03,733 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'34' stats
+2023-04-02 01:00:03,738 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #34 to the DF
+2023-04-02 01:00:03,738 scrape-log INFO - attractions_data - Data from url #34 successfully retrieved
+2023-04-02 01:00:03,738 scrape-log INFO - attractions_data - Start retrieving attraction information from url #35
+2023-04-02 01:00:04,155 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:04,368 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'35' stats
+2023-04-02 01:00:04,373 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #35 to the DF
+2023-04-02 01:00:04,373 scrape-log INFO - attractions_data - Data from url #35 successfully retrieved
+2023-04-02 01:00:04,373 scrape-log INFO - attractions_data - Start retrieving attraction information from url #36
+2023-04-02 01:00:04,702 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:04,922 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'36' stats
+2023-04-02 01:00:04,927 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #36 to the DF
+2023-04-02 01:00:04,927 scrape-log INFO - attractions_data - Data from url #36 successfully retrieved
+2023-04-02 01:00:04,927 scrape-log INFO - attractions_data - Start retrieving attraction information from url #37
+2023-04-02 01:00:05,246 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:05,462 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'37' stats
+2023-04-02 01:00:05,467 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #37 to the DF
+2023-04-02 01:00:05,468 scrape-log INFO - attractions_data - Data from url #37 successfully retrieved
+2023-04-02 01:00:05,468 scrape-log INFO - attractions_data - Start retrieving attraction information from url #38
+2023-04-02 01:00:05,797 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:06,009 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'38' stats
+2023-04-02 01:00:06,014 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #38 to the DF
+2023-04-02 01:00:06,015 scrape-log INFO - attractions_data - Data from url #38 successfully retrieved
+2023-04-02 01:00:06,015 scrape-log INFO - attractions_data - Start retrieving attraction information from url #39
+2023-04-02 01:00:06,411 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:06,613 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'39' stats
+2023-04-02 01:00:06,617 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #39 to the DF
+2023-04-02 01:00:06,617 scrape-log INFO - attractions_data - Data from url #39 successfully retrieved
+2023-04-02 01:00:06,617 scrape-log INFO - attractions_data - Start retrieving attraction information from url #40
+2023-04-02 01:00:06,924 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:07,114 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'40' stats
+2023-04-02 01:00:07,120 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #40 to the DF
+2023-04-02 01:00:07,120 scrape-log INFO - attractions_data - Data from url #40 successfully retrieved
+2023-04-02 01:00:08,196 scrape-log INFO - attractions_data - Start retrieving attraction information from url #41
+2023-04-02 01:00:08,520 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:08,734 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'41' stats
+2023-04-02 01:00:08,738 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #41 to the DF
+2023-04-02 01:00:08,739 scrape-log INFO - attractions_data - Data from url #41 successfully retrieved
+2023-04-02 01:00:08,777 scrape-log INFO - attractions_data - Start retrieving attraction information from url #42
+2023-04-02 01:00:09,070 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:09,269 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'42' stats
+2023-04-02 01:00:09,274 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #42 to the DF
+2023-04-02 01:00:09,274 scrape-log INFO - attractions_data - Data from url #42 successfully retrieved
+2023-04-02 01:00:09,274 scrape-log INFO - attractions_data - Start retrieving attraction information from url #43
+2023-04-02 01:00:09,664 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:09,868 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'43' stats
+2023-04-02 01:00:09,873 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #43 to the DF
+2023-04-02 01:00:09,873 scrape-log INFO - attractions_data - Data from url #43 successfully retrieved
+2023-04-02 01:00:09,873 scrape-log INFO - attractions_data - Start retrieving attraction information from url #44
+2023-04-02 01:00:10,189 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:10,440 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'44' stats
+2023-04-02 01:00:10,445 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #44 to the DF
+2023-04-02 01:00:10,445 scrape-log INFO - attractions_data - Data from url #44 successfully retrieved
+2023-04-02 01:00:10,445 scrape-log INFO - attractions_data - Start retrieving attraction information from url #45
+2023-04-02 01:00:10,847 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:11,058 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'45' stats
+2023-04-02 01:00:11,063 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #45 to the DF
+2023-04-02 01:00:11,063 scrape-log INFO - attractions_data - Data from url #45 successfully retrieved
+2023-04-02 01:00:11,063 scrape-log INFO - attractions_data - Start retrieving attraction information from url #46
+2023-04-02 01:00:11,467 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:11,678 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'46' stats
+2023-04-02 01:00:11,682 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #46 to the DF
+2023-04-02 01:00:11,682 scrape-log INFO - attractions_data - Data from url #46 successfully retrieved
+2023-04-02 01:00:11,683 scrape-log INFO - attractions_data - Start retrieving attraction information from url #47
+2023-04-02 01:00:12,061 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:12,311 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'47' stats
+2023-04-02 01:00:12,317 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #47 to the DF
+2023-04-02 01:00:12,317 scrape-log INFO - attractions_data - Data from url #47 successfully retrieved
+2023-04-02 01:00:12,317 scrape-log INFO - attractions_data - Start retrieving attraction information from url #48
+2023-04-02 01:00:12,785 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:12,971 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'48' stats
+2023-04-02 01:00:12,976 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #48 to the DF
+2023-04-02 01:00:12,976 scrape-log INFO - attractions_data - Data from url #48 successfully retrieved
+2023-04-02 01:00:12,977 scrape-log INFO - attractions_data - Start retrieving attraction information from url #49
+2023-04-02 01:00:13,481 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:13,693 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'49' stats
+2023-04-02 01:00:13,697 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #49 to the DF
+2023-04-02 01:00:13,697 scrape-log INFO - attractions_data - Data from url #49 successfully retrieved
+2023-04-02 01:00:13,698 scrape-log INFO - attractions_data - Start retrieving attraction information from url #50
+2023-04-02 01:00:14,296 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:14,524 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'50' stats
+2023-04-02 01:00:14,528 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #50 to the DF
+2023-04-02 01:00:14,528 scrape-log INFO - attractions_data - Data from url #50 successfully retrieved
+2023-04-02 01:00:15,441 scrape-log INFO - attractions_data - Start retrieving attraction information from url #51
+2023-04-02 01:00:15,726 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:15,891 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'51' stats
+2023-04-02 01:00:15,896 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #51 to the DF
+2023-04-02 01:00:15,896 scrape-log INFO - attractions_data - Data from url #51 successfully retrieved
+2023-04-02 01:00:15,944 scrape-log INFO - attractions_data - Start retrieving attraction information from url #52
+2023-04-02 01:00:16,269 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:16,571 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'52' stats
+2023-04-02 01:00:16,577 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #52 to the DF
+2023-04-02 01:00:16,577 scrape-log INFO - attractions_data - Data from url #52 successfully retrieved
+2023-04-02 01:00:16,577 scrape-log INFO - attractions_data - Start retrieving attraction information from url #53
+2023-04-02 01:00:16,949 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:17,182 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'53' stats
+2023-04-02 01:00:17,188 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #53 to the DF
+2023-04-02 01:00:17,188 scrape-log INFO - attractions_data - Data from url #53 successfully retrieved
+2023-04-02 01:00:17,188 scrape-log INFO - attractions_data - Start retrieving attraction information from url #54
+2023-04-02 01:00:17,594 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:17,804 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'54' stats
+2023-04-02 01:00:17,809 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #54 to the DF
+2023-04-02 01:00:17,809 scrape-log INFO - attractions_data - Data from url #54 successfully retrieved
+2023-04-02 01:00:17,809 scrape-log INFO - attractions_data - Start retrieving attraction information from url #55
+2023-04-02 01:00:18,129 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:18,336 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'55' stats
+2023-04-02 01:00:18,341 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #55 to the DF
+2023-04-02 01:00:18,341 scrape-log INFO - attractions_data - Data from url #55 successfully retrieved
+2023-04-02 01:00:18,341 scrape-log INFO - attractions_data - Start retrieving attraction information from url #56
+2023-04-02 01:00:18,662 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:18,905 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'56' stats
+2023-04-02 01:00:18,909 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #56 to the DF
+2023-04-02 01:00:18,909 scrape-log INFO - attractions_data - Data from url #56 successfully retrieved
+2023-04-02 01:00:18,909 scrape-log INFO - attractions_data - Start retrieving attraction information from url #57
+2023-04-02 01:00:19,217 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:19,425 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'57' stats
+2023-04-02 01:00:19,429 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #57 to the DF
+2023-04-02 01:00:19,429 scrape-log INFO - attractions_data - Data from url #57 successfully retrieved
+2023-04-02 01:00:19,429 scrape-log INFO - attractions_data - Start retrieving attraction information from url #58
+2023-04-02 01:00:19,827 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:20,069 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'58' stats
+2023-04-02 01:00:20,074 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #58 to the DF
+2023-04-02 01:00:20,074 scrape-log INFO - attractions_data - Data from url #58 successfully retrieved
+2023-04-02 01:00:20,074 scrape-log INFO - attractions_data - Start retrieving attraction information from url #59
+2023-04-02 01:00:20,395 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:20,620 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'59' stats
+2023-04-02 01:00:20,627 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #59 to the DF
+2023-04-02 01:00:20,628 scrape-log INFO - attractions_data - Data from url #59 successfully retrieved
+2023-04-02 01:00:20,628 scrape-log INFO - attractions_data - Start retrieving attraction information from url #60
+2023-04-02 01:00:21,172 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:21,456 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'60' stats
+2023-04-02 01:00:21,464 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #60 to the DF
+2023-04-02 01:00:21,464 scrape-log INFO - attractions_data - Data from url #60 successfully retrieved
+2023-04-02 01:00:22,692 scrape-log INFO - attractions_data - Start retrieving attraction information from url #61
+2023-04-02 01:00:23,189 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:23,483 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'61' stats
+2023-04-02 01:00:23,488 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #61 to the DF
+2023-04-02 01:00:23,488 scrape-log INFO - attractions_data - Data from url #61 successfully retrieved
+2023-04-02 01:00:23,533 scrape-log INFO - attractions_data - Start retrieving attraction information from url #62
+2023-04-02 01:00:23,909 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:24,199 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'62' stats
+2023-04-02 01:00:24,204 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #62 to the DF
+2023-04-02 01:00:24,204 scrape-log INFO - attractions_data - Data from url #62 successfully retrieved
+2023-04-02 01:00:24,204 scrape-log INFO - attractions_data - Start retrieving attraction information from url #63
+2023-04-02 01:00:24,610 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:24,858 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'63' stats
+2023-04-02 01:00:24,869 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #63 to the DF
+2023-04-02 01:00:24,869 scrape-log INFO - attractions_data - Data from url #63 successfully retrieved
+2023-04-02 01:00:24,870 scrape-log INFO - attractions_data - Start retrieving attraction information from url #64
+2023-04-02 01:00:25,218 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:25,478 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'64' stats
+2023-04-02 01:00:25,488 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #64 to the DF
+2023-04-02 01:00:25,488 scrape-log INFO - attractions_data - Data from url #64 successfully retrieved
+2023-04-02 01:00:25,488 scrape-log INFO - attractions_data - Start retrieving attraction information from url #65
+2023-04-02 01:00:25,987 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:26,252 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'65' stats
+2023-04-02 01:00:26,257 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #65 to the DF
+2023-04-02 01:00:26,257 scrape-log INFO - attractions_data - Data from url #65 successfully retrieved
+2023-04-02 01:00:26,258 scrape-log INFO - attractions_data - Start retrieving attraction information from url #66
+2023-04-02 01:00:26,633 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:26,904 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'66' stats
+2023-04-02 01:00:26,909 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #66 to the DF
+2023-04-02 01:00:26,909 scrape-log INFO - attractions_data - Data from url #66 successfully retrieved
+2023-04-02 01:00:26,909 scrape-log INFO - attractions_data - Start retrieving attraction information from url #67
+2023-04-02 01:00:27,264 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:27,558 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'67' stats
+2023-04-02 01:00:27,567 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #67 to the DF
+2023-04-02 01:00:27,568 scrape-log INFO - attractions_data - Data from url #67 successfully retrieved
+2023-04-02 01:00:27,568 scrape-log INFO - attractions_data - Start retrieving attraction information from url #68
+2023-04-02 01:00:28,069 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:28,313 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'68' stats
+2023-04-02 01:00:28,318 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #68 to the DF
+2023-04-02 01:00:28,318 scrape-log INFO - attractions_data - Data from url #68 successfully retrieved
+2023-04-02 01:00:28,319 scrape-log INFO - attractions_data - Start retrieving attraction information from url #69
+2023-04-02 01:00:28,700 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:29,008 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'69' stats
+2023-04-02 01:00:29,014 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #69 to the DF
+2023-04-02 01:00:29,014 scrape-log INFO - attractions_data - Data from url #69 successfully retrieved
+2023-04-02 01:00:29,014 scrape-log INFO - attractions_data - Start retrieving attraction information from url #70
+2023-04-02 01:00:29,402 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:29,681 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'70' stats
+2023-04-02 01:00:29,686 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #70 to the DF
+2023-04-02 01:00:29,687 scrape-log INFO - attractions_data - Data from url #70 successfully retrieved
+2023-04-02 01:00:30,731 scrape-log INFO - attractions_data - Start retrieving attraction information from url #71
+2023-04-02 01:00:31,159 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:31,448 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'71' stats
+2023-04-02 01:00:31,453 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #71 to the DF
+2023-04-02 01:00:31,453 scrape-log INFO - attractions_data - Data from url #71 successfully retrieved
+2023-04-02 01:00:31,495 scrape-log INFO - attractions_data - Start retrieving attraction information from url #72
+2023-04-02 01:00:31,941 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:32,175 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'72' stats
+2023-04-02 01:00:32,180 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #72 to the DF
+2023-04-02 01:00:32,180 scrape-log INFO - attractions_data - Data from url #72 successfully retrieved
+2023-04-02 01:00:32,180 scrape-log INFO - attractions_data - Start retrieving attraction information from url #73
+2023-04-02 01:00:32,499 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:32,716 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'73' stats
+2023-04-02 01:00:32,721 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #73 to the DF
+2023-04-02 01:00:32,721 scrape-log INFO - attractions_data - Data from url #73 successfully retrieved
+2023-04-02 01:00:32,722 scrape-log INFO - attractions_data - Start retrieving attraction information from url #74
+2023-04-02 01:00:33,077 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:33,337 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'74' stats
+2023-04-02 01:00:33,343 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #74 to the DF
+2023-04-02 01:00:33,343 scrape-log INFO - attractions_data - Data from url #74 successfully retrieved
+2023-04-02 01:00:33,343 scrape-log INFO - attractions_data - Start retrieving attraction information from url #75
+2023-04-02 01:00:33,929 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:34,181 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'75' stats
+2023-04-02 01:00:34,189 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #75 to the DF
+2023-04-02 01:00:34,189 scrape-log INFO - attractions_data - Data from url #75 successfully retrieved
+2023-04-02 01:00:34,189 scrape-log INFO - attractions_data - Start retrieving attraction information from url #76
+2023-04-02 01:00:34,529 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:34,740 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'76' stats
+2023-04-02 01:00:34,746 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #76 to the DF
+2023-04-02 01:00:34,746 scrape-log INFO - attractions_data - Data from url #76 successfully retrieved
+2023-04-02 01:00:34,746 scrape-log INFO - attractions_data - Start retrieving attraction information from url #77
+2023-04-02 01:00:35,129 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:35,379 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'77' stats
+2023-04-02 01:00:35,384 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #77 to the DF
+2023-04-02 01:00:35,384 scrape-log INFO - attractions_data - Data from url #77 successfully retrieved
+2023-04-02 01:00:35,384 scrape-log INFO - attractions_data - Start retrieving attraction information from url #78
+2023-04-02 01:00:35,713 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:35,948 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'78' stats
+2023-04-02 01:00:35,952 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #78 to the DF
+2023-04-02 01:00:35,952 scrape-log INFO - attractions_data - Data from url #78 successfully retrieved
+2023-04-02 01:00:35,953 scrape-log INFO - attractions_data - Start retrieving attraction information from url #79
+2023-04-02 01:00:36,348 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:36,551 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'79' stats
+2023-04-02 01:00:36,557 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #79 to the DF
+2023-04-02 01:00:36,557 scrape-log INFO - attractions_data - Data from url #79 successfully retrieved
+2023-04-02 01:00:37,601 scrape-log INFO - attractions_data - Start retrieving attraction information from url #80
+2023-04-02 01:00:37,909 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:38,112 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'80' stats
+2023-04-02 01:00:38,117 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #80 to the DF
+2023-04-02 01:00:38,117 scrape-log INFO - attractions_data - Data from url #80 successfully retrieved
+2023-04-02 01:00:38,169 scrape-log INFO - attractions_data - Start retrieving attraction information from url #81
+2023-04-02 01:00:38,458 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:38,631 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'81' stats
+2023-04-02 01:00:38,636 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #81 to the DF
+2023-04-02 01:00:38,636 scrape-log INFO - attractions_data - Data from url #81 successfully retrieved
+2023-04-02 01:00:38,636 scrape-log INFO - attractions_data - Start retrieving attraction information from url #82
+2023-04-02 01:00:38,930 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:39,131 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'82' stats
+2023-04-02 01:00:39,136 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #82 to the DF
+2023-04-02 01:00:39,136 scrape-log INFO - attractions_data - Data from url #82 successfully retrieved
+2023-04-02 01:00:39,136 scrape-log INFO - attractions_data - Start retrieving attraction information from url #83
+2023-04-02 01:00:39,529 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:39,728 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'83' stats
+2023-04-02 01:00:39,733 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #83 to the DF
+2023-04-02 01:00:39,733 scrape-log INFO - attractions_data - Data from url #83 successfully retrieved
+2023-04-02 01:00:39,734 scrape-log INFO - attractions_data - Start retrieving attraction information from url #84
+2023-04-02 01:00:40,126 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:40,483 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'84' stats
+2023-04-02 01:00:40,488 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #84 to the DF
+2023-04-02 01:00:40,488 scrape-log INFO - attractions_data - Data from url #84 successfully retrieved
+2023-04-02 01:00:40,488 scrape-log INFO - attractions_data - Start retrieving attraction information from url #85
+2023-04-02 01:00:40,835 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:41,094 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'85' stats
+2023-04-02 01:00:41,100 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #85 to the DF
+2023-04-02 01:00:41,100 scrape-log INFO - attractions_data - Data from url #85 successfully retrieved
+2023-04-02 01:00:41,100 scrape-log INFO - attractions_data - Start retrieving attraction information from url #86
+2023-04-02 01:00:41,426 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:41,675 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'86' stats
+2023-04-02 01:00:41,680 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #86 to the DF
+2023-04-02 01:00:41,680 scrape-log INFO - attractions_data - Data from url #86 successfully retrieved
+2023-04-02 01:00:41,680 scrape-log INFO - attractions_data - Start retrieving attraction information from url #87
+2023-04-02 01:00:42,102 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:42,323 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'87' stats
+2023-04-02 01:00:42,328 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #87 to the DF
+2023-04-02 01:00:42,328 scrape-log INFO - attractions_data - Data from url #87 successfully retrieved
+2023-04-02 01:00:42,328 scrape-log INFO - attractions_data - Start retrieving attraction information from url #88
+2023-04-02 01:00:42,640 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:42,868 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'88' stats
+2023-04-02 01:00:42,873 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #88 to the DF
+2023-04-02 01:00:42,873 scrape-log INFO - attractions_data - Data from url #88 successfully retrieved
+2023-04-02 01:00:42,874 scrape-log INFO - attractions_data - Start retrieving attraction information from url #89
+2023-04-02 01:00:43,182 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:43,391 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'89' stats
+2023-04-02 01:00:43,396 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #89 to the DF
+2023-04-02 01:00:43,396 scrape-log INFO - attractions_data - Data from url #89 successfully retrieved
+2023-04-02 01:00:44,429 scrape-log INFO - attractions_data - Start retrieving attraction information from url #90
+2023-04-02 01:00:44,731 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:44,921 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'90' stats
+2023-04-02 01:00:44,926 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #90 to the DF
+2023-04-02 01:00:44,927 scrape-log INFO - attractions_data - Data from url #90 successfully retrieved
+2023-04-02 01:00:44,966 scrape-log INFO - attractions_data - Start retrieving attraction information from url #91
+2023-04-02 01:00:45,390 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:45,621 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'91' stats
+2023-04-02 01:00:45,625 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #91 to the DF
+2023-04-02 01:00:45,626 scrape-log INFO - attractions_data - Data from url #91 successfully retrieved
+2023-04-02 01:00:45,626 scrape-log INFO - attractions_data - Start retrieving attraction information from url #92
+2023-04-02 01:00:45,924 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:46,147 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'92' stats
+2023-04-02 01:00:46,152 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #92 to the DF
+2023-04-02 01:00:46,152 scrape-log INFO - attractions_data - Data from url #92 successfully retrieved
+2023-04-02 01:00:46,152 scrape-log INFO - attractions_data - Start retrieving attraction information from url #93
+2023-04-02 01:00:46,412 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:46,601 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'93' stats
+2023-04-02 01:00:46,609 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #93 to the DF
+2023-04-02 01:00:46,610 scrape-log INFO - attractions_data - Data from url #93 successfully retrieved
+2023-04-02 01:00:46,610 scrape-log INFO - attractions_data - Start retrieving attraction information from url #94
+2023-04-02 01:00:47,039 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:47,356 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'94' stats
+2023-04-02 01:00:47,365 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #94 to the DF
+2023-04-02 01:00:47,365 scrape-log INFO - attractions_data - Data from url #94 successfully retrieved
+2023-04-02 01:00:47,366 scrape-log INFO - attractions_data - Start retrieving attraction information from url #95
+2023-04-02 01:00:47,944 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:48,309 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'95' stats
+2023-04-02 01:00:48,315 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #95 to the DF
+2023-04-02 01:00:48,315 scrape-log INFO - attractions_data - Data from url #95 successfully retrieved
+2023-04-02 01:00:48,315 scrape-log INFO - attractions_data - Start retrieving attraction information from url #96
+2023-04-02 01:00:48,600 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:48,844 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'96' stats
+2023-04-02 01:00:48,849 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #96 to the DF
+2023-04-02 01:00:48,849 scrape-log INFO - attractions_data - Data from url #96 successfully retrieved
+2023-04-02 01:00:48,849 scrape-log INFO - attractions_data - Start retrieving attraction information from url #97
+2023-04-02 01:00:49,167 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:49,397 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'97' stats
+2023-04-02 01:00:49,402 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #97 to the DF
+2023-04-02 01:00:49,402 scrape-log INFO - attractions_data - Data from url #97 successfully retrieved
+2023-04-02 01:00:49,403 scrape-log INFO - attractions_data - Start retrieving attraction information from url #98
+2023-04-02 01:00:49,731 scrape-log DEBUG - attractions_data - The response is parsed into a BeautifulSoup object
+2023-04-02 01:00:49,980 scrape-log DEBUG - attractions_data - Successfully retrieved attraction #'98' stats
+2023-04-02 01:00:49,989 scrape-log DEBUG - attractions_data - Successfully added the river attractions from url #98 to the DF
+2023-04-02 01:00:49,989 scrape-log INFO - attractions_data - Data from url #98 successfully retrieved
+>>>>>>> Stashed changes
