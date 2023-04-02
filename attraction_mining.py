@@ -37,9 +37,9 @@ headers = {"User-Agent": ua.random}
 
 def tripadvisor_name_rate(soup):
     """
-    Extracts the name, location, and TripAdvisor rating of an attraction from its TripAdvisor page.
-    Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
-    Returns: dict: A dictionary containing the attraction's name, location, and TripAdvisor rating.
+    param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
+    return: info dict - a dictionary containing information about the name, lovation and rating of a tourist attraction
+    on trip advisor.com. 
     """
     # Find the main section tag that contains the needed data
     main_tag = soup.find('section', "vwOfI nlaXM")
@@ -69,10 +69,10 @@ def tripadvisor_name_rate(soup):
 
 def attraction_stats(soup):
     """
-    Extracts various statistics about an attraction from its TripAdvisor page.
-    Args: soup (BeautifulSoup object): Parsed HTML of the attraction's TripAdvisor page.
-    Returns: dict: A dictionary containing the attraction's score, number of reviewers, and ratios of excellent, very good,
-    average, poor, and terrible ratings.
+    param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
+    return: stats (dict) - containing statistics about a tourist attraction on tripadvisor.com
+        stats contains the following data: attraction's score, number of reviewers, and
+        ratios of excellent, very good, average, poor, and terrible ratings.
     """
     main_tag = soup.find('div', "yFKLG")  # Find the main div tag containing the statistics
 
@@ -113,9 +113,10 @@ def attraction_stats(soup):
 
 def attractions_data(lst, batch_size):
     """
-    Retrieve attraction information from a list of URLs and create a Pandas DataFrame.
-    Args: lst (list): A list of URLs of attractions to retrieve information from. BATCH_size (int): The number of URLs to retrieve at once.
-    Returns: DataFrame: A Pandas DataFrame containing information on the attractions of the chosen city.
+    params: lst (list)- a list of urls of tourist attraction webpages from tripadvisor.com
+            batch_size (int) - the number of urls to get a response from in an asynchronous grequests get() function.
+    return: data_df (pandas.DataFrame) - contains all the statistical data about each attraction
+            whose url was passed to this function
     """
     # Initialize variables
     data_df = None
