@@ -15,12 +15,24 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 # Read configuration data from a json file
 with open("config.json", "r") as config_file:
-    config_data = json.load(config_file)
+    configs = json.load(config_file)
 
-LOG_FORMAT = config_data["logger_format_string"]
+LOG_FORMAT = configs["logger_format_string"]
+LOGGER_NAME = configs["logger_name"]
+RATE_CLASS = configs["soup_elements"]["rate_class"]
+ATTRACTION_DESCRIPTION_TAG = configs["soup_elements"]["attraction_description_tag"]
+DATA_SECTION_TAG = configs["soup_elements"]["data_section_tag"]
+NAME_TAG = configs["soup_elements"]["name_tag"]
+POPULAR_MENTION_TAG = configs["soup_elements"]["popular_mention_tag"]
+REVIEWERS_TAG = configs["soup_elements"]["reviewers_tag"]
+SCORE_TAG = configs["soup_elements"]["score_tag"]
+RAW_RATES_TAG = configs["soup_elements"]["raw_rates_tag"]
+STAT_TAG = configs["soup_elements"]["stat_tag"]
+RESPONSE_ERROR = configs["log_messages"]["response_error"]
+
 
 # Set up logging to write messages to a file with a specific format and logging level.
-logger = logging.getLogger("scrape-log")
+logger = logging.getLogger(LOGGER_NAME)
 """
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter(LOG_FORMAT)
@@ -42,11 +54,11 @@ def tripadvisor_name_rate(soup):
     on trip advisor.com. 
     """
     # Find the main section tag that contains the needed data
-    main_tag = soup.find('section', "vwOfI nlaXM")
+    main_tag = soup.find('section', DATA_SECTION_TAG)
 
     # Get rate, city name, tags and attraction's name info
     try:
-        rate = main_tag.find('div', class_='biGQs _P pZUbB KxBGd').text.strip()
+        rate = main_tag.find('div', class_=RATE_CLASS).text.strip()
     except AttributeError:
         rate = ['empty']
     try:
@@ -54,13 +66,13 @@ def tripadvisor_name_rate(soup):
     except IndexError:
         rate_tag = None
     city = rate.split()[-1]
-    name = soup.find('h1', "biGQs _P fiohW eIegw").text.strip()
-    main_tag = soup.find('div', "qWPrE XCaFq bSHRx")  # Find the main div tag that contains attraction descriptions
+    name = soup.find('h1', NAME_TAG).text.strip()
+    main_tag = soup.find('div', ATTRACTION_DESCRIPTION_TAG)  # Find the main div tag that contains attraction descriptions
 
     # Find the main div tag that contains attraction descriptions and scrape attraction tags
     try:
         popular_mentions = [elem.text.strip() for elem in
-                            main_tag.findAll('span', class_='biGQs _P vvmrG')]  # scrapes attraction tags
+                            main_tag.findAll('span', class_=POPULAR_MENTION_TAG)]  # scrapes attraction tags
     except AttributeError:
         popular_mentions = ['empty']
     info_dict = {"City": city, "Name": name, "Tripadvisor Rate": rate_tag, "Popular Mentions": popular_mentions}
@@ -74,20 +86,20 @@ def attraction_stats(soup):
         stats contains the following data: attraction's score, number of reviewers, and
         ratios of excellent, very good, average, poor, and terrible ratings.
     """
-    main_tag = soup.find('div', "yFKLG")  # Find the main div tag containing the statistics
+    main_tag = soup.find('div', STAT_TAG)  # Find the main div tag containing the statistics
 
     # Extract the number of reviewers and the score of the attraction
     try:
-        reviewers = main_tag.find('span', class_='biGQs _P pZUbB KxBGd').text.strip().split()[0].replace(",", "")
+        reviewers = main_tag.find('span', class_=REVIEWERS_TAG).text.strip().split()[0].replace(",", "")
     except AttributeError:
         reviewers = ['empty']
     try:
-        score = main_tag.find('div', class_='biGQs _P fiohW hzzSG uuBRH').text.strip()
+        score = main_tag.find('div', class_=SCORE_TAG).text.strip()
     except AttributeError:
         score = ['empty']
 
     # Extract the rating scales and rates from the raw html
-    raw_rates = str(soup.findAll('div', "IMmqe"))
+    raw_rates = str(soup.findAll('div', RAW_RATES_TAG))
     rate_scales_pattern = r'<div class="biGQs _P pZUbB hmDzD">(.+?)</div>'
     scales = re.findall(rate_scales_pattern, raw_rates)
     reviewers_rate_pattern = r'<div class="biGQs _P pZUbB osNWb">(.+?)</div>'
@@ -134,7 +146,7 @@ def attractions_data(lst, batch_size):
                                                    size=batch_size)  # retrieve attractions data asynchronously
                 for response in response_unparsed:
                     if response is None or response.status_code != 200:
-                        raise Exception("Couldn't get response from attraction.")
+                        raise Exception(RESPONSE_ERROR)
                 break
             except Exception as e:
                 logger.error(e)

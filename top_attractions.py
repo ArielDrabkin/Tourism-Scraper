@@ -9,16 +9,26 @@ UA = UserAgent()
 
 # load config data
 with open("config.json", "r") as config_file:
-    config_data = json.load(config_file)
+    configs = json.load(config_file)
 
 # define global vars
-BASE_URL = config_data["urls"]["base_url_tripadvisor"]
-LOG_FORMAT = config_data["logger_format_string"]
+BASE_URL = configs["urls"]["base_url_tripadvisor"]
+LOG_FORMAT = configs["logger_format_string"]
+LOGGER_NAME = configs["logger_name"]
+ARROW_CLASS = configs["soup_elements"]["arrow_class"]
+TITLE_CLASS = configs["soup_elements"]["title_class"]
+URL_CLASS = configs["soup_elements"]["url_class"]
+NEXT_PAGE_LABEL = configs["soup_elements"]["next_page_label"]
+ARROW_ERROR = configs["log_messages"]["arrow_error"]
+SOUP_ERROR = configs["log_messages"]["soup_error"]
+SOUP_SUCCESS = configs["log_messages"]["soup_success"]
+GET_HTML_ERROR = configs["log_messages"]["html_error"]
+
 NUM_ATTRACTIONS = 420
 TIMEOUT = 5
 
 # Initialize a logger object
-logger = logging.getLogger("scrape-log")
+logger = logging.getLogger(LOGGER_NAME)
 
 
 def get_next_page_arrow(soup):
@@ -29,21 +39,20 @@ def get_next_page_arrow(soup):
     return: next_page_arrow - the element of the webpage soup which directs you to the next page in the list.
     """
     try:
-        arrow_elements = soup.find_all("div", class_="UCacc")  # there are 2 arrows, 1 for prev_page, 1 for next_page
+        arrow_elements = soup.find_all("div", class_=ARROW_CLASS)  # there are 2 arrows, 1 for prev_page, 1 for next_page
         if arrow_elements is None:
             return arrow_elements  # return None
     except Exception as e:
-        logger.error(f"Couldn't get next page arrows from soup. Error: {e}")
+        logger.error(ARROW_ERROR + f" {e}")
         raise Exception(e)
 
     next_page_arrow = None  # if code finds next page then it will be defined.
     if arrow_elements:
         for element in arrow_elements:  # find the next page
-            if element.a["aria-label"] == "Next page":  # this ensures we don't get the arrow for prev. pg. instead
+            if element.a["aria-label"] == NEXT_PAGE_LABEL:  # this ensures we don't get the arrow for prev. pg. instead
                 next_page_arrow = element
-                logger.info("Found next-page icon.")
     else:
-        logger.info("Failed to get next page icon.")
+        logger.info(ARROW_ERROR)
         return next_page_arrow  # return None
 
     return next_page_arrow
@@ -55,29 +64,26 @@ def get_next_page_html(soup):
     return : html code for the following page in the tripadvisor list of top attractions.
         (Returns None if there's an issue collecting the html.)
     """
-    logger.debug("Trying to get next page html.")
     try:
         next_page_arrow = get_next_page_arrow(soup)  # will either return soup element, None or an Exception :)
     except Exception as e:
-        raise Exception("Couldn't get next page element.", e)
+        raise Exception(ARROW_ERROR + f" {e}")
 
     if next_page_arrow:  # if function could get the next page arrow element
-        next_page_url = BASE_URL + next_page_arrow.a["href"]
+        next_page_url = BASE_URL + next_page_arrow.a[URL_CLASS]
         logger.debug(f"url of next_page: {next_page_url}")
 
         # Make requests until successful
         headers = {"User-Agent": UA.random}
         while True:
-            logger.debug("requesting...")
             req = grequests.get(next_page_url, headers=headers, timeout=TIMEOUT).send()
             next_page_response = grequests.map([req])[0]
             if next_page_response is not None and next_page_response.status_code == 200:
-                logger.debug("got")
                 break
         return next_page_response.text
 
     else:
-        logger.debug("Failed to get next page html.")
+        logger.debug(GET_HTML_ERROR)
         return None
 
 
@@ -89,15 +95,15 @@ def get_next_page_soup(soup):
     try:
         next_page_html = get_next_page_html(soup)
         if next_page_html is None:
-            raise Exception("Failed to get html to next page")
+            raise Exception(GET_HTML_ERROR)
     except Exception as e:
         return None
 
     next_page_soup = BeautifulSoup(next_page_html, features="html.parser")
     if next_page_soup is not None:  # checking for the purposes of debug log.
-        logger.debug("Successfully got next page soup.")
+        logger.debug(SOUP_SUCCESS)
     else:
-        logger.debug("Failed to get next page soup.")
+        logger.debug(SOUP_ERROR)
         return None
     return next_page_soup
 
@@ -107,9 +113,8 @@ def get_links_from_page(soup):
     :param: soup - a soup object fo the beautifulsoup library from a webpage of top attractions for a city.
     :return: a list of ~30 urls from the webpage.
     """
-    logger.debug("Trying to get links from page")
     urls = list()
-    titles = soup.find_all("div", class_="alPVI eNNhq PgLKC tnGGX")
+    titles = soup.find_all("div", class_=TITLE_CLASS)
     for i, title in enumerate(titles):
         urls.append("https://www.tripadvisor.com/" + title.a["href"])
 
@@ -130,7 +135,6 @@ def get_response_then_get_soup(url):
     """
     headers = {"User-Agent": UA.random}
     while True:
-        logger.debug("requesting...")
         req = grequests.get(url, headers=headers, timeout=TIMEOUT).send()
         response = grequests.map([req])[0]
         if response is not None and response.status_code == 200:
@@ -163,10 +167,10 @@ def get_all_top_links(url, num_attractions):
         try:
             front_page_soup = get_next_page_soup(front_page_soup)  # redefine the new "front-page" as the next page.
             if front_page_soup is None:
-                logger.error("Couldn't get next page soup.")
+                logger.error(SOUP_ERROR)
                 break
         except Exception as e:
-            logger.error(f"Error while getting next page (page {count+1}) soup: {e}")
+            logger.error(f"{SOUP_ERROR}: {e}")
             break
 
     return top_attractions_urls

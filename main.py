@@ -15,8 +15,10 @@ ALL_CITY_HOMEPAGES = configs["urls"]  # dictionary of urls for 5 cities
 
 LOG_FORMAT = configs["logger_format_string"]
 REQUEST_BATCH_SIZE = 5
+URL_VARIABLE_SUFFIX = configs["url_variable_suffix"]
+LOGGER_NAME = configs["logger_name"]
 
-logger = logging.getLogger("scrape-log")
+logger = logging.getLogger(LOGGER_NAME)
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter(LOG_FORMAT)
 handler = logging.FileHandler("tripadvisor.log")
@@ -60,7 +62,7 @@ def main():
         attractions_num = int(args.attractions_num)
 
     # Get the urls for the top attractions webpage of the chosen cities
-    cities_urls = [ALL_CITY_HOMEPAGES[city + '_top_url'] for city in cities if city + '_top_url' in ALL_CITY_HOMEPAGES]
+    cities_urls = [ALL_CITY_HOMEPAGES[city + URL_VARIABLE_SUFFIX] for city in cities if city + URL_VARIABLE_SUFFIX in ALL_CITY_HOMEPAGES]
 
     # Call a function to get a list of URLs for the top attractions of the desired cities
     urls = []
