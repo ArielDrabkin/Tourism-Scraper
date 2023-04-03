@@ -61,9 +61,9 @@ def populate_tables(df):
     """
     params: (Pandas.DataFrame) - the data which was created using an external script.
         The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
-        ['City', 'Name', 'Tripadvisor Rate', 'Popular Mentions', 'Score',
+        ['City', 'Name', 'Popular Mentions', 'Score',
            'Reviewers#', 'Excellent', 'Very good', 'Average', 'Poor', 'Terrible',
-           'Exellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio']
+           'Exellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio', 'Url']
     return: no return    
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
@@ -77,8 +77,8 @@ def populate_tables(df):
 
         # 1) populate attractions table:
         sql_insert_attraction = (
-            " INSERT INTO attractions (name, city_id) "
-            " VALUES (%s, (SELECT id FROM cities WHERE cities.name=%s));"
+            " INSERT INTO attractions (name, city_id, url) "
+            " VALUES (%s, (SELECT id FROM cities WHERE cities.name=%s), %s);"
         )
 
         # 2) populate attraction_stats table:
@@ -107,8 +107,8 @@ def populate_tables(df):
             if not city_already_recorded(attraction["City"]):
                 c.execute(sql_insert_cities, (attraction["City"],))
 
-            c.execute(sql_insert_attraction, (attraction["Name"], attraction["City"]))
-            c.execute(sql_insert_attraction_stats, (attraction["Name"], attraction["Tripadvisor Rate"], attraction["Reviewers#"], attraction["Excellent"], attraction["Very good"], attraction["Average"], attraction["Poor"], attraction["Terrible"]))
+            c.execute(sql_insert_attraction, (attraction["Name"], attraction["City"], attraction["Url"]))
+            c.execute(sql_insert_attraction_stats, (attraction["Name"], attraction["Tripadvisor rank"], attraction["Reviewers#"], attraction["Excellent"], attraction["Very good"], attraction["Average"], attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
@@ -217,4 +217,3 @@ if __name__ == "__main__":
         for r in results5:
             print(r)
         """
-    

@@ -75,7 +75,7 @@ def tripadvisor_name_rate(soup):
                             main_tag.findAll('span', class_=POPULAR_MENTION_TAG)]  # scrapes attraction tags
     except AttributeError:
         popular_mentions = ['empty']
-    info_dict = {"City": city, "Name": name, "Tripadvisor Rate": rate_tag, "Popular Mentions": popular_mentions}
+    info_dict = {"City": city, "Name": name, "Popular Mentions": popular_mentions}
     return info_dict
 
 
@@ -107,14 +107,24 @@ def attraction_stats(soup):
     rates = [re.sub(",", "", rate) for rate in rates]
 
     # Calculate and store the ratios of each rating type
-    ratios_dict = {
-        "Exellent_ratio": int(rates[0]) / int(reviewers),
-        "VG_ratio": int(rates[1]) / int(reviewers),
-        "Average_ratio": int(rates[2]) / int(reviewers),
-        "Poor_ratio": int(rates[3]) / int(reviewers),
-        "Terrible_ratio": int(rates[4]) / int(reviewers),
-        "Score": score
-    }
+    try:
+        ratios_dict = {
+            "Exellent_ratio": int(rates[0]) / int(reviewers),
+            "VG_ratio": int(rates[1]) / int(reviewers),
+            "Average_ratio": int(rates[2]) / int(reviewers),
+            "Poor_ratio": int(rates[3]) / int(reviewers),
+            "Terrible_ratio": int(rates[4]) / int(reviewers),
+            "Score": score
+        }
+    except (IndexError, ValueError):
+        ratios_dict = {
+               "Exellent_ratio": 0,
+               "VG_ratio": 0,
+               "Average_ratio": 0,
+               "Poor_ratio": 0,
+               "Terrible_ratio": 0,
+               "Score": score
+       }
 
     # Store the extracted statistics in a dictionary
     stats = {"Score": score, "Reviewers#": reviewers}
@@ -123,34 +133,57 @@ def attraction_stats(soup):
     return stats
 
 
-def attractions_data(lst, batch_size):
+def add_url_rank(urls, ranks, attraction_url, attractions_dict):
     """
-    params: lst (list)- a list of urls of tourist attraction webpages from tripadvisor.com
-            batch_size (int) - the number of urls to get a response from in an asynchronous grequests get() function.
+    [Adds the URL and TripAdvisor rank for a given attraction to the provided dictionary.
+    Parameters]
+    param: urls (list) - A list of attraction URLs.
+    param: ranks (list) - A list of TripAdvisor ranks corresponding to the attraction URLs.
+    param: attraction_url (str) - The URL of the attraction to add to the dictionary.
+    param: attractions_dict (dict) - The dictionary to add the URL and rank information to.
+    Returns: (dict) - The updated attractions dictionary.
+    """
+    attractions_dict['Url'] = re.sub(r'(?<!/)/(?!/)', r'//', attraction_url)
+    attractions_dict['Tripadvisor rank'] = ranks[urls.index(attractions_dict['Url'])]
+    return attractions_dict
+
+
+def retrieve_data(soup):
+    """
+    [Retrieves the relevant data for a TripAdvisor attraction page and returns it as a dictionary.
+    Parameters]
+    param: soup (BeautifulSoup) - A BeautifulSoup object representing the HTML of the attraction page.
+    Returns (dict) - A dictionary containing the name, rating, and other relevant stats for the attraction.
+    """
+    attractions_dict = tripadvisor_name_rate(soup)  # Scrape the needed stats
+    stats = attraction_stats(soup)
+    attractions_dict.update(stats)
+    return attractions_dict
+
+
+def attractions_data(urls, ranks, batch_size):
+    """
+    param: lst (list)- a list of urls of tourist attraction webpages from tripadvisor.com
+    param: batch_size (int) - the number of urls to get a response from in an asynchronous grequests get() function.
     return: data_df (pandas.DataFrame) - contains all the statistical data about each attraction
             whose url was passed to this function
     """
-    # Initialize variables
-    data_df = None
-    urls = lst.copy()
+    data_df = None  # we will return this dataframe upon scraping all the desired data
+    attraction_urls = urls.copy()
     urls_counter = 1
-    while urls:
-        # update the urls batch and the urls list
-        batch, urls = urls[:batch_size], urls[batch_size:]
-
-        # Send requests to retrieve attractions data asynchronously
-        while True:  # try to get resonse from the batch until it works
+    while attraction_urls:
+        batch, attraction_urls = attraction_urls[:batch_size], attraction_urls[batch_size:]  # update the urls batch and the urls list
+        while True:  # try to get response from the batch until it works
             try:
                 responses = [grequests.get(url, headers=headers, timeout=TIMEOUT) for url in batch]
-                response_unparsed = grequests.map(responses,
-                                                   size=batch_size)  # retrieve attractions data asynchronously
+                response_unparsed = grequests.map(responses, size=batch_size)
                 for response in response_unparsed:
                     if response is None or response.status_code != 200:
                         raise Exception(RESPONSE_ERROR)
-                break
+                break  # break from "While True" if successfully got response
             except Exception as e:
                 logger.error(e)
-                continue
+                continue  # try again from "While True"
 
         for attraction in response_unparsed:
             logger.info(f"Start retrieving attraction information from url #{urls_counter}")
@@ -158,10 +191,8 @@ def attractions_data(lst, batch_size):
             logger.debug(f"The response is parsed into a BeautifulSoup object")
 
             # Scrape the needed stats
-            attractions_dict = tripadvisor_name_rate(soup)
-            stats = attraction_stats(soup)
-            attractions_dict.update(stats)
-            attractions_dict['Url'] = attraction.url
+            attractions_dict = retrieve_data(soup)
+            attractions_dict = add_url_rank(urls, ranks, attraction.url, attractions_dict)
             logger.debug(f"Successfully retrieved attraction #'{urls_counter}' stats")
 
             # Append the attraction data to the DataFrame
@@ -174,12 +205,8 @@ def attractions_data(lst, batch_size):
                 data_df.index = data_df.index + 1
                 logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
 
-            # Log and update the urls counter
             logger.info(f"Data from url #{urls_counter} successfully retrieved")
             urls_counter += 1
-
+    # sort cities by their ranking, within each city.
+    data_df = data_df.sort_values(["City", "Tripadvisor rank"], ascending=[True, True])
     return data_df
-
-
-if __name__ == '__main__':
-    attractions_data()
