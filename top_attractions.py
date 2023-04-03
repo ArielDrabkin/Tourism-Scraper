@@ -38,7 +38,7 @@ def get_next_page_arrow(soup):
     return: next_page_arrow - the element of the webpage soup which directs you to the next page in the list.
     """
     try:
-        arrow_elements = soup.find_all("div", class_=ARROW_CLASS)  # there are 2 arrows, 1 for prev_page, 1 for next_page
+        arrow_elements = soup.find_all("div", class_=ARROW_CLASS)  # there are 2 arrows, 1) prev_page, 2) next_page
         if arrow_elements is None:
             return arrow_elements  # return None
     except Exception as e:
@@ -95,7 +95,7 @@ def get_next_page_soup(soup):
         next_page_html = get_next_page_html(soup)
         if next_page_html is None:
             raise Exception(GET_HTML_ERROR)
-    except Exception as e:
+    except Exception:
         return None
 
     next_page_soup = BeautifulSoup(next_page_html, features="html.parser")
@@ -147,8 +147,8 @@ def get_response_then_get_soup(url):
 def get_all_top_links(url, num_attractions):
     """
     param: url (str) - the url for the homepage of top attractions for a particular city on tripadvisor.com
-    param: num_attractions (int) - the number of attraction-urls to gather starting from the homepage and continuing on to
-        the next page (and the ext page...)
+    param: num_attractions (int) - the number of attraction-urls to gather starting from the homepage
+        and continuing on to the next page (and the ext page...)
     return: all_urls (list) - a list of urls.
     """
     # 1. get response obj. ==> 2. get html code. ==> 3. get soup obj.
@@ -227,6 +227,7 @@ def main():
         for i, url in enumerate(urls_seoul, start=1):
             writer.writerow((i, url))
     """
+
 
 if __name__ == '__main__':
     main()
