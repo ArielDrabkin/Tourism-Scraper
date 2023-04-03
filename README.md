@@ -72,6 +72,50 @@
 <div style="text-align:center">
     <p><strong>(Generated on dbdiagram.io)</strong></p>
 </div>
+<div style="text-align:left">
+    <h3>Description of Tables in Database:</h3>
+    <p><strong>Cities</strong></p>
+    <ul>
+        <li> id (int) [Auto-Generated]
+        <li> name (varchar) [Name of city]
+        <li> top_attractions_url (varchar) [tripdvisor url of the top attractions for this city]
+        </li>
+    </ul>
+    <p><strong>Attractions</strong></p>
+    <ul>
+        <li> id (int) [Auto-Generated]
+        <li> name (varchar) [Name of attraction]
+        <li> city_id (int) [Foreign key from cities(id)]
+        <li> url (varchar) [Tripadvisor url for the attraction]
+        </li>
+    </ul>
+    <p><strong>Attraction_stats</strong></p>
+    <ul>
+        <li> attraction_id (int) [Foreign key from attractions(id)]
+        <li> ranking (int)
+        <li> num_reviewers (int)
+        <li> excellent_review (int) [Number of "Excellent" reviews]
+        <li> very_good_review (int) [Number of...]
+        <li> average_review (int) [Number of...]
+        <li> poor_review (int) [Number of...]
+        <li> terrible_review (int) [Number of...]
+        </li>
+    </ul>
+    <p><strong>Popular_mentions</strong></p>
+    <ul>
+        <li> id (int) [Auto-generated]
+        <li> popular_mention (varchar) [A common phrase/word associated with an attraction]
+        </li>
+    </ul>
+    <p><strong>Popular_mentions_attractions</strong></p>
+    <p>(A helper table to reference a popular mention to an attraction and an attraction to all its popular mentions.</p>
+    <ul>
+        <li> id (int) [Auto-generated]
+        <li> attraction_id (int) [Foreign key from attraction(id)]
+        <li> popular_mention_id (int) [Foreign key from popular_mentions(id)]
+        </li>
+    </ul>
+</div>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Contributors</h2>
