@@ -1,5 +1,4 @@
 import pymysql
-import pandas as pd
 import json
 
 with open("mysql_config.json", "r") as mysql_config:
@@ -11,11 +10,89 @@ PASSWORD = config["password"]
 
 DEBUG_MODE = False
 
+# create dictionary to store the sql CREATE TABLE commands
+TABLES = dict()
+TABLES["cities"] = """
+            CREATE TABLE IF NOT EXISTS cities (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(255),
+                top_attractions_url VARCHAR(255)
+            );"""
+
+TABLES["attractions"] = """
+            CREATE TABLE IF NOT EXISTS attractions (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(255),
+                city_id INT,
+                url VARCHAR(255),
+                FOREIGN KEY (city_id) REFERENCES cities(id)
+            );"""
+
+TABLES["attraction_stats"] = """
+            CREATE TABLE IF NOT EXISTS attraction_stats (
+                attraction_id INT,
+                ranking INT,
+                num_reviewers INT,
+                excellent_review INT,
+                very_good_review INT,
+                average_review INT,
+                poor_review INT,
+                terrible_review INT,
+                FOREIGN KEY (attraction_id) REFERENCES attractions(id)
+            );"""
+
+TABLES["popular_mentions"] = """
+            CREATE TABLE IF NOT EXISTS popular_mentions (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                popular_mention VARCHAR(255)
+            );"""
+
+TABLES["popular_mentions_attractions"] = """
+            CREATE TABLE IF NOT EXISTS popular_mentions_attractions (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                attraction_id INT,
+                popular_mention_id INT,
+                FOREIGN KEY (attraction_id) REFERENCES attractions(id),
+                FOREIGN KEY (popular_mention_id) REFERENCES popular_mentions(id)
+            );"""
+
+# create dictionary to store the sql INSERT INTO commands
+INSERT_INTO = dict()
+INSERT_INTO["cities"] = (
+            " INSERT INTO cities (name) "
+            " VALUES (%s);"
+        )
+
+INSERT_INTO["attractions"] = (
+            " INSERT INTO attractions (name, city_id, url) "
+            " VALUES (%s, (SELECT id FROM cities WHERE cities.name=%s), %s);"
+        )
+
+INSERT_INTO["attraction_stats"] = (
+            " INSERT INTO attraction_stats "
+            "(attraction_id, ranking, num_reviewers, excellent_review, very_good_review, "
+            " average_review, poor_review, terrible_review) "
+            "VALUES ((SELECT id FROM attractions WHERE attractions.name=%s), %s, %s, %s, %s, %s, %s, %s) "
+        )
+
+INSERT_INTO["popular_mentions"] = (
+            " INSERT INTO popular_mentions (popular_mention) "
+            " VALUES (%s) "
+        )
+
+INSERT_INTO["popular_mentions_attractions"] = (
+            " INSERT INTO popular_mentions_attractions (attraction_id, popular_mention_id) "
+            " VALUES ("
+            "   (SELECT id FROM attractions WHERE name=%s),"
+            "   (SELECT id FROM popular_mentions WHERE popular_mention=%s)"
+            ") "
+        )
+
 
 def city_already_recorded(city):
     """
     param: city (str) - a city name
-    return: (boolean) - Return True if the city is aleady in the cities table of the Attractions database
+    return: (boolean) - Return True if the city is already in the cities table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -30,7 +107,7 @@ def city_already_recorded(city):
 def attraction_already_recorded(attraction):
     """
     param: attraction (str) - An attraction name
-    return: (boolean) - return True if the attraction is aleady in the attractions table of the Attractions database
+    return: (boolean) - return True if the attraction is already in the attractions table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -61,70 +138,41 @@ def populate_tables(df):
     """
     params: (Pandas.DataFrame) - the data which was created using an external script.
         The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
-        ['City', 'Name', 'Popular Mentions', 'Score',
+        'City', 'Name', 'Popular Mentions', 'Score',
            'Reviewers#', 'Excellent', 'Very good', 'Average', 'Poor', 'Terrible',
-           'Exellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio', 'Url']
+           'Excellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio', 'Url'
     return: no return    
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
-
-        # 0) populate city table:
-        sql_insert_cities = (
-            " INSERT INTO cities (name) "
-            " VALUES (%s);"
-        )
-
-        # 1) populate attractions table:
-        sql_insert_attraction = (
-            " INSERT INTO attractions (name, city_id, url) "
-            " VALUES (%s, (SELECT id FROM cities WHERE cities.name=%s), %s);"
-        )
-
-        # 2) populate attraction_stats table:
-        sql_insert_attraction_stats = (
-            " INSERT INTO attraction_stats "
-            "(attraction_id, ranking, num_reviewers, excellent_review, very_good_review, average_review, poor_review, terrible_review) "
-            "VALUES ((SELECT id FROM attractions WHERE attractions.name=%s), %s, %s, %s, %s, %s, %s, %s) "
-        )
-
-        # 3) populate popular_mentions:
-        sql_insert_pop_mentions = (
-            " INSERT INTO popular_mentions (popular_mention) "
-            " VALUES (%s) "
-        )
-
-        # 4) populate popular_mentions_attractions:
-        sql_insert_pop_mention_attraction = (
-            " INSERT INTO popular_mentions_attractions (attraction_id, popular_mention_id) "
-            " VALUES ((SELECT id FROM attractions WHERE name=%s), (SELECT id FROM popular_mentions WHERE popular_mention=%s)) "
-        )
-
         for index, attraction in df.iterrows():
             if attraction_already_recorded(attraction["Name"]):
-                continue # move to the next attraction
+                continue  # move to the next attraction
 
             if not city_already_recorded(attraction["City"]):
-                c.execute(sql_insert_cities, (attraction["City"],))
+                c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
-            c.execute(sql_insert_attraction, (attraction["Name"], attraction["City"], attraction["Url"]))
-            c.execute(sql_insert_attraction_stats, (attraction["Name"], attraction["Tripadvisor rank"], attraction["Reviewers#"], attraction["Excellent"], attraction["Very good"], attraction["Average"], attraction["Poor"], attraction["Terrible"]))
+            c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
+            c.execute(INSERT_INTO["attraction_stats"], (attraction["Name"], attraction["Tripadvisor rank"],
+                                                        attraction["Reviewers#"], attraction["Excellent"],
+                                                        attraction["Very good"], attraction["Average"],
+                                                        attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
                 if popular_mention_already_recorded(popular_mention):
-                    c.execute(sql_insert_pop_mention_attraction, (attraction["Name"], popular_mention))
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
                     conn.commit()
                 else:  # popular mention not yet recorded
-                    c.execute(sql_insert_pop_mentions, (popular_mention,))
-                    c.execute(sql_insert_pop_mention_attraction, (attraction["Name"], popular_mention))
+                    c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
                     conn.commit()
 
 
 def create_database():
     """
     This function is used to create the Attractions database, whose design can be found
-    on the github repo of this project: https://github.com/yoniabrams/webscraper_tripadvisor
+    on the gitHub repo of this project: https://github.com/yoniabrams/webscraper_tripadvisor
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD) as conn:
         cursor = conn.cursor()
@@ -132,88 +180,12 @@ def create_database():
 
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         cursor = conn.cursor()
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS cities (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                name VARCHAR(255),
-                top_attractions_url VARCHAR(255)
-            );""")
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS attractions (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                name VARCHAR(255),
-                city_id INT,
-                url VARCHAR(255),
-                FOREIGN KEY (city_id) REFERENCES cities(id)
-            );""")
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS attraction_stats (
-                attraction_id INT,
-                ranking INT,
-                num_reviewers INT,
-                excellent_review INT,
-                very_good_review INT,
-                average_review INT,
-                poor_review INT,
-                terrible_review INT,
-                FOREIGN KEY (attraction_id) REFERENCES attractions(id)
-            );""")
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS popular_mentions (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                popular_mention VARCHAR(255)
-            );""")
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS popular_mentions_attractions (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                attraction_id INT,
-                popular_mention_id INT,
-                FOREIGN KEY (attraction_id) REFERENCES attractions(id),
-                FOREIGN KEY (popular_mention_id) REFERENCES popular_mentions(id)
-            );""")
+        # create all the tables (if each table doesn't exist already, respectively)
+        for sql_table_creation_script in TABLES.values():
+            cursor.execute(sql_table_creation_script)
 
     if DEBUG_MODE:
         cursor.execute("SHOW TABLES;")
         results = cursor.fetchall()
         for result in results:
             print(result)
-
-
-if __name__ == "__main__":
-    """
-    with open("top_attractions.csv", "r", encoding="utf8") as file:
-        df = pd.read_csv(file)
-        populate_tables(df)
-
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM cities;")
-        results1 = cursor.fetchall()
-        print("CITIES")
-        for result in results1:
-            print(result)
-
-        cursor.execute("SELECT * FROM attractions;")
-        results2 = cursor.fetchall()
-        print("ATTRACTIONS")
-        for result in results2:
-            print(result)
-
-        cursor.execute("SELECT * FROM popular_mentions_attractions;")
-        results3 = cursor.fetchall()
-        print("POPULAR MENTIONS/ATTRACTIONS")
-        for r in results3:
-            print(r)
-
-        cursor.execute("SELECT * FROM popular_mentions;")
-        results4 = cursor.fetchall()
-        print("POPULAR MENTIONS")
-        for r in results4:
-            print(r)
-
-        cursor.execute("SELECT * FROM attraction_stats;")
-        results5 = cursor.fetchall()
-        print("ATTRACTION STATS")
-        for r in results5:
-            print(r)
-        """
