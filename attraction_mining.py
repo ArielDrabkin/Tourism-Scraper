@@ -10,7 +10,7 @@ import grequests
 TIMEOUT = 5
 BATCH_SIZE = 5
 
-# Dismiss warnings for updating packages
+# Dismiss warnings for updating package
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 # Read configuration data from a json file
