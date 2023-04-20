@@ -8,7 +8,6 @@ HOST = config["host"]
 USER = config["user"]
 PASSWORD = config["password"]
 
-DEBUG_MODE = False
 
 # create dictionary to store the sql CREATE TABLE commands
 TABLES = dict()
@@ -183,9 +182,3 @@ def create_database():
         # create all the tables (if each table doesn't exist already, respectively)
         for sql_table_creation_script in TABLES.values():
             cursor.execute(sql_table_creation_script)
-
-    if DEBUG_MODE:
-        cursor.execute("SHOW TABLES;")
-        results = cursor.fetchall()
-        for result in results:
-            print(result)
