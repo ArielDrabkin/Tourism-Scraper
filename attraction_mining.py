@@ -185,6 +185,28 @@ def retrieve_data(soup):
     return attractions_dict
 
 
+def attraction_data_update(attractions_dict, urls_counter, data_df):
+    """
+    param: attractions_dict (dict) - A dictionary containing the name, rating, and other relevant stats for attractions.
+    param: urls_counter (int) - The id of the current url.
+    param: data_df(df) - Data frame that storing the attraction data that was retrieved before.
+    return: data_df (pandas.DataFrame) - contains all the statistical data about each attraction
+            whose url was passed to this function
+    """
+    # Append the attraction data to the DataFrame
+    if data_df is None:
+        data_df = pd.DataFrame.from_dict(attractions_dict, orient='index').T
+        data_df.index = data_df.index + 1
+        logger.debug(f"Successfully created the DF for river attractions data")
+    else:
+        data_df = data_df.append(attractions_dict, ignore_index=True)
+        data_df.index = data_df.index + 1
+        logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
+
+    logger.info(f"Data from url #{urls_counter} successfully retrieved")
+    return data_df
+
+
 def attractions_data(urls, ranks, batch_size):
     """
     param: lst (list)- a list of urls of tourist attraction webpages from tripadvisor.com
@@ -220,18 +242,9 @@ def attractions_data(urls, ranks, batch_size):
             attractions_dict = add_url_rank(urls, ranks, attraction.url, attractions_dict)
             logger.debug(f"Successfully retrieved attraction #'{urls_counter}' stats")
 
-            # Append the attraction data to the DataFrame
-            if data_df is None:
-                data_df = pd.DataFrame.from_dict(attractions_dict, orient='index').T
-                data_df.index = data_df.index + 1
-                logger.debug(f"Successfully created the DF for river attractions data")
-            else:
-                data_df = data_df.append(attractions_dict, ignore_index=True)
-                data_df.index = data_df.index + 1
-                logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
-
-            logger.info(f"Data from url #{urls_counter} successfully retrieved")
+            data_df = attraction_data_update(attractions_dict, urls_counter, data_df)
             urls_counter += 1
+
     # sort cities by their ranking, within each city.
     data_df = data_df.sort_values(["City", "Tripadvisor rank"], ascending=[True, True])
     return data_df
