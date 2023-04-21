@@ -30,7 +30,6 @@ RAW_RATES_TAG = configs["soup_elements"]["raw_rates_tag"]
 STAT_TAG = configs["soup_elements"]["stat_tag"]
 RESPONSE_ERROR = configs["log_messages"]["response_error"]
 
-
 # Set up logging to write messages to a file with a specific format and logging level.
 logger = logging.getLogger(LOGGER_NAME)
 """
@@ -47,11 +46,30 @@ ua = UserAgent(browsers=['edge', 'chrome'])
 headers = {"User-Agent": ua.random}
 
 
+def tripadvisor_popular_mentions(soup):
+    """
+    param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
+    return: popular_mentions - a list containing information about the tourist attraction popular mentions
+    on trip advisor.com.
+    """
+    # Find the main section tag that contains the needed data
+    main_tag = soup.find('div',
+                         ATTRACTION_DESCRIPTION_TAG)  # Find the main div tag that contains attraction descriptions
+
+    # Find the main div tag that contains attraction descriptions and scrape attraction tags
+    try:
+        popular_mentions = [elem.text.strip() for elem in
+                            main_tag.findAll('span', class_=POPULAR_MENTION_TAG)]  # scrapes attraction tags
+    except AttributeError:
+        popular_mentions = ['empty']
+    return popular_mentions
+
+
 def tripadvisor_name_rate(soup):
     """
     param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
-    return: info dict - a dictionary containing information about the name, lovation and rating of a tourist attraction
-    on trip advisor.com. 
+    return: info dict - a dictionary containing information about the name, location and rating of a tourist attraction
+    on trip advisor.com.
     """
     # Find the main section tag that contains the needed data
     main_tag = soup.find('section', DATA_SECTION_TAG)
@@ -61,44 +79,52 @@ def tripadvisor_name_rate(soup):
         rate = main_tag.find('div', class_=RATE_CLASS).text.strip()
     except AttributeError:
         rate = ['empty']
-    try:
-        rate_tag = int(rate.split()[0][1:]),
-    except IndexError:
-        rate_tag = None
     city = rate.split()[-1]
     name = soup.find('h1', NAME_TAG).text.strip()
-    main_tag = soup.find('div', ATTRACTION_DESCRIPTION_TAG)  # Find the main div tag that contains attraction descriptions
+    popular_mentions = tripadvisor_popular_mentions(soup)
 
-    # Find the main div tag that contains attraction descriptions and scrape attraction tags
-    try:
-        popular_mentions = [elem.text.strip() for elem in
-                            main_tag.findAll('span', class_=POPULAR_MENTION_TAG)]  # scrapes attraction tags
-    except AttributeError:
-        popular_mentions = ['empty']
     info_dict = {"City": city, "Name": name, "Popular Mentions": popular_mentions}
     return info_dict
+
+
+def reviewers_count(soup):
+    """
+    param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
+    return: reviewers (variable) - containing number of reviewers for a specific attraction.
+    """
+    main_tag = soup.find('div', STAT_TAG)  # Find the main div tag containing the statistics
+    # Extract the number of reviewers and the score of the attraction
+    try:
+        reviewers = main_tag.find('span', class_=REVIEWERS_TAG).text.strip().split()[0].replace(",", "")
+    except AttributeError:
+        reviewers = ['empty']
+    return reviewers
+
+
+def reviewers_score(soup):
+    """
+    param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
+    return: score (variable) - containing the score of a specific attraction.
+    """
+    main_tag = soup.find('div', STAT_TAG)  # Find the main div tag containing the statistics
+    # Extract the number of reviewers and the score of the attraction
+    try:
+        score = main_tag.find('div', class_=SCORE_TAG).text.strip()
+    except AttributeError:
+        score = ['empty']
+    return score
 
 
 def attraction_stats(soup):
     """
     param: soup - a parsed html attraction from a tripadvisor.com attraction webpage.
     return: stats (dict) - containing statistics about a tourist attraction on tripadvisor.com
-        stats contains the following data: attraction's score, number of reviewers, and
-        ratios of excellent, very good, average, poor, and terrible ratings.
+    stats contains the following data: attraction's score, number of reviewers, and
+    ratios of excellent, very good, average, poor, and terrible ratings.
     """
-    main_tag = soup.find('div', STAT_TAG)  # Find the main div tag containing the statistics
-
-    # Extract the number of reviewers and the score of the attraction
-    try:
-        reviewers = main_tag.find('span', class_=REVIEWERS_TAG).text.strip().split()[0].replace(",", "")
-    except AttributeError:
-        reviewers = ['empty']
-    try:
-        score = main_tag.find('div', class_=SCORE_TAG).text.strip()
-    except AttributeError:
-        score = ['empty']
-
     # Extract the rating scales and rates from the raw html
+    reviewers = reviewers_count(soup)
+    score = reviewers_score(soup)
     raw_rates = str(soup.findAll('div', RAW_RATES_TAG))
     rate_scales_pattern = r'<div class="biGQs _P pZUbB hmDzD">(.+?)</div>'
     scales = re.findall(rate_scales_pattern, raw_rates)
@@ -109,22 +135,20 @@ def attraction_stats(soup):
     # Calculate and store the ratios of each rating type
     try:
         ratios_dict = {
-            "Exellent_ratio": int(rates[0]) / int(reviewers),
+            "Excellent_ratio": int(rates[0]) / int(reviewers),
             "VG_ratio": int(rates[1]) / int(reviewers),
             "Average_ratio": int(rates[2]) / int(reviewers),
             "Poor_ratio": int(rates[3]) / int(reviewers),
             "Terrible_ratio": int(rates[4]) / int(reviewers),
-            "Score": score
         }
     except (IndexError, ValueError):
         ratios_dict = {
-               "Exellent_ratio": 0,
-               "VG_ratio": 0,
-               "Average_ratio": 0,
-               "Poor_ratio": 0,
-               "Terrible_ratio": 0,
-               "Score": score
-       }
+            "Excellent_ratio": 0,
+            "VG_ratio": 0,
+            "Average_ratio": 0,
+            "Poor_ratio": 0,
+            "Terrible_ratio": 0,
+        }
 
     # Store the extracted statistics in a dictionary
     stats = {"Score": score, "Reviewers#": reviewers}
@@ -161,6 +185,28 @@ def retrieve_data(soup):
     return attractions_dict
 
 
+def attraction_data_update(attractions_dict, urls_counter, data_df):
+    """
+    param: attractions_dict (dict) - A dictionary containing the name, rating, and other relevant stats for attractions.
+    param: urls_counter (int) - The id of the current url.
+    param: data_df(df) - Data frame that storing the attraction data that was retrieved before.
+    return: data_df (pandas.DataFrame) - contains all the statistical data about each attraction
+            whose url was passed to this function
+    """
+    # Append the attraction data to the DataFrame
+    if data_df is None:
+        data_df = pd.DataFrame.from_dict(attractions_dict, orient='index').T
+        data_df.index = data_df.index + 1
+        logger.debug(f"Successfully created the DF for river attractions data")
+    else:
+        data_df = data_df.append(attractions_dict, ignore_index=True)
+        data_df.index = data_df.index + 1
+        logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
+
+    logger.info(f"Data from url #{urls_counter} successfully retrieved")
+    return data_df
+
+
 def attractions_data(urls, ranks, batch_size):
     """
     param: lst (list)- a list of urls of tourist attraction webpages from tripadvisor.com
@@ -172,7 +218,8 @@ def attractions_data(urls, ranks, batch_size):
     attraction_urls = urls.copy()
     urls_counter = 1
     while attraction_urls:
-        batch, attraction_urls = attraction_urls[:batch_size], attraction_urls[batch_size:]  # update the urls batch and the urls list
+        batch, attraction_urls = attraction_urls[:batch_size], attraction_urls[
+                                                               batch_size:]  # update the urls batch and the urls list
         while True:  # try to get response from the batch until it works
             try:
                 responses = [grequests.get(url, headers=headers, timeout=TIMEOUT) for url in batch]
@@ -195,18 +242,9 @@ def attractions_data(urls, ranks, batch_size):
             attractions_dict = add_url_rank(urls, ranks, attraction.url, attractions_dict)
             logger.debug(f"Successfully retrieved attraction #'{urls_counter}' stats")
 
-            # Append the attraction data to the DataFrame
-            if data_df is None:
-                data_df = pd.DataFrame.from_dict(attractions_dict, orient='index').T
-                data_df.index = data_df.index + 1
-                logger.debug(f"Successfully created the DF for river attractions data")
-            else:
-                data_df = data_df.append(attractions_dict, ignore_index=True)
-                data_df.index = data_df.index + 1
-                logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
-
-            logger.info(f"Data from url #{urls_counter} successfully retrieved")
+            data_df = attraction_data_update(attractions_dict, urls_counter, data_df)
             urls_counter += 1
+
     # sort cities by their ranking, within each city.
     data_df = data_df.sort_values(["City", "Tripadvisor rank"], ascending=[True, True])
     return data_df
