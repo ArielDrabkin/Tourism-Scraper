@@ -54,7 +54,7 @@ TABLES["popular_mentions_attractions"] = """
                 FOREIGN KEY (popular_mention_id) REFERENCES popular_mentions(id)
             );"""
 
-TABLES["weather_stats"] = """
+TABLES["meteorological_data"] = """
             CREATE TABLE IF NOT EXISTS attraction_stats (
                 min_temp INT,
                 max_temp INT,
