@@ -19,3 +19,6 @@ requests @ file:///C:/ci/requests_1657735342357/work
 requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
 SQLAlchemy @ file:///C:/Windows/Temp/abs_f8661157-660b-49bb-a790-69ab9f3b8f7c8a8s2psb/croots/recipe/sqlalchemy_1657867864564/work
 useragent==0.1.1
+requests~=2.28.2
+beautifulsoup4~=4.12.2
+pandas~=2.0.0

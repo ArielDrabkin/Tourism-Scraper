@@ -1,9 +1,9 @@
+import pandas as pd
 import requests
 import json
 import os
+import regex as re
 
-
-# WEBSITE: https://open-meteo.com
 
 WEATHER_API_URLS = {
     "paris":        "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
@@ -13,6 +13,30 @@ WEATHER_API_URLS = {
     "seoul":        "https://archive-api.open-meteo.com/v1/archive?latitude=37.57&longitude=126.98&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
     "london":       "https://archive-api.open-meteo.com/v1/archive?latitude=51.51&longitude=-0.13&&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT"
 }
+
+
+def get_annual_data(daily_data_df):
+    """
+    param: daily_data_df (pd.DataFrame) - This Data Frame has daily values for weather.
+    return: (pd.Series) - This Series will contain the following annual weather data, indexed as follows:
+    --> min_temp, max_temp, avg_temp, total_annual_precipitation
+    """
+    min_temp = daily_data_df["temperature_2m_min"].min()
+    max_temp = daily_data_df["temperature_2m_max"].max()
+    mean_temp = daily_data_df["temperature_2m_mean"].mean()
+    total_precipitation = daily_data_df["precipitation_sum"].sum()
+    return pd.Series((min_temp, max_temp, mean_temp, total_precipitation),
+                     index=("min_temp", "max_temp", "mean_temp", "total_precipitation"))
+
+
+def get_city_name(filename):
+    """
+    param: filename (str) - a filename which contains a cityname
+    return: str of city name
+    Example:
+    """
+    pattern = r"([\w\s]+)_weather\.json"
+    return re.search(pattern, filename).group(1)
 
 
 def weather_data_already_saved_for_city(city_name):
@@ -63,5 +87,31 @@ def request_from_weather_api():
             json.dump(data, file)  # write json to json file
 
 
+def generate_weather_df():
+    """
+    param: --
+    returns: Pandas DataFrame of annual weather data for various cities
+    This function will take all weather data json files from a given directory (weather_files)
+    and will return data into a pd.DataFrame which will then be used to populate a tourist attraction database.
+    The weather features are all DAILY values for the year 2022-04-01 to 2023-04-01, but annual data will be
+    calculated using a helper function. The final output will be a dataframe with the following columns:
+        --> Min_temp, Max_temp, mean_temp, total_precipitation
+    """
+    if not os.path.exists("weather_files"):
+        os.makedirs("weather_files")
+
+    all_annual_data = dict()
+    filenames = os.listdir("weather_files")
+    for filename in filenames:
+        with open(f"weather_files/{filename}", "r") as file:
+            json_str = file.read()
+        data_dict = json.loads(json_str)
+        daily_data_df = pd.DataFrame.from_dict(data_dict["daily"])
+        annual_data = get_annual_data(daily_data_df)
+        all_annual_data[get_city_name(filename)] = annual_data
+    print(pd.DataFrame.from_dict(all_annual_data, orient='index'))
+    return pd.DataFrame.from_dict(all_annual_data, orient='index')
+
+
 if __name__ == "__main__":
-    request_from_weather_api()
+    generate_weather_df()
