@@ -55,6 +55,26 @@ TABLES["popular_mentions_attractions"] = """
                 FOREIGN KEY (popular_mention_id) REFERENCES popular_mentions(id)
             );"""
 
+# TABLES["weather"] = """
+#             CREATE TABLE IF NOT EXISTS attraction_stats (
+#                 Var_1 INT,
+#                 Var_2 INT,
+#                 Var_3 INT,
+#                 Var_4 INT,
+#                 Var_5 INT,
+#                 FOREIGN KEY (city_id) REFERENCES cities(id)
+#             );"""
+#
+# TABLES["demography"] = """
+#             CREATE TABLE IF NOT EXISTS attraction_stats (
+#                 Var_1 INT,
+#                 Var_2 INT,
+#                 Var_3 INT,
+#                 Var_4 INT,
+#                 Var_5 INT,
+#                 FOREIGN KEY (city_id) REFERENCES cities(id)
+#             );"""
+
 # create dictionary to store the sql INSERT INTO commands
 INSERT_INTO = dict()
 INSERT_INTO["cities"] = (
@@ -86,52 +106,77 @@ INSERT_INTO["popular_mentions_attractions"] = (
             "   (SELECT id FROM popular_mentions WHERE popular_mention=%s)"
             ") "
         )
+#
+# INSERT_INTO["weather"] = (
+#             " INSERT INTO weather "
+#             "(city_id, Var_1, Var_2, Var_3, Var_4, Var_5) "
+#             "VALUES ((SELECT name FROM cities WHERE name=%s), %s, %s, %s, %s, %s, %s, %s) "
+#         )
+# INSERT_INTO["demography"] = (
+#             " INSERT INTO demography "
+#             "(city_id, Var_1, Var_2, Var_3, Var_4, Var_5) "
+#             "VALUES ((SELECT name FROM cities demography name=%s), %s, %s, %s, %s, %s, %s, %s) "
+#         )
 
 
-def city_already_recorded(city):
+def already_recorded(var):
     """
-    param: city (str) - a city name
-    return: (boolean) - Return True if the city is already in the cities table of the Attractions database
+    param: var (str) - a variable name
+    return: (boolean) - Return True if the variable is already in the cities table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
-        c.execute('SELECT * FROM cities WHERE name="{}";'.format(city))
+        c.execute('SELECT * FROM cities WHERE name="{}";'.format(var))
         existing_records = c.fetchall()
         if existing_records is None or len(existing_records) == 0:
             return False
         else:
             return True
 
-
-def attraction_already_recorded(attraction):
-    """
-    param: attraction (str) - An attraction name
-    return: (boolean) - return True if the attraction is already in the attractions table of the Attractions database
-    """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-        c = conn.cursor()
-        c.execute('SELECT * FROM attractions WHERE name="{}";'.format(attraction))
-        existing_records = c.fetchall()
-        if existing_records is None or len(existing_records) == 0:
-            return False
-        else:
-            return True
-
-
-def popular_mention_already_recorded(popular_mention):
-    """
-    param: popular_mention (str) a "popular_mention"
-    return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
-    """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-        c = conn.cursor()
-        c.execute('SELECT * FROM popular_mentions WHERE popular_mention="{}"'.format(popular_mention))
-        existing_records = c.fetchall()
-        if existing_records is None or len(existing_records) == 0:
-            return False
-        else:
-            return True
-
+# def city_already_recorded(city):
+#     """
+#     param: city (str) - a city name
+#     return: (boolean) - Return True if the city is already in the cities table of the Attractions database
+#     """
+#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+#         c = conn.cursor()
+#         c.execute('SELECT * FROM cities WHERE name="{}";'.format(city))
+#         existing_records = c.fetchall()
+#         if existing_records is None or len(existing_records) == 0:
+#             return False
+#         else:
+#             return True
+#
+#
+# def attraction_already_recorded(attraction):
+#     """
+#     param: attraction (str) - An attraction name
+#     return: (boolean) - return True if the attraction is already in the attractions table of the Attractions database
+#     """
+#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+#         c = conn.cursor()
+#         c.execute('SELECT * FROM attractions WHERE name="{}";'.format(attraction))
+#         existing_records = c.fetchall()
+#         if existing_records is None or len(existing_records) == 0:
+#             return False
+#         else:
+#             return True
+#
+#
+# def popular_mention_already_recorded(popular_mention):
+#     """
+#     param: popular_mention (str) a "popular_mention"
+#     return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
+#     """
+#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+#         c = conn.cursor()
+#         c.execute('SELECT * FROM popular_mentions WHERE popular_mention="{}"'.format(popular_mention))
+#         existing_records = c.fetchall()
+#         if existing_records is None or len(existing_records) == 0:
+#             return False
+#         else:
+#             return True
+#
 
 def populate_tables(df):
     """
@@ -145,10 +190,10 @@ def populate_tables(df):
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
         for index, attraction in df.iterrows():
-            if attraction_already_recorded(attraction["Name"]):
+            if already_recorded(attraction["Name"]):
                 continue  # move to the next attraction
 
-            if not city_already_recorded(attraction["City"]):
+            if not already_recorded(attraction["City"]):
                 c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
             c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
@@ -159,7 +204,7 @@ def populate_tables(df):
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-                if popular_mention_already_recorded(popular_mention):
+                if already_recorded(popular_mention):
                     c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
                     conn.commit()
                 else:  # popular mention not yet recorded
