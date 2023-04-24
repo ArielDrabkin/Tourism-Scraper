@@ -15,7 +15,7 @@
 </div>
 
 <div style="color:white; text-align:justify; padding:20px">
-    <p>The purpose of this research project is to investigate the relationship between major rivers and the popularity of tourist attractions in five major cities worldwide: Paris, France; Cairo, Egypt; Washington, D.C., USA; Seoul, South Korea; and Buenos Aires, Argentina.</p>
+    <p>The purpose of this research project is to investigate the popularity of tourist attractions in tourist cities worldwide, like: Paris, France; Cairo, Egypt; Washington, D.C., USA; Seoul, South Korea; and Buenos Aires, Argentina.</p>
     <p>The project allows users to use a command line interface to scrape TripAdvisor.com for data on tourist attraction popularity in selected cities based on chosen keywords. The data provides insights into the most popular tourist destinations in a given city, allowing users to plan their travel itineraries more efficiently.</p>
     <p>The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords which a user wants.</p>
     <p>User input: This webscraping tool will provide users with a more focused and relevant dataset according to their interests. The collected data will be used to explore and compare the popularity of tourist attractions related to their major rivers in the selected cities.</p>
@@ -28,8 +28,8 @@
 
 <div style="color:white; text-align:left">
     <ul>
-        <li>To scrape data from <strong>TripAdvisor.com</strong> related to the top tourist attractions in five major cities worldwide: Paris, Cairo, Washington, D.C., Seoul, and Buenos Aires.
-        <li>To filter the scraped data for only those tourist attractions that have descriptions related to rivers.
+        <li>To scrape data from <strong>TripAdvisor.com</strong> related to the top tourist attractions in all tourist cities.
+        <li>To gather relevant data from weather <strong>APIs</strong> to contribute to a holistic picture of a tourist city in conjunction with the top tourist attractions.
         <li>To explore and summarize the popularity of the tourist attractions related to river in the tested major cities.
         <li>To conduct statistical analysis for comparison of the collected data to test hypotheses related to the project's objectives.
         <li>To contribute to the development of tourism strategies that can leverage the centrality and prestige of cities' major rivers to attract more tourists.
@@ -42,16 +42,37 @@
 </div>
 
 <div style="text-align:center; ">
-    <p>Python programming language is used in this project, specifically the Grequests, and BeautifulSoup packages, to scrape data from TripAdvisor.com.<p>
-    <p>First, the top attractions in each of the five cities were scraped, and then filtered for only those that have descriptions related to rivers.<p>
+    <p>Python programming language is used in this project, specifically the Grequests, and BeautifulSoup packages, to scrape data from<code>tripadvisor.com</code>.<p>
+    <p>First, the top attractions for the user's choice cities are scraped, and then filtered for only those that have descriptions related to the keywords which the user desires.<p>
+    <p>Alternatively, the user can decide to get all attractions (without filtering). This will be discussed in the detail below.</p>
     <p>The code developed for web scraping is specific to the TripAdvisor.com website and cannot be used for other websites that are organized differently.<p>
-    <p>The next step is to conduct statistical analysis on the collected data to test hypotheses related to the project's objectives.<p>
+    <p>The database which stores this data is called 'Attractions' and will be described in detail below.</p>
+    <p>Data is also mined from a weather API from a website<code>https://open-meteo.com</code>. More details will be discussed below.</p>
+    <p>The next step will be to conduct statistical analysis on the collected data to test hypotheses related to the project's objectives.<p>
 </div>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>How to deploy this webscraper</h2>
 </div>
-<div style="text-align:left; ">
+<p style="text-align:left; ">
+<h4>Configurations:</h4>
+<p>
+    Create a sql configuration file (called mysql_config.json) which contains your mysql user data.<br>
+    (The scraper will connect to mysql, so you have to be prepared with your login info.)
+</p>
+<p>
+    Call the file <strong>mysql_config.json</strong>, formatted as follows:
+</p>
+<pre>
+    <code style="padding: 10px;">
+        {
+        "host": YOUR_HOST,
+        "user": YOUR_USERNAME,
+        "password": YOUR_PASSWORD
+        }
+    </code>
+</pre>
+<h4>Running the scraper:</h4>
 <p>Run the main script (main.py) from your command line, using the following instructions for the input parameter:</p>
 <ul>
     <li> Input the cities and relevant keywords you want to search for, separated by white
@@ -61,17 +82,19 @@
     <li><strong>Usage example: Cairo,Paris river,boat,bridge 420.</strong>
     </li>
 </ul>
-</div>
+<h4>Enjoy your output:</h4>
+<p>
+    Depending on what you've aske for, you'll receive a csv file with the data about the attractions you've asked for given your search parameters.<br>
+    If you aren't satisfied with your results, try running the scraper again with different preferences.<br>
+    (<strong>Pro Tip:</strong> Try "all" instead of choosing specific keywords, as this will get you as many attractions as you asked for.)
+</p>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Database structure:</h2>
 </div>
 
-![image](https://user-images.githubusercontent.com/124047859/229366709-f54c0a51-df96-48ea-a3b4-8e1944b8d159.png)
+#### image coming soon
 
-<div style="text-align:center">
-    <p><strong>(Generated on dbdiagram.io)</strong></p>
-</div>
 <div style="text-align:left">
     <h3>Description of Tables in Database:</h3>
     <p><strong>Cities</strong></p>
@@ -115,18 +138,38 @@
         <li> popular_mention_id (int) [Foreign key from popular_mentions(id)]
         </li>
     </ul>
+    <p><strong>Meteorological_data</strong></p>
+    <p>(Annual weather data for a given city</p>
+    <ul>
+        <li> city_id (int) [Foreign key from cities(id)]
+        <li> name (varchar) [City name]
+        <li> min_temp (float)
+        <li> max_temp (float)
+        <li> mean_temp (float)
+        <li> total_precipitation (float) [includes both snow and rain]
+    </li>
+    </ul>
 </div>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Contributors</h2>
 </div>
 
-<div style="text-align:center;">
-    <p>This project is brought to you by Ariel Drabkin and Yonatan Abrams.</p>
-    <hr></hr
-    <p>We would also like to extend a special thanks to the following outstanding individuals:
-    <p>Felipe, Yoni K, Yoni M, Merav</p>
-    <p>Thank you for the inspiration and guidance.</p>
+<div style="text-align:left;">
+<h4>This project was developed by:</h4>
+<ul>
+    Ariel Drabkin and Yonatan Abrams
+</ul>
+<p><strong>Thanks!</strong> We would also like to extend a special thanks to the following outstanding mentors:</p>
+<ul>
+    <li>Felipe,
+    <li>Yoni K,
+    <li>Yoni M,
+    <li>Danielle,
+    <li>and Merav
+    </li>
+</ul>
+<p>Thank you for the inspiration and guidance.</p>
 </div>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
