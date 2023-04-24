@@ -17,6 +17,7 @@
 <div style="color:white; text-align:justify; padding:20px">
     <p>The purpose of this research project is to investigate the popularity of tourist attractions in tourist cities worldwide, like: Paris, France; Cairo, Egypt; Washington, D.C., USA; Seoul, South Korea; and Buenos Aires, Argentina.</p>
     <p>The project allows users to use a command line interface to scrape TripAdvisor.com for data on tourist attraction popularity in selected cities based on chosen keywords. The data provides insights into the most popular tourist destinations in a given city, allowing users to plan their travel itineraries more efficiently.</p>
+    <p>Additionally, the scraper provides relevant meteorological data for the destinations where attraction data is being collected.<p>  
     <p>The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords which a user wants.</p>
     <p>User input: This webscraping tool will provide users with a more focused and relevant dataset according to their interests. The collected data will be used to explore and compare the popularity of tourist attractions related to their major rivers in the selected cities.</p>
     <p>More details of the user input will be discussed in the "How to" section of this intro.</p>
@@ -79,12 +80,14 @@
     spaces and followed by a comma at the end of each group of arguments.
     <li> Additionally, specify the desired number of attractions per city.
     to search for in each city.
-    <li><strong>Usage example: Cairo,Paris river,boat,bridge 420.</strong>
+    <li>Finally, select the type output you prefer: "all" to scrape all attractions in chosen cities,
+    or "key_words" to scrape attractions by keyword.
+    <li><strong>Usage example: "Paris,Cairo" "river,boat,bridge" 420 "key_words".</strong>
     </li>
 </ul>
 <h4>Enjoy your output:</h4>
 <p>
-    Depending on what you've aske for, you'll receive a csv file with the data about the attractions you've asked for given your search parameters.<br>
+    Depending on what you've ask for, you'll receive a csv file with the data about the attractions you've asked for given your search parameters.<br>
     If you aren't satisfied with your results, try running the scraper again with different preferences.<br>
     (<strong>Pro Tip:</strong> Try "all" instead of choosing specific keywords, as this will get you as many attractions as you asked for.)
 </p>
