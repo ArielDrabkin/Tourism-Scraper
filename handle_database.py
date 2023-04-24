@@ -142,7 +142,9 @@ def meteorological_data(met_df):
                                   city["total_precipitation"]))
             conn.commit()
     return
-def add_to_popular_mentions_table(popular_mention,attraction):
+
+
+def add_to_popular_mentions_table(popular_mention, attraction):
     """
     Inserts a popular mention into the 'popular_mentions' table and creates an association between the popular mention
     and the current attraction in the 'popular_mentions_attractions' table.
@@ -191,7 +193,7 @@ def populate_tables(attraction_df):
                                                             attraction["Reviewers#"], attraction["Excellent"],
                                                             attraction["Very good"], attraction["Average"],
                                                             attraction["Poor"], attraction["Terrible"]))
-            except (pymysql.err.OperationalError,pymysql.err.ProgrammingError):
+            except (pymysql.err.OperationalError, pymysql.err.ProgrammingError):
                 continue
             conn.commit()
 
