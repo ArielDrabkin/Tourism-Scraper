@@ -122,11 +122,11 @@ def already_recorded(data_table, var):
 
 def meteorological_data(met_df):
     """
+    Function that insert the data in to the attraction Data Base in to meteorological data tale.
     params: (Pandas.DataFrame) - the data which was created using an external script.
     The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
     'Name', 'min_temp', 'max_temp', 'mean_temp', 'total_precipitation'
-    return: no return, function insert the data in to the attraction Data Base
-
+    return: no return
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -134,25 +134,25 @@ def meteorological_data(met_df):
             if already_recorded("meteorological_data", city["Name"]):
                 continue  # move to the next attraction
 
-            if not already_recorded("meteorological_data", city["Name"]):
+            # only add the record if it isn't there already
+            else:
                 query = INSERT_INTO["meteorological_data"]
-                print(query)
                 c.execute(query, (str(city["Name"]), str(city["Name"]), city["min_temp"],
                                   city["max_temp"], city["mean_temp"],
                                   city["total_precipitation"]))
-
             conn.commit()
     return
 
 
 def populate_tables(attraction_df):
     """
+    Function that insert attractions data in to attraction Data Base.
     params: (Pandas.DataFrame) - the data which was created using an external script.
         The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
         'City', 'Name', 'Popular Mentions', 'Score',
            'Reviewers#', 'Excellent', 'Very good', 'Average', 'Poor', 'Terrible',
            'Excellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio', 'Url'
-    return: no return, function insert the data in to the attraction Data Base
+    return: no return
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
@@ -160,6 +160,7 @@ def populate_tables(attraction_df):
             if already_recorded("attractions", attraction["Name"]):
                 continue  # move to the next attraction
 
+            # only add the record if it isn't there already
             if not already_recorded("cities", attraction["City"]):
                 c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
@@ -170,14 +171,14 @@ def populate_tables(attraction_df):
                                                         attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
-            # for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-            #     if already_recorded("popular_mentions", popular_mention):
-            #         c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-            #         conn.commit()
-            #     else:  # popular mention not yet recorded
-            #         c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
-            #         c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-            #         conn.commit()
+            for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
+                if already_recorded("popular_mentions", popular_mention):
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                    conn.commit()
+                else:  # popular mention not yet recorded
+                    c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                    conn.commit()
     return
 
 
