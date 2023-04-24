@@ -141,7 +141,7 @@ def attraction_stats(soup):
             "Poor_ratio": int(rates[3]) / int(reviewers),
             "Terrible_ratio": int(rates[4]) / int(reviewers),
         }
-    except (IndexError, ValueError):
+    except (IndexError, ValueError,TypeError):
         ratios_dict = {
             "Excellent_ratio": 0,
             "VG_ratio": 0,
