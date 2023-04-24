@@ -93,7 +93,7 @@
     <h2>Database structure:</h2>
 </div>
 
-#### image coming soon
+![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/db_diagram.png)
 
 <div style="text-align:left">
     <h3>Description of Tables in Database:</h3>
