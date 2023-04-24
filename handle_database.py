@@ -172,13 +172,16 @@ def populate_tables(attraction_df):
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-                if already_recorded("popular_mentions", popular_mention):
-                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                    conn.commit()
-                else:  # popular mention not yet recorded
-                    c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
-                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                    conn.commit()
+                try:
+                    if already_recorded("popular_mentions", popular_mention):
+                        c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                        conn.commit()
+                    else:  # popular mention not yet recorded
+                        c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+                        c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                        conn.commit()
+                except pymysql.err.OperationalError:
+                    continue
     return
 
 
