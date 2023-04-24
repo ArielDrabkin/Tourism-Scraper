@@ -142,6 +142,27 @@ def meteorological_data(met_df):
                                   city["total_precipitation"]))
             conn.commit()
     return
+def add_to_popular_mentions_table(popular_mention,attraction):
+    """
+    Inserts a popular mention into the 'popular_mentions' table and creates an association between the popular mention
+    and the current attraction in the 'popular_mentions_attractions' table.
+    param: popular_mention: The popular mention to insert into the database.
+    param: attraction: DataSeries that had all the attraction data.
+    Returns:None
+    """
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+        c = conn.cursor()
+    try:
+        if already_recorded("popular_mentions", popular_mention):
+            c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+            conn.commit()
+        else:  # popular mention not yet recorded
+            c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+            c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+            conn.commit()
+    except pymysql.err.OperationalError:
+        return
+    return
 
 
 def populate_tables(attraction_df):
@@ -157,31 +178,25 @@ def populate_tables(attraction_df):
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
         for index, attraction in attraction_df.iterrows():
-            if already_recorded("attractions", attraction["Name"]):
-                continue  # move to the next attraction
+            try:
+                if already_recorded("attractions", attraction["Name"]):
+                    continue  # move to the next attraction
 
-            # only add the record if it isn't there already
-            if not already_recorded("cities", attraction["City"]):
-                c.execute(INSERT_INTO["cities"], (attraction["City"],))
+                # only add the record if it isn't there already
+                if not already_recorded("cities", attraction["City"]):
+                    c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
-            c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
-            c.execute(INSERT_INTO["attraction_stats"], (attraction["Name"], attraction["Tripadvisor rank"],
-                                                        attraction["Reviewers#"], attraction["Excellent"],
-                                                        attraction["Very good"], attraction["Average"],
-                                                        attraction["Poor"], attraction["Terrible"]))
+                c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
+                c.execute(INSERT_INTO["attraction_stats"], (attraction["Name"], attraction["Tripadvisor rank"],
+                                                            attraction["Reviewers#"], attraction["Excellent"],
+                                                            attraction["Very good"], attraction["Average"],
+                                                            attraction["Poor"], attraction["Terrible"]))
+            except (pymysql.err.OperationalError,pymysql.err.ProgrammingError):
+                continue
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-                try:
-                    if already_recorded("popular_mentions", popular_mention):
-                        c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                        conn.commit()
-                    else:  # popular mention not yet recorded
-                        c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
-                        c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                        conn.commit()
-                except pymysql.err.OperationalError:
-                    continue
+                add_to_popular_mentions_table(popular_mention, attraction)
     return
 
 
