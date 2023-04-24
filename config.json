@@ -34,6 +34,6 @@
     "soup_success": "Got soup we need.",
     "html_error": "Couldn't get the html we need.",
     "response_error": "Couldn't get response from attraction."
-  }
-
+  },
+  "lat_lon_api_key": "yimGrjCwOzEqxOVLBIj+5A==Jqqc3UyswXLz59pH"
 }

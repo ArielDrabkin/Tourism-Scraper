@@ -3,7 +3,22 @@ import requests
 import json
 import os
 import regex as re
+import urllib.parse
 
+with open("config.json", "r") as config_file:
+    configs = json.load(config_file)
+
+LAT_LON_API_KEY = configs["lat_lon_api_key"]
+RESOURCE_NOT_FOUND_RESPONSE_CODE = 404
+WEATHER_API_BASE_URL = "https://archive-api.open-meteo.com/v1/archive?"
+WEATHER_API_URL_PARAMS = {
+    "latitude": "",
+    "longitude": "",
+    "start_date": "2022-04-01",
+    "end_date": "2023-04-01",
+    "daily": ["temperature_2m_max", "temperature_2m_min", "temperature_2m_mean", "precipitation_sum"],
+    "timezone": "GMT"
+}
 
 WEATHER_API_URLS = {
     "paris":        "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
@@ -60,7 +75,33 @@ def weather_data_already_saved_for_city(city_name):
     return False  # weather data has not been saved for this city
 
 
-def request_from_weather_api():
+def lat_lon_of_city(city, country=None):
+    """
+    param: city (str) - a city name
+    param: country (str) - a country name.
+        - None by default. some cities appear in multiple countries,
+            so this might be a helpful parameter
+    return (tuple) - a tuple in the following form: (latitude of city, longitude of city)
+    The data for this function is requested from the following url:
+    https://api-ninjas.com/api/geocoding
+    """
+    if country:
+        api_url = "https://api.api-ninjas.com/v1/geocoding?city={}&country={}{}".format(city, country, city)
+    else:
+        api_url = "https://api.api-ninjas.com/v1/geocoding?city={}".format(city)
+    while True:
+        response = requests.get(api_url, headers={"X-Api-Key": LAT_LON_API_KEY})
+        if response.status_code == requests.codes.ok:
+            break
+        elif response.status_code == RESOURCE_NOT_FOUND_RESPONSE_CODE:
+            return None, None
+        else:
+            continue  # try again
+    result = response.json()[0]
+    return result["latitude"], result["longitude"]
+
+
+def request_from_weather_api(city, country=None):
     """
     This function is designed to connect to the weather API, https://open-meteo.com
     Using a dictionary whose keys are cities and whose values are the URL from open-meteo we collect all desired data
@@ -72,9 +113,10 @@ def request_from_weather_api():
         [For 2022-04-01 to 2023-04-01]
         Max Temp, Min Temp, Mean Temp, Precipitation Sum (rain+snow)
     """
+    """
     if not os.path.exists("weather_files"):
         os.makedirs("weather_files")
-
+    
     for city, api_url in WEATHER_API_URLS.items():
         response = requests.get(api_url)
         data = response.json()
@@ -83,6 +125,27 @@ def request_from_weather_api():
         if weather_data_already_saved_for_city(city_name_formatted):
             continue  # don't save it again!
         filename = f"{city_name_formatted}_weather.json"
+        with open(f"weather_files/{filename}", "w") as file:
+            json.dump(data, file)  # write json to json file
+    """
+    city = city.lower().replace(" ", "_")  # filename will be, for example, "buenos_aires_weather.json"
+    if weather_data_already_saved_for_city(city):  # TODO - This function doesn't take into account country
+        return
+    else:  # if we already have data for this city
+        if country:
+            latitude, longitude = lat_lon_of_city(city, country)
+        else:
+            latitude, longitude = lat_lon_of_city(city)
+
+        WEATHER_API_URL_PARAMS["latitude"] = latitude
+        WEATHER_API_URL_PARAMS["longitude"] = longitude
+
+        url = WEATHER_API_BASE_URL + urllib.parse.urlencode(WEATHER_API_URL_PARAMS, doseq=True)
+        print(url)
+        response = requests.get(url)
+        data = response.json()
+
+        filename = f"{city}_weather.json"
         with open(f"weather_files/{filename}", "w") as file:
             json.dump(data, file)  # write json to json file
 
@@ -114,4 +177,4 @@ def generate_weather_df():
 
 
 if __name__ == "__main__":
-    generate_weather_df()
+    request_from_weather_api("Moscow", "Russia")
