@@ -55,23 +55,16 @@ TABLES["popular_mentions_attractions"] = """
             );"""
 
 TABLES["meteorological_data"] = """
-            CREATE TABLE IF NOT EXISTS attraction_stats (
-                min_temp INT,
-                max_temp INT,
-                mean_temp INT,
-                total_precipitation INT,
+            CREATE TABLE IF NOT EXISTS meteorological_data (
+                city_id INT PRIMARY KEY,
+                name VARCHAR(255),
+                min_temp Float,
+                max_temp Float,
+                mean_temp Float,
+                total_precipitation float,
                 FOREIGN KEY (city_id) REFERENCES cities(id)
-            );"""
-#
-# TABLES["demography"] = """
-#             CREATE TABLE IF NOT EXISTS attraction_stats (
-#                 Var_1 INT,
-#                 Var_2 INT,
-#                 Var_3 INT,
-#                 Var_4 INT,
-#                 Var_5 INT,
-#                 FOREIGN KEY (city_id) REFERENCES cities(id)
-#             );"""
+            );
+"""
 
 # create dictionary to store the sql INSERT INTO commands
 INSERT_INTO = dict()
@@ -106,23 +99,15 @@ INSERT_INTO["popular_mentions_attractions"] = (
 )
 
 INSERT_INTO["meteorological_data"] = (
-    " INSERT INTO meteorological_data "
-    "(city_id, min_temp, max_temp, mean_temp, total_precipitation) "
-    "VALUES ((SELECT name FROM cities WHERE name=%s), %s, %s, %s, %s) "
+    " INSERT INTO meteorological_data (city_id, Name, min_temp, max_temp, mean_temp, total_precipitation) "
+    "VALUES ((SELECT id FROM cities WHERE cities.name = %s), %s, %s, %s, %s, %s)"
 )
 
 
-# INSERT_INTO["demography"] = (
-#             " INSERT INTO demography "
-#             "(city_id, Var_1, Var_2, Var_3, Var_4, Var_5) "
-#             "VALUES ((SELECT name FROM cities demography name=%s), %s, %s, %s, %s, %s, %s, %s) "
-#         )
-
-
-def already_recorded(var, data_table):
+def already_recorded(data_table, var):
     """
-    param: var (str) - a variable name
     param: var (data_table) - a data_table name in DB
+    param: var (str) - a variable name
     return: (boolean) - Return True if the variable is already in the chosen data_table of the Attractions database
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
@@ -135,51 +120,6 @@ def already_recorded(var, data_table):
             return True
 
 
-# def city_already_recorded(city):
-#     """
-#     param: city (str) - a city name
-#     return: (boolean) - Return True if the city is already in the cities table of the Attractions database
-#     """
-#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-#         c = conn.cursor()
-#         c.execute('SELECT * FROM cities WHERE name="{}";'.format(city))
-#         existing_records = c.fetchall()
-#         if existing_records is None or len(existing_records) == 0:
-#             return False
-#         else:
-#             return True
-#
-#
-# def attraction_already_recorded(attraction):
-#     """
-#     param: attraction (str) - An attraction name
-#     return: (boolean) - return True if the attraction is already in the attractions table of the Attractions database
-#     """
-#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-#         c = conn.cursor()
-#         c.execute('SELECT * FROM attractions WHERE name="{}";'.format(attraction))
-#         existing_records = c.fetchall()
-#         if existing_records is None or len(existing_records) == 0:
-#             return False
-#         else:
-#             return True
-#
-#
-# def popular_mention_already_recorded(popular_mention):
-#     """
-#     param: popular_mention (str) a "popular_mention"
-#     return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
-#     """
-#     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
-#         c = conn.cursor()
-#         c.execute('SELECT * FROM popular_mentions WHERE popular_mention="{}"'.format(popular_mention))
-#         existing_records = c.fetchall()
-#         if existing_records is None or len(existing_records) == 0:
-#             return False
-#         else:
-#             return True
-#
-
 def meteorological_data(met_df):
     """
     params: (Pandas.DataFrame) - the data which was created using an external script.
@@ -191,14 +131,17 @@ def meteorological_data(met_df):
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
         for index, city in met_df.iterrows():
-            if already_recorded(city["Name"], "meteorological_data"):
+            if already_recorded("meteorological_data", city["Name"]):
                 continue  # move to the next attraction
 
-            if not already_recorded(city["Name"], "meteorological_data"):
-                c.execute(INSERT_INTO["meteorological_data"], (city["Name"], city["min_temp"],
-                                                               city["max_temp"], city["mean_temp"],
-                                                               city["total_precipitation"]))
-                conn.commit()
+            if not already_recorded("meteorological_data", city["Name"]):
+                query = INSERT_INTO["meteorological_data"]
+                print(query)
+                c.execute(query, (str(city["Name"]), str(city["Name"]), city["min_temp"],
+                                  city["max_temp"], city["mean_temp"],
+                                  city["total_precipitation"]))
+
+            conn.commit()
     return
 
 
@@ -214,10 +157,10 @@ def populate_tables(attraction_df):
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
         for index, attraction in attraction_df.iterrows():
-            if already_recorded(attraction["Name"], "attractions"):
+            if already_recorded("attractions", attraction["Name"]):
                 continue  # move to the next attraction
 
-            if not already_recorded(attraction["City"], "cities"):
+            if not already_recorded("cities", attraction["City"]):
                 c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
             c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
@@ -227,14 +170,14 @@ def populate_tables(attraction_df):
                                                         attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
-            for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-                if already_recorded(popular_mention, "popular_mentions"):
-                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                    conn.commit()
-                else:  # popular mention not yet recorded
-                    c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
-                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-                    conn.commit()
+            # for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
+            #     if already_recorded("popular_mentions", popular_mention):
+            #         c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+            #         conn.commit()
+            #     else:  # popular mention not yet recorded
+            #         c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+            #         c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+            #         conn.commit()
     return
 
 

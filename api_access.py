@@ -2,17 +2,7 @@ import pandas as pd
 import requests
 import json
 import os
-import regex as re
-
-
-WEATHER_API_URLS = {
-    "paris":        "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "buenos aires": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.61&longitude=-58.38&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "cairo":        "https://archive-api.open-meteo.com/v1/archive?latitude=30.06&longitude=31.25&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "washington":   "https://archive-api.open-meteo.com/v1/archive?latitude=38.89&longitude=-77.04&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "seoul":        "https://archive-api.open-meteo.com/v1/archive?latitude=37.57&longitude=126.98&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "london":       "https://archive-api.open-meteo.com/v1/archive?latitude=51.51&longitude=-0.13&&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT"
-}
+import re
 
 
 def get_annual_data(daily_data_df):
@@ -21,17 +11,17 @@ def get_annual_data(daily_data_df):
     return: (pd.Series) - This Series will contain the following annual weather data, indexed as follows:
     --> min_temp, max_temp, avg_temp, total_annual_precipitation
     """
-    min_temp = daily_data_df["temperature_2m_min"].min()
-    max_temp = daily_data_df["temperature_2m_max"].max()
-    mean_temp = daily_data_df["temperature_2m_mean"].mean()
-    total_precipitation = daily_data_df["precipitation_sum"].sum()
+    min_temp = round(daily_data_df["temperature_2m_min"].min(), 2)
+    max_temp = round(daily_data_df["temperature_2m_max"].max(), 2)
+    mean_temp = round(daily_data_df["temperature_2m_mean"].mean(), 2)
+    total_precipitation = round(daily_data_df["precipitation_sum"].sum(), 2)
     return pd.Series((min_temp, max_temp, mean_temp, total_precipitation),
                      index=("min_temp", "max_temp", "mean_temp", "total_precipitation"))
 
 
 def get_city_name(filename):
     """
-    param: filename (str) - a filename which contains a cityname
+    param: filename (str) - a filename which contains a city name
     return: str of city name
     Example:
     """
@@ -60,7 +50,7 @@ def weather_data_already_saved_for_city(city_name):
     return False  # weather data has not been saved for this city
 
 
-def request_from_weather_api():
+def request_from_weather_api(urls):
     """
     This function is designed to connect to the weather API, https://open-meteo.com
     Using a dictionary whose keys are cities and whose values are the URL from open-meteo we collect all desired data
@@ -75,7 +65,7 @@ def request_from_weather_api():
     if not os.path.exists("weather_files"):
         os.makedirs("weather_files")
 
-    for city, api_url in WEATHER_API_URLS.items():
+    for city, api_url in urls.items():
         response = requests.get(api_url)
         data = response.json()
 
@@ -109,9 +99,8 @@ def generate_weather_df():
         daily_data_df = pd.DataFrame.from_dict(data_dict["daily"])
         annual_data = get_annual_data(daily_data_df)
         all_annual_data[get_city_name(filename)] = annual_data
-    print(pd.DataFrame.from_dict(all_annual_data, orient='index'))
-    return pd.DataFrame.from_dict(all_annual_data, orient='index')
+    met_data = pd.DataFrame.from_dict(all_annual_data, orient='index')
+    met_data = met_data.reset_index().rename(columns={'index': 'Name'})
 
-
-if __name__ == "__main__":
-    generate_weather_df()
+    print(met_data)
+    return met_data

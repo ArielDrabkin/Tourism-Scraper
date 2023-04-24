@@ -1,6 +1,5 @@
 {
-  "urls":
-  {
+  "urls": {
     "Paris_top_url": "https://www.tripadvisor.com/Attractions-g187147-Activities-oa0-Paris_Ile_de_France.html",
     "Buenos_Aires_top_url": "https://www.tripadvisor.com/Attractions-g312741-Activities-oa0-Buenos_Aires_Capital_Federal_District.html",
     "Washington_top_url": "https://www.tripadvisor.com/Attractions-g28970-Activities-oa0-Washington_DC_District_of_Columbia.html",
@@ -11,8 +10,7 @@
   "logger_format_string": "%(asctime)s %(name)s %(levelname)s - %(funcName)s - %(message)s",
   "url_variable_suffix": "_top_url",
   "logger_name": "scrape-log",
-  "soup_elements":
-  {
+  "soup_elements": {
     "arrow_class": "UCacc",
     "title_class": "alPVI eNNhq PgLKC tnGGX",
     "next_page_label": "Next page",
@@ -27,21 +25,18 @@
     "stat_tag": "yFKLG",
     "url_class": "href"
   },
-  "log_messages":
-  {
+  "log_messages": {
     "arrow_error": "Couldn't get next page arrows from soup.",
     "soup_error": "Couldn't get the soup we need.",
     "soup_success": "Got soup we need.",
     "html_error": "Couldn't get the html we need.",
     "response_error": "Couldn't get response from attraction."
   },
-  "WEATHER_API_URLS":
-  {
-    "Paris":        "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
+  "WEATHER_API_URLS": {
+    "Paris": "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
     "Buenos Aires": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.61&longitude=-58.38&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "Cairo":        "https://archive-api.open-meteo.com/v1/archive?latitude=30.06&longitude=31.25&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "Washington":   "https://archive-api.open-meteo.com/v1/archive?latitude=38.89&longitude=-77.04&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "Seoul":        "https://archive-api.open-meteo.com/v1/archive?latitude=37.57&longitude=126.98&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
-    "London":       "https://archive-api.open-meteo.com/v1/archive?latitude=51.51&longitude=-0.13&&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT"
- }
+    "Cairo": "https://archive-api.open-meteo.com/v1/archive?latitude=30.06&longitude=31.25&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
+    "Washington": "https://archive-api.open-meteo.com/v1/archive?latitude=38.89&longitude=-77.04&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
+    "Seoul": "https://archive-api.open-meteo.com/v1/archive?latitude=37.57&longitude=126.98&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT"
+  }
 }

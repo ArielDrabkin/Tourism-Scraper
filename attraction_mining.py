@@ -199,7 +199,7 @@ def attraction_data_update(attractions_dict, urls_counter, data_df):
         data_df.index = data_df.index + 1
         logger.debug(f"Successfully created the DF for river attractions data")
     else:
-        data_df = data_df.append(attractions_dict, ignore_index=True)
+        data_df = data_df._append(attractions_dict, ignore_index=True)
         data_df.index = data_df.index + 1
         logger.debug(f"Successfully added the river attractions from url #{urls_counter} to the DF")
 
