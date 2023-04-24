@@ -177,4 +177,4 @@ def generate_weather_df():
 
 
 if __name__ == "__main__":
-    request_from_weather_api("Moscow", "Russia")
+    request_from_weather_api("Las Vegas", "USA")
