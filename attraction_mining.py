@@ -77,9 +77,10 @@ def tripadvisor_name_rate(soup):
     # Get rate, city name, tags and attraction's name info
     try:
         rate = main_tag.find('div', class_=RATE_CLASS).text.strip()
+        city = rate.split()[-1]
     except AttributeError:
         rate = ['empty']
-    city = rate.split()[-1]
+        city = rate
     name = soup.find('h1', NAME_TAG).text.strip()
     popular_mentions = tripadvisor_popular_mentions(soup)
 
