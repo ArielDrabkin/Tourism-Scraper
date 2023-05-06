@@ -112,7 +112,7 @@ def already_recorded(data_table, var):
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
-        c.execute('SELECT * FROM {} WHERE name="{}";'.format(data_table, var))
+        c.execute('SELECT * FROM {} WHERE name="{}";'.format(data_table, str(var)))
         existing_records = c.fetchall()
         if existing_records is None or len(existing_records) == 0:
             return False
@@ -144,32 +144,23 @@ def meteorological_data(met_df):
     return
 
 
-def add_to_popular_mentions_table(popular_mention, attraction):
+def popular_mention_already_recorded(popular_mention):
     """
-    Inserts a popular mention into the 'popular_mentions' table and creates an association between the popular mention
-    and the current attraction in the 'popular_mentions_attractions' table.
-    param: popular_mention: The popular mention to insert into the database.
-    param: attraction: DataSeries that had all the attraction data.
-    Returns:None
+    param: popular_mention (str) a "popular_mention"
+    return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
-    try:
-        if already_recorded("popular_mentions", popular_mention):
-            c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-            conn.commit()
-        else:  # popular mention not yet recorded
-            c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
-            c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
-            conn.commit()
-    except pymysql.err.OperationalError:
-        return
-    return
+        c.execute('SELECT * FROM popular_mentions WHERE popular_mention="{}"'.format(popular_mention))
+        existing_records = c.fetchall()
+        if existing_records is None or len(existing_records) == 0:
+            return False
+        else:
+            return True
 
 
-def populate_tables(attraction_df):
+def populate_tables(df):
     """
-    Function that insert attractions data in to attraction Data Base.
     params: (Pandas.DataFrame) - the data which was created using an external script.
         The structure of the dataframe is as follows (generated using pd.DataFrame.columns)
         'City', 'Name', 'Popular Mentions', 'Score',
@@ -179,26 +170,28 @@ def populate_tables(attraction_df):
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
         c = conn.cursor()
-        for index, attraction in attraction_df.iterrows():
-            try:
-                if already_recorded("attractions", attraction["Name"]):
-                    continue  # move to the next attraction
+        for index, attraction in df.iterrows():
+            if already_recorded("attractions", attraction["Name"]):
+                continue  # move to the next attraction
 
-                # only add the record if it isn't there already
-                if not already_recorded("cities", attraction["City"]):
-                    c.execute(INSERT_INTO["cities"], (attraction["City"],))
+            if not already_recorded("cities", attraction["City"]):
+                c.execute(INSERT_INTO["cities"], (attraction["City"],))
 
-                c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
-                c.execute(INSERT_INTO["attraction_stats"], (attraction["Name"], attraction["Tripadvisor rank"],
-                                                            attraction["Reviewers#"], attraction["Excellent"],
-                                                            attraction["Very good"], attraction["Average"],
-                                                            attraction["Poor"], attraction["Terrible"]))
-            except (pymysql.err.OperationalError, pymysql.err.ProgrammingError):
-                continue
+            c.execute(INSERT_INTO["attractions"], (attraction["Name"], attraction["City"], attraction["Url"]))
+            c.execute(INSERT_INTO["attraction_stats"], (attraction["Name"], attraction["Tripadvisor rank"],
+                                                        attraction["Reviewers#"], attraction["Excellent"],
+                                                        attraction["Very good"], attraction["Average"],
+                                                        attraction["Poor"], attraction["Terrible"]))
             conn.commit()
 
             for popular_mention in attraction["Popular Mentions"]:  # only add the record if it isn't there already
-                add_to_popular_mentions_table(popular_mention, attraction)
+                if popular_mention_already_recorded(popular_mention):
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                    conn.commit()
+                else:  # popular mention not yet recorded
+                    c.execute(INSERT_INTO["popular_mentions"], (popular_mention,))
+                    c.execute(INSERT_INTO["popular_mentions_attractions"], (attraction["Name"], popular_mention))
+                    conn.commit()
     return
 
 
