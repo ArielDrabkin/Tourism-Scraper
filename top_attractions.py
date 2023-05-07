@@ -200,7 +200,6 @@ def get_correct_see_all_url(see_alls):
     for see_all in see_alls:
         url = see_all.get_attribute(URL_CLASS)
         if url.count(TOP_ATTRACTIONS_SEE_ALL_CODE) > 0:
-            print(url)
             return url
 
 
@@ -266,9 +265,9 @@ def get_city_top_attractions_url(city_string):
         clear_search_bar(search_bar)
 
         search_bar.send_keys(city_string)
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(150)  # Thanks Hannah for the suggestion
         search_bar.send_keys(Keys.ARROW_DOWN)
-        driver.implicitly_wait(8)
+        driver.implicitly_wait(150)
         try:
             a_element = wait.until(EC.presence_of_all_elements_located((By.XPATH, SUGGESTION_XPATH)))
             url = a_element[0].get_attribute("href")
