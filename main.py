@@ -1,7 +1,7 @@
 import json
 import logging
+from top_attractions import get_all_top_links, get_city_top_attractions_url
 import pandas as pd
-from top_attractions import get_all_top_links
 from attraction_mining import attractions_data
 from handle_database import populate_tables, meteorological_data, create_database
 import argparse
@@ -46,8 +46,8 @@ def main():
     """
     parser = argparse.ArgumentParser(description=main.__doc__)
     parser.add_argument('cities', nargs='?', type=str,
-                        help="Enter chosen city/cites from the list: 'Paris, Buenos_Aires, Cairo, Washington, Seoul")
-    parser.add_argument('key_words', type=str,
+                        help="Enter chosen city/cites")
+    parser.add_argument('key_words', nargs='?', type=str,
                         help="""Enter attraction key words from the list:
                                 'river, boat, fairy, opera house, guided tour, 
                              beautiful building, free museum, art, sculptures, architecture' , etc. etc.
@@ -97,8 +97,17 @@ def main():
             return
 
     # Get the urls for the top attractions webpage of the chosen cities
-    cities_urls = [ALL_CITY_HOMEPAGES[city + URL_VARIABLE_SUFFIX] for city in cities
-                   if city + URL_VARIABLE_SUFFIX in ALL_CITY_HOMEPAGES]
+    cities_urls = list()
+    for city in cities:
+        if city.title() + "_top_url" in ALL_CITY_HOMEPAGES.keys():
+            cities_urls.append(ALL_CITY_HOMEPAGES[city.title() + "_top_url"])
+        else:
+            city_url = get_city_top_attractions_url(city)
+            if city_url is None:
+                print("Sorry, please try again.")
+                return
+            else:
+                cities_urls.append(city_url)
 
     # Get the urls for the meteorological data webpage of the chosen cities
     met_urls = {city: WEATHER_API_URLS[city] for city in cities if city in WEATHER_API_URLS}
