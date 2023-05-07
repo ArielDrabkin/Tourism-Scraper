@@ -138,12 +138,12 @@ def get_links_from_page(soup):
 
 def get_response_then_get_soup(url):
     """
-    Param: url (str) a url from a ripadvisor webpage.
+    Param: url (str) url from a tripadvisor webpage.
     Returns: a soup object of the BeautifulSoup library.
     
     [Motivation: Often, getting a response from a website using the grequests library can take a long time.
     It is more efficient to try again after a certain short time-period, especially with a website like Tripadvisor
-    which has an unstable servor.
+    which has an unstable server.
     After getting a response, this function will then generate a soup object from the BeautifulSoup library.]
     """
     headers = {"User-Agent": UA.random}
@@ -286,8 +286,3 @@ def get_city_top_attractions_url(city_string):
     top_attractions_url = get_top_attraction_url_from_city_homepage(url)
 
     return top_attractions_url
-
-
-if __name__ == "__main__":
-    url = get_city_top_attractions_url("washington")
-    print(url)
