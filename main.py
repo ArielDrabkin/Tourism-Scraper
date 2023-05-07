@@ -1,6 +1,6 @@
 import json
 import logging
-from top_attractions import get_all_top_links
+from top_attractions import get_all_top_links, get_city_top_attractions_url
 from attraction_mining import attractions_data
 from handle_database import populate_tables
 import argparse
@@ -39,7 +39,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description=main.__doc__)
     parser.add_argument('cities', nargs='?', type=str,
-                        help="Enter chosen city/cites from the list: 'Paris, Buenos_Aires, Cairo, Washington, Seoul")
+                        help="Enter chosen city/cites")
     parser.add_argument('key_words', nargs='?', type=str,
                         help="""Enter attraction key words from the list:
                                 'river, boat, fairy, opera house, guided tour, 
@@ -61,15 +61,18 @@ def main():
         attractions_num = int(args.attractions_num)
         select_output = args.select_output
 
-    for city in cities:
-        if city not in ("Cairo", "Buenos_Aires", "Paris", "Seoul", "Washington"):
-            print("You either picked an invalid city, or you spelled it wrong.\n"
-                  "By Bye.")
-            return
-
     # Get the urls for the top attractions webpage of the chosen cities
-    cities_urls = [ALL_CITY_HOMEPAGES[city + URL_VARIABLE_SUFFIX] for city in cities
-                   if city + URL_VARIABLE_SUFFIX in ALL_CITY_HOMEPAGES]
+    cities_urls = list()
+    for city in cities:
+        if city.title() + "_top_url" in ALL_CITY_HOMEPAGES.keys():
+            cities_urls.append(ALL_CITY_HOMEPAGES[city.title() + "_top_url"])
+        else:
+            city_url = get_city_top_attractions_url(city)
+            if city_url is None:
+                print("Sorry, please try again.")
+                return
+            else:
+                cities_urls.append(city_url)
 
     # Call a function to get a list of URLs for the top attractions of the desired cities
     ranks, urls = [], []
