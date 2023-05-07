@@ -39,6 +39,7 @@
     "html_error": "Couldn't get the html we need.",
     "response_error": "Couldn't get response from attraction."
   },
+  "lat_lon_api_key": "yimGrjCwOzEqxOVLBIj+5A==Jqqc3UyswXLz59pH"
   "WEATHER_API_URLS": {
     "Paris": "https://archive-api.open-meteo.com/v1/archive?latitude=48.85&longitude=2.35&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",
     "Buenos Aires": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.61&longitude=-58.38&start_date=2022-04-01&end_date=2023-04-01&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum&timezone=GMT",

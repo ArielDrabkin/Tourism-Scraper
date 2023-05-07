@@ -2,8 +2,23 @@ import pandas as pd
 import requests
 import json
 import os
-import re
-import shutil
+import regex as re
+import urllib.parse
+
+with open("config.json", "r") as config_file:
+    configs = json.load(config_file)
+
+LAT_LON_API_KEY = configs["lat_lon_api_key"]
+RESOURCE_NOT_FOUND_RESPONSE_CODE = 404
+WEATHER_API_BASE_URL = "https://archive-api.open-meteo.com/v1/archive?"
+WEATHER_API_URL_PARAMS = {
+    "latitude": "",
+    "longitude": "",
+    "start_date": "2022-04-01",
+    "end_date": "2023-04-01",
+    "daily": ["temperature_2m_max", "temperature_2m_min", "temperature_2m_mean", "precipitation_sum"],
+    "timezone": "GMT"
+}
 
 
 def get_annual_data(daily_data_df):
@@ -25,6 +40,8 @@ def get_city_name(filename):
     param: filename (str) - a filename which contains a city name
     return: str of city name
     Example:
+        input: "buenos_aires_weather.json"
+        returns: "buenos_aires
     """
     pattern = r"([\w\s]+)_weather\.json"
     return re.search(pattern, filename).group(1)
@@ -55,34 +72,64 @@ def weather_data_already_saved_for_city(city_name):
     return False  # weather data has not been saved for this city
 
 
-def request_from_weather_api(urls):
+def lat_lon_of_city(city, country=None):
     """
+    param: city (str) - a city name
+    param: country (str) - a country name.
+        - None by default. some cities appear in multiple countries,
+            so this might be a helpful parameter
+    return (tuple) - a tuple in the following form: (latitude of city, longitude of city)
+    The data for this function is requested from the following url:
+    https://api-ninjas.com/api/geocoding
+    """
+    if country:
+        api_url = "https://api.api-ninjas.com/v1/geocoding?city={}&country={}{}".format(city, country, city)
+    else:
+        api_url = "https://api.api-ninjas.com/v1/geocoding?city={}".format(city)
+    while True:
+        response = requests.get(api_url, headers={"X-Api-Key": LAT_LON_API_KEY})
+        if response.status_code == requests.codes.ok:
+            break
+        elif response.status_code == RESOURCE_NOT_FOUND_RESPONSE_CODE:
+            return None, None
+        else:
+            continue  # try again
+    result = response.json()[0]
+    return result["latitude"], result["longitude"]
+
+
+def request_from_weather_api(city, country=None):
+    """
+    param: city (str) - city name
+    param: country (stt; default=None) - country name
     This function is designed to connect to the weather API, https://open-meteo.com
-    Using a dictionary whose keys are cities and whose values are the URL from open-meteo we collect all desired data
-    The data is then written to a city-specific file, which is saved in a "weather_files" directory
-    The data which is gathered from each city includes the following features:
+    The function will take the parameters of city and country, and create the correct API URL.
+    Then it will make a request from the API to get the following meteorological data.
     General Features:
         Latitude, Longitude, Elevation
     Daily Features:
         [For 2022-04-01 to 2023-04-01]
         Max Temp, Min Temp, Mean Temp, Precipitation Sum (rain+snow)
     """
-    # Check if the "weather_files" directory exists, and create it if it does not.
-    if not os.path.exists("weather_files"):
-        os.makedirs("weather_files")
+    city = city.lower().replace(" ", "_")  # filename will be, for example, "buenos_aires_weather.json"
+    if weather_data_already_saved_for_city(city):
+        return
+    else:  # if we don't already have data for this city
+        if country:
+            latitude, longitude = lat_lon_of_city(city, country)
+        else:
+            latitude, longitude = lat_lon_of_city(city)
 
-    # Loop through each city and API URL in the "urls" dictionary.
-    for city, api_url in urls.items():
-        response = requests.get(api_url)
+        WEATHER_API_URL_PARAMS["latitude"] = latitude
+        WEATHER_API_URL_PARAMS["longitude"] = longitude
+
+        url = WEATHER_API_BASE_URL + urllib.parse.urlencode(WEATHER_API_URL_PARAMS, doseq=True)
+        print(url)
+        response = requests.get(url)
         data = response.json()
-        # Format the city name as a valid filename by replacing spaces with underscores.
-        city_name_formatted = city.replace(" ", "_")  # filename will be, for example, "buenos_aires_weather.json"
-        # Check if weather data has already been saved for this city. If it has, skip this iteration of the loop.
-        if weather_data_already_saved_for_city(city_name_formatted):
-            continue  # don't save it again!
-        # Create a filename for the weather data file based on the formatted city name.
-        filename = f"{city_name_formatted}_weather.json"
-        # Open the file for writing and dump the JSON data into it.
+
+        filename = f"{city}_weather.json"
+
         with open(f"weather_files/{filename}", "w") as file:
             json.dump(data, file)  # write json to json file
 
@@ -114,7 +161,7 @@ def generate_weather_df():
         # Add the annual weather data for the city named in the filename to the "all_annual_data" dictionary.
         # Use the helper function "get_city_name()" to extract the city name from the filename.
         all_annual_data[get_city_name(filename)] = annual_data
+
     met_data = pd.DataFrame.from_dict(all_annual_data, orient='index')
     met_data = met_data.reset_index().rename(columns={'index': 'Name'})
-    shutil.rmtree("weather_files")  # Deletes the created folder for the weather data
     return met_data
