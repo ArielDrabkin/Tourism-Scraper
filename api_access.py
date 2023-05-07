@@ -27,10 +27,10 @@ def get_annual_data(daily_data_df):
     return: (pd.Series) - This Series will contain the following annual weather data, indexed as follows:
     --> min_temp, max_temp, avg_temp, total_annual_precipitation
     """
-    min_temp = daily_data_df["temperature_2m_min"].min()
-    max_temp = daily_data_df["temperature_2m_max"].max()
-    mean_temp = daily_data_df["temperature_2m_mean"].mean()
-    total_precipitation = daily_data_df["precipitation_sum"].sum()
+    min_temp = round(daily_data_df["temperature_2m_min"].min(), 2)
+    max_temp = round(daily_data_df["temperature_2m_max"].max(), 2)
+    mean_temp = round(daily_data_df["temperature_2m_mean"].mean(), 2)
+    total_precipitation = round(daily_data_df["precipitation_sum"].sum(), 2)
     return pd.Series((min_temp, max_temp, mean_temp, total_precipitation),
                      index=("min_temp", "max_temp", "mean_temp", "total_precipitation"))
 
@@ -55,13 +55,17 @@ def weather_data_already_saved_for_city(city_name):
     The format for the city name should be all lowercase and with "_" instead of " "
     if the city_name is formatted wrong, this function will correct that
     """
+    # Check if the "weather_files" directory exists, and create it if it does not.
     if not os.path.exists("weather_files"):
         os.makedirs("weather_files")
 
     # correct format of city_name if it's wrong
     city_name = city_name.lower().replace(" ", "_")
+    # Get a list of all the filenames in the "weather_files" directory.
     filenames = os.listdir("weather_files")
     for filename in filenames:
+        # Check if the city name is in the filename. If it is, return True to indicate that weather data has already
+        # been saved for this city.
         if filename.find(city_name) != -1:
             return True  # weather data already saved for this city
 
@@ -125,6 +129,7 @@ def request_from_weather_api(city, country=None):
         data = response.json()
 
         filename = f"{city}_weather.json"
+
         with open(f"weather_files/{filename}", "w") as file:
             json.dump(data, file)  # write json to json file
 
@@ -139,17 +144,24 @@ def generate_weather_df():
     calculated using a helper function. The final output will be a dataframe with the following columns:
         --> Min_temp, Max_temp, mean_temp, total_precipitation
     """
+    # Check if the "weather_files" directory exists, and create it if it does not.
     if not os.path.exists("weather_files"):
         os.makedirs("weather_files")
 
     all_annual_data = dict()
+    # Get a list of all the filenames in the "weather_files" directory.
     filenames = os.listdir("weather_files")
     for filename in filenames:
         with open(f"weather_files/{filename}", "r") as file:
             json_str = file.read()
         data_dict = json.loads(json_str)
+        # Create a Pandas DataFrame from the "daily" key of the "data_dict" dictionary.
         daily_data_df = pd.DataFrame.from_dict(data_dict["daily"])
         annual_data = get_annual_data(daily_data_df)
+        # Add the annual weather data for the city named in the filename to the "all_annual_data" dictionary.
+        # Use the helper function "get_city_name()" to extract the city name from the filename.
         all_annual_data[get_city_name(filename)] = annual_data
 
-    return pd.DataFrame.from_dict(all_annual_data, orient='index')
+    met_data = pd.DataFrame.from_dict(all_annual_data, orient='index')
+    met_data = met_data.reset_index().rename(columns={'index': 'Name'})
+    return met_data
