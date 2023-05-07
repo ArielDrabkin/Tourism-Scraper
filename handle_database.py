@@ -1,12 +1,15 @@
 import pymysql
 import json
 
+DATABASE = "Attractions"
+
 with open("mysql_config.json", "r") as mysql_config:
     config = json.load(mysql_config)
 
 HOST = config["host"]
 USER = config["user"]
 PASSWORD = config["password"]
+DATABASE = config["database"]
 
 # create dictionary to store the sql CREATE TABLE commands
 TABLES = dict()
@@ -110,7 +113,7 @@ def already_recorded(data_table, var):
     param: var (str) - a variable name
     return: (boolean) - Return True if the variable is already in the chosen data_table of the Attractions database
     """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         c = conn.cursor()
         c.execute('SELECT * FROM {} WHERE name="{}";'.format(data_table, str(var)))
         existing_records = c.fetchall()
@@ -128,7 +131,7 @@ def meteorological_data(met_df):
     'Name', 'min_temp', 'max_temp', 'mean_temp', 'total_precipitation'
     return: no return
     """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         c = conn.cursor()
         for index, city in met_df.iterrows():
             if already_recorded("meteorological_data", city["Name"]):
@@ -149,7 +152,7 @@ def popular_mention_already_recorded(popular_mention):
     param: popular_mention (str) a "popular_mention"
     return: (boolean) - Return True if the popular_mention has already been recorded in the popular_mention table.
     """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         c = conn.cursor()
         c.execute('SELECT * FROM popular_mentions WHERE popular_mention="{}"'.format(popular_mention))
         existing_records = c.fetchall()
@@ -168,7 +171,7 @@ def populate_tables(df):
            'Excellent_ratio', 'VG_ratio', 'Average_ratio', 'Poor_ratio', 'Terrible_ratio', 'Url'
     return: no return
     """
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         c = conn.cursor()
         for index, attraction in df.iterrows():
             if already_recorded("attractions", attraction["Name"]):
@@ -202,9 +205,9 @@ def create_database():
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD) as conn:
         cursor = conn.cursor()
-        cursor.execute("CREATE database IF NOT EXISTS Attractions;")
+        cursor.execute("CREATE database IF NOT EXISTS ariel_yonatan;")
 
-    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database="Attractions") as conn:
+    with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         cursor = conn.cursor()
         # create all the tables (if each table doesn't exist already, respectively)
         for sql_table_creation_script in TABLES.values():
