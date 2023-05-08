@@ -64,7 +64,7 @@ def main():
         return
 
     # Split the comma-separated list of cities and keywords provided in the command-line arguments strip any whitespace
-    cities = [city.strip() for city in args.cities.split(",")]
+    cities = [city.strip().title() for city in args.cities.split(",")]
     key_words = [key.strip() for key in args.key_words.lower().split(",")]
 
     # Convert the number of attractions to an integer
@@ -124,7 +124,8 @@ def main():
     attraction_df = attractions_data(urls, ranks, REQUEST_BATCH_SIZE)
 
     # Download meteorological data from api's
-    request_from_weather_api(met_urls)
+    for city in cities:
+        request_from_weather_api(city)
 
     # create a Pandas dataframe with the meteorological data
     met_df = generate_weather_df()
