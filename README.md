@@ -15,7 +15,7 @@
 </div>
 
 <div style="color:white; text-align:justify; padding:20px">
-    <p>The purpose of this research project is to investigate the popularity of tourist attractions in tourist cities worldwide, like: Paris, France; Cairo, Egypt; Washington, D.C., USA; Seoul, South Korea; and Buenos Aires, Argentina.</p>
+    <p>The purpose of this research project is to investigate the popularity of tourist attractions in tourist cities worldwide, users can input the name of any city in the world that they are interested in researching, as well as keywords related to their specific interests. The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords.</p>
     <p>The project allows users to use a command line interface to scrape TripAdvisor.com for data on tourist attraction popularity in selected cities based on chosen keywords. The data provides insights into the most popular tourist destinations in a given city, allowing users to plan their travel itineraries more efficiently.</p>
     <p>Additionally, the scraper provides relevant meteorological data for the destinations where attraction data is being collected.<p>  
     <p>The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords which a user wants.</p>
@@ -58,18 +58,17 @@
 <p style="text-align:left; ">
 <h4>Configurations:</h4>
 <p>
-    Create a sql configuration file (called mysql_config.json) which contains your mysql user data.<br>
-    (The scraper will connect to mysql, so you have to be prepared with your login info.)
+    Connect automatically via the sql configuration file (called mysql_config.json) which contains our mysql user data.<br>
 </p>
 <p>
-    Call the file <strong>mysql_config.json</strong>, formatted as follows:
+   The file <strong>mysql_config.json</strong>, formatted as follows:
 </p>
 <pre>
     <code style="padding: 10px;">
         {
-        "host": YOUR_HOST,
-        "user": YOUR_USERNAME,
-        "password": YOUR_PASSWORD
+        "host": http://data-mining-db1.cttpnp4olbpx.us-west-1.rds.amazonaws.com,
+        "user": ariel_yoni,
+        "password": ariel_yoni
         }
     </code>
 </pre>
