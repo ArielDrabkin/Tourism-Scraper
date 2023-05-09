@@ -66,9 +66,10 @@
 <pre>
     <code style="padding: 10px;">
         {
-        "host": http://data-mining-db1.cttpnp4olbpx.us-west-1.rds.amazonaws.com,
+        "host": data-mining-db1.cttpnp4olbpx.us-west-1.rds.amazonaws.com,
         "user": ariel_yoni,
-        "password": ariel_yoni
+        "password": ariel_yoni,
+        "database": ariel_yoni
         }
     </code>
 </pre>
