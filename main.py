@@ -31,19 +31,7 @@ logger.addHandler(handler)
 logger.propagate = False
 
 
-def main():
-    """
-    This script scrapes TripAdvisor.com for data on tourist attraction popularity in selected cities by chosen keywords.
-    It provides insights into the most popular tourist destinations in a given city, allowing users to plan their
-    travel itineraries more efficiently.
-    To start using the web scraper, input the cities and relevant keywords you want to search for, separated by white
-    spaces and followed by a comma at the end of each argument. Additionally, specify the desired number of attractions
-    to search for in each city. List the cities and keywords one after the other.
-    Finally, select the type output you prefer: "all" to scrape all attractions in chosen cities,
-    or "key_words" to scrape attractions by keyword.
-    For example, to retrieve popularity data for attractions related to rivers, boats or bridges
-    in Paris and Cairo, one can input: "Paris,Cairo" "river,boat,bridge" 420 "key_words".
-    """
+def create_argparse():
     parser = argparse.ArgumentParser(description=main.__doc__)
     parser.add_argument('cities', nargs='?', type=str,
                         help="Enter chosen city/cites")
@@ -72,7 +60,10 @@ def main():
 
     # Convert the select_output argument to lowercase
     select_output = args.select_output.lower()
+    return cities, key_words, attractions_num, select_output
 
+
+def checking_inputs(select_output, cities, key_words):
     # Check the select_output argument and update accordingly
     if select_output == "all":
         logger.info(
@@ -88,14 +79,6 @@ def main():
         print("You picked an Invalid output select option.\n"
               "Bye Bye.")
         return
-
-    # Check if each city is one of the supported cities. If not, print an error message and exit the script.
-    for city in cities:
-        if city not in ("Cairo", "Buenos_Aires", "Paris", "Seoul", "Washington"):
-            print("You either picked an invalid city, or you spelled it wrong.\n"
-                  "Bye Bye.")
-            return
-
     # Get the urls for the top attractions webpage of the chosen cities
     cities_urls = list()
     for city in cities:
@@ -104,15 +87,14 @@ def main():
         else:
             city_url = get_city_top_attractions_url(city)
             if city_url is None:
-                print("Sorry, please try again.")
+                print("Sorry, the url was not right, please try again.")
                 return
             else:
                 cities_urls.append(city_url)
+    return cities_urls
 
-    # Get the urls for the meteorological data webpage of the chosen cities
-    met_urls = {city: WEATHER_API_URLS[city] for city in cities if city in WEATHER_API_URLS}
 
-    # Call a function to get a list of URLs for the top attractions of the desired cities
+def storing_data(cities, attractions_num, cities_urls):
     ranks, urls = [], []
     for i, city in enumerate(cities_urls):
         city_attractions_urls = get_all_top_links(city, attractions_num)
@@ -139,6 +121,30 @@ def main():
     populate_tables(attraction_df)  # attractions data
     meteorological_data(met_df)  # meteorological data
     logger.info(f"populate_tables and meteorological_data added to DB")
+    return attraction_df, met_df
+
+
+def main():
+    """
+    This script scrapes TripAdvisor.com for data on tourist attraction popularity in selected cities by chosen keywords.
+    It provides insights into the most popular tourist destinations in a given city, allowing users to plan their
+    travel itineraries more efficiently.
+    To start using the web scraper, input the cities and relevant keywords you want to search for, separated by white
+    spaces and followed by a comma at the end of each argument. Additionally, specify the desired number of attractions
+    to search for in each city. List the cities and keywords one after the other.
+    Finally, select the type output you prefer: "all" to scrape all attractions in chosen cities,
+    or "key_words" to scrape attractions by keyword.
+    For example, to retrieve popularity data for attractions related to rivers, boats or bridges
+    in Paris and Cairo, one can input: "Paris,Cairo" "river,boat,bridge" 420 "key_words".
+    """
+    # initiate argparse
+    cities, key_words, attractions_num, select_output = create_argparse()
+    # check inputs
+    cities_urls = checking_inputs(select_output, cities, key_words)
+    if cities_urls is None:
+        return
+    # store data
+    attraction_df, met_df = storing_data(cities, attractions_num, cities_urls)
 
     # give user their desired output
     if select_output == "all":
