@@ -165,10 +165,7 @@
 </div>
 
 <div style="text-align:left;">
-<h4>This app was developed as part of the ITC Data Science bootcamp by:</h4>
-<ul>
-    Ariel Drabkin and Yonatan Abrams
-</ul>
+<h4>This app was developed as part of the ITC Data Science bootcamp by:</h4> Ariel Drabkin and Yonatan Abrams
 </div>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
