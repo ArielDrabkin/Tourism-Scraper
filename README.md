@@ -92,11 +92,11 @@
     <h2>Examples from the output report:</h2>
 </div>
 
-![city](C:\Users\ariel\TripAdvisor_webscraper\city.jpg)
-![words](https://github.com/ArielDrabkin/Tourism_Scraper/words.png)
-![stats](C:\Users\ariel\TripAdvisor_webscraper\stats.jpg)
-![interactions](C:\Users\ariel\TripAdvisor_webscraper\interactions.jpg)
-![correlation.jpg](C:\Users\ariel\TripAdvisor_webscraper\correlation.jpg)
+![city](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/city.jpg)
+![words](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/words.png)
+![stats](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/stats.jpg)
+![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/interactions.jpg)
+![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/correlation.jpg)
 
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
