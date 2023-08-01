@@ -1,11 +1,11 @@
 import json
 import logging
-from top_attractions import get_all_top_links, get_city_top_attractions_url
+from scripts.top_attractions import get_all_top_links, get_city_top_attractions_url
 import pandas as pd
-from attraction_mining import attractions_data
-from handle_database import populate_tables, meteorological_data, create_database
+from scripts.attraction_mining import attractions_data
+from scripts.handle_database import populate_tables, meteorological_data, create_database
 import argparse
-from api_access import generate_weather_df, request_from_weather_api
+from scripts.api_access import generate_weather_df, request_from_weather_api
 from ydata_profiling import ProfileReport
 import warnings
 warnings.filterwarnings("ignore")
