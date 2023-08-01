@@ -1,5 +1,5 @@
 <div style="background-color:#00AA6C; color:white; text-align:center">
-    <h1>TripAdvisor Webscraping Project</h1>
+    <h1>TripAdvisor Tourism Scraper</h1>
 </div>
 
 <div style="text-align:center">
