@@ -93,7 +93,7 @@
 </div>
 
 ![city](C:\Users\ariel\TripAdvisor_webscraper\city.jpg)
-![words](C:\Users\ariel\TripAdvisor_webscraper\words.jpg)
+![words](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/words.png)
 ![stats](C:\Users\ariel\TripAdvisor_webscraper\stats.jpg)
 ![interactions](C:\Users\ariel\TripAdvisor_webscraper\interactions.jpg)
 ![correlation.jpg](C:\Users\ariel\TripAdvisor_webscraper\correlation.jpg)
