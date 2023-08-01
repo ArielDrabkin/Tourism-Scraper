@@ -98,13 +98,6 @@
 ![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/interactions.jpg)
 ![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/correlation.jpg)
 
-
-<div style="background-color:#00AA6C; color:white; text-align:center">
-    <h2>Database structure:</h2>
-</div>
-
-![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/db_diagram.png)
-
 <div style="text-align:left">
     <h3>Description of Tables in Database:</h3>
     <p><strong>Cities</strong></p>
@@ -160,6 +153,12 @@
     </li>
     </ul>
 </div>
+
+<div style="background-color:#00AA6C; color:white; text-align:center">
+    <h2>Database structure:</h2>
+</div>
+
+![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/db_diagram.png)
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Contributors</h2>
