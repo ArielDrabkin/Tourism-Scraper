@@ -89,14 +89,14 @@
 </ul>
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
-    <h2>Example for the output report:</h2>
+    <h2>Examples from the output report:</h2>
 </div>
 
-![city](https://github.com/ArielDrabkin/Tourism_Scraper/city.jpg)
-![words](https://github.com/ArielDrabkin/Tourism_Scraper/words.jpg)
-![stats](https://github.com/ArielDrabkin/Tourism_Scraper/stats.jpg)
-![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/interactions.jpg)
-![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/correlation.jpg)
+![city](C:\Users\ariel\TripAdvisor_webscraper\city.jpg)
+![words](C:\Users\ariel\TripAdvisor_webscraper\words.jpg)
+![stats](C:\Users\ariel\TripAdvisor_webscraper\stats.jpg)
+![interactions](C:\Users\ariel\TripAdvisor_webscraper\interactions.jpg)
+![correlation.jpg](C:\Users\ariel\TripAdvisor_webscraper\correlation.jpg)
 
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
