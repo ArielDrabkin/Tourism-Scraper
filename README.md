@@ -92,11 +92,11 @@
     <h2>Example for the output report:</h2>
 </div>
 
-![city](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/city.jpg)
-![words](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/cords.jpg)
-![stats](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/stats.jpg)
-![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/interactions.jpg)
-![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/correlation.jpg.jpg)
+![city](https://github.com/ArielDrabkin/Tourism_Scraper/city.jpg)
+![words](https://github.com/ArielDrabkin/Tourism_Scraper/words.jpg)
+![stats](https://github.com/ArielDrabkin/Tourism_Scraper/stats.jpg)
+![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/interactions.jpg)
+![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/correlation.jpg)
 
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
