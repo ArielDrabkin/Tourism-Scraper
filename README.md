@@ -92,11 +92,11 @@
     <h2>Examples from the output report:</h2>
 </div>
 
-![city](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/city.jpg)
-![words](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/words.png)
-![stats](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/stats.jpg)
-![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/interactions.jpg)
-![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/correlation.jpg)
+![city](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/city.jpg)
+![words](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/words.png)
+![stats](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/stats.jpg)
+![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/interactions.jpg)
+![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/correlation.jpg)
 
 <div style="text-align:left">
     <h3>Description of Tables in Database:</h3>
@@ -158,7 +158,7 @@
     <h2>Database structure:</h2>
 </div>
 
-![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/Images/blob/master/db_diagram.png)
+![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/blob/master/Images/db_diagram.png)
 
 <div style="background-color:#00AA6C; color:white; text-align:center">
     <h2>Contributors</h2>
