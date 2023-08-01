@@ -115,7 +115,7 @@ def already_recorded(data_table, var):
     """
     with pymysql.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE) as conn:
         c = conn.cursor()
-        c.execute('SELECT * FROM {} WHERE name="{}";'.format(data_table, str(var)))
+        c.execute('SELECT * FROM {} WHERE name="{}";'.format(data_table, var))
         existing_records = c.fetchall()
         if existing_records is None or len(existing_records) == 0:
             return False

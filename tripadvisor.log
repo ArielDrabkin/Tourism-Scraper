@@ -1,0 +1,1544 @@
+2023-08-01 17:03:44,493 scrape-log INFO - checking_inputs - Will start working on retrieving data for meteorological and museum attractions data in Paris, Seoul, Cairo.
+2023-08-01 17:03:56,852 scrape-log INFO - storing_data - Received 120 urls for the attractions of Paris
+2023-08-01 17:04:09,239 scrape-log INFO - storing_data - Received 120 urls for the attractions of Seoul
+2023-08-01 17:11:06,638 scrape-log INFO - storing_data - Received 120 urls for the attractions of Cairo
+2023-08-01 17:11:08,848 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-08-01 17:11:09,078 scrape-log INFO - attraction_data_update - Data from url #1 successfully retrieved
+2023-08-01 17:11:09,078 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-08-01 17:11:09,387 scrape-log INFO - attraction_data_update - Data from url #2 successfully retrieved
+2023-08-01 17:11:09,387 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-08-01 17:11:09,610 scrape-log INFO - attraction_data_update - Data from url #3 successfully retrieved
+2023-08-01 17:11:09,610 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-08-01 17:11:09,835 scrape-log INFO - attraction_data_update - Data from url #4 successfully retrieved
+2023-08-01 17:11:09,835 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-08-01 17:11:10,013 scrape-log INFO - attraction_data_update - Data from url #5 successfully retrieved
+2023-08-01 17:11:11,826 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-08-01 17:11:12,141 scrape-log INFO - attraction_data_update - Data from url #6 successfully retrieved
+2023-08-01 17:11:12,141 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-08-01 17:11:12,344 scrape-log INFO - attraction_data_update - Data from url #7 successfully retrieved
+2023-08-01 17:11:12,344 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-08-01 17:11:12,555 scrape-log INFO - attraction_data_update - Data from url #8 successfully retrieved
+2023-08-01 17:11:12,555 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-08-01 17:11:12,831 scrape-log INFO - attraction_data_update - Data from url #9 successfully retrieved
+2023-08-01 17:11:12,832 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-08-01 17:11:13,019 scrape-log INFO - attraction_data_update - Data from url #10 successfully retrieved
+2023-08-01 17:11:15,039 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-08-01 17:11:15,249 scrape-log INFO - attraction_data_update - Data from url #11 successfully retrieved
+2023-08-01 17:11:15,249 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-08-01 17:11:15,531 scrape-log INFO - attraction_data_update - Data from url #12 successfully retrieved
+2023-08-01 17:11:15,531 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-08-01 17:11:15,746 scrape-log INFO - attraction_data_update - Data from url #13 successfully retrieved
+2023-08-01 17:11:15,747 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-08-01 17:11:15,946 scrape-log INFO - attraction_data_update - Data from url #14 successfully retrieved
+2023-08-01 17:11:15,946 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-08-01 17:11:16,215 scrape-log INFO - attraction_data_update - Data from url #15 successfully retrieved
+2023-08-01 17:11:17,930 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-08-01 17:11:18,137 scrape-log INFO - attraction_data_update - Data from url #16 successfully retrieved
+2023-08-01 17:11:18,137 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-08-01 17:11:18,315 scrape-log INFO - attraction_data_update - Data from url #17 successfully retrieved
+2023-08-01 17:11:18,315 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-08-01 17:11:18,600 scrape-log INFO - attraction_data_update - Data from url #18 successfully retrieved
+2023-08-01 17:11:18,600 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-08-01 17:11:18,811 scrape-log INFO - attraction_data_update - Data from url #19 successfully retrieved
+2023-08-01 17:11:18,811 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-08-01 17:11:18,987 scrape-log INFO - attraction_data_update - Data from url #20 successfully retrieved
+2023-08-01 17:11:20,576 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-08-01 17:11:20,887 scrape-log INFO - attraction_data_update - Data from url #21 successfully retrieved
+2023-08-01 17:11:20,887 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-08-01 17:11:21,090 scrape-log INFO - attraction_data_update - Data from url #22 successfully retrieved
+2023-08-01 17:11:21,090 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-08-01 17:11:21,265 scrape-log INFO - attraction_data_update - Data from url #23 successfully retrieved
+2023-08-01 17:11:21,265 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-08-01 17:11:21,568 scrape-log INFO - attraction_data_update - Data from url #24 successfully retrieved
+2023-08-01 17:11:21,568 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-08-01 17:11:21,777 scrape-log INFO - attraction_data_update - Data from url #25 successfully retrieved
+2023-08-01 17:11:23,782 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-08-01 17:11:23,950 scrape-log INFO - attraction_data_update - Data from url #26 successfully retrieved
+2023-08-01 17:11:23,950 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-08-01 17:11:24,236 scrape-log INFO - attraction_data_update - Data from url #27 successfully retrieved
+2023-08-01 17:11:24,236 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-08-01 17:11:24,403 scrape-log INFO - attraction_data_update - Data from url #28 successfully retrieved
+2023-08-01 17:11:24,404 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-08-01 17:11:24,535 scrape-log INFO - attraction_data_update - Data from url #29 successfully retrieved
+2023-08-01 17:11:24,536 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-08-01 17:11:24,699 scrape-log INFO - attraction_data_update - Data from url #30 successfully retrieved
+2023-08-01 17:11:27,010 scrape-log INFO - attractions_data - Start retrieving attraction information from url #31
+2023-08-01 17:11:27,293 scrape-log INFO - attraction_data_update - Data from url #31 successfully retrieved
+2023-08-01 17:11:27,293 scrape-log INFO - attractions_data - Start retrieving attraction information from url #32
+2023-08-01 17:11:27,473 scrape-log INFO - attraction_data_update - Data from url #32 successfully retrieved
+2023-08-01 17:11:27,473 scrape-log INFO - attractions_data - Start retrieving attraction information from url #33
+2023-08-01 17:11:27,626 scrape-log INFO - attraction_data_update - Data from url #33 successfully retrieved
+2023-08-01 17:11:27,626 scrape-log INFO - attractions_data - Start retrieving attraction information from url #34
+2023-08-01 17:11:27,873 scrape-log INFO - attraction_data_update - Data from url #34 successfully retrieved
+2023-08-01 17:11:27,873 scrape-log INFO - attractions_data - Start retrieving attraction information from url #35
+2023-08-01 17:11:28,051 scrape-log INFO - attraction_data_update - Data from url #35 successfully retrieved
+2023-08-01 17:11:29,821 scrape-log INFO - attractions_data - Start retrieving attraction information from url #36
+2023-08-01 17:11:29,972 scrape-log INFO - attraction_data_update - Data from url #36 successfully retrieved
+2023-08-01 17:11:29,972 scrape-log INFO - attractions_data - Start retrieving attraction information from url #37
+2023-08-01 17:11:30,126 scrape-log INFO - attraction_data_update - Data from url #37 successfully retrieved
+2023-08-01 17:11:30,126 scrape-log INFO - attractions_data - Start retrieving attraction information from url #38
+2023-08-01 17:11:30,409 scrape-log INFO - attraction_data_update - Data from url #38 successfully retrieved
+2023-08-01 17:11:30,409 scrape-log INFO - attractions_data - Start retrieving attraction information from url #39
+2023-08-01 17:11:30,569 scrape-log INFO - attraction_data_update - Data from url #39 successfully retrieved
+2023-08-01 17:11:30,569 scrape-log INFO - attractions_data - Start retrieving attraction information from url #40
+2023-08-01 17:11:30,758 scrape-log INFO - attraction_data_update - Data from url #40 successfully retrieved
+2023-08-01 17:11:32,456 scrape-log INFO - attractions_data - Start retrieving attraction information from url #41
+2023-08-01 17:11:32,748 scrape-log INFO - attraction_data_update - Data from url #41 successfully retrieved
+2023-08-01 17:11:32,748 scrape-log INFO - attractions_data - Start retrieving attraction information from url #42
+2023-08-01 17:11:32,909 scrape-log INFO - attraction_data_update - Data from url #42 successfully retrieved
+2023-08-01 17:11:32,909 scrape-log INFO - attractions_data - Start retrieving attraction information from url #43
+2023-08-01 17:11:33,075 scrape-log INFO - attraction_data_update - Data from url #43 successfully retrieved
+2023-08-01 17:11:33,075 scrape-log INFO - attractions_data - Start retrieving attraction information from url #44
+2023-08-01 17:11:33,246 scrape-log INFO - attraction_data_update - Data from url #44 successfully retrieved
+2023-08-01 17:11:33,246 scrape-log INFO - attractions_data - Start retrieving attraction information from url #45
+2023-08-01 17:11:33,517 scrape-log INFO - attraction_data_update - Data from url #45 successfully retrieved
+2023-08-01 17:11:35,581 scrape-log INFO - attractions_data - Start retrieving attraction information from url #46
+2023-08-01 17:11:35,746 scrape-log INFO - attraction_data_update - Data from url #46 successfully retrieved
+2023-08-01 17:11:35,746 scrape-log INFO - attractions_data - Start retrieving attraction information from url #47
+2023-08-01 17:11:35,908 scrape-log INFO - attraction_data_update - Data from url #47 successfully retrieved
+2023-08-01 17:11:35,908 scrape-log INFO - attractions_data - Start retrieving attraction information from url #48
+2023-08-01 17:11:36,173 scrape-log INFO - attraction_data_update - Data from url #48 successfully retrieved
+2023-08-01 17:11:36,173 scrape-log INFO - attractions_data - Start retrieving attraction information from url #49
+2023-08-01 17:11:36,365 scrape-log INFO - attraction_data_update - Data from url #49 successfully retrieved
+2023-08-01 17:11:36,365 scrape-log INFO - attractions_data - Start retrieving attraction information from url #50
+2023-08-01 17:11:36,541 scrape-log INFO - attraction_data_update - Data from url #50 successfully retrieved
+2023-08-01 17:11:38,684 scrape-log INFO - attractions_data - Start retrieving attraction information from url #51
+2023-08-01 17:11:38,851 scrape-log INFO - attraction_data_update - Data from url #51 successfully retrieved
+2023-08-01 17:11:38,851 scrape-log INFO - attractions_data - Start retrieving attraction information from url #52
+2023-08-01 17:11:39,119 scrape-log INFO - attraction_data_update - Data from url #52 successfully retrieved
+2023-08-01 17:11:39,119 scrape-log INFO - attractions_data - Start retrieving attraction information from url #53
+2023-08-01 17:11:39,267 scrape-log INFO - attraction_data_update - Data from url #53 successfully retrieved
+2023-08-01 17:11:39,267 scrape-log INFO - attractions_data - Start retrieving attraction information from url #54
+2023-08-01 17:11:39,492 scrape-log INFO - attraction_data_update - Data from url #54 successfully retrieved
+2023-08-01 17:11:39,492 scrape-log INFO - attractions_data - Start retrieving attraction information from url #55
+2023-08-01 17:11:39,763 scrape-log INFO - attraction_data_update - Data from url #55 successfully retrieved
+2023-08-01 17:11:41,815 scrape-log INFO - attractions_data - Start retrieving attraction information from url #56
+2023-08-01 17:11:41,953 scrape-log INFO - attraction_data_update - Data from url #56 successfully retrieved
+2023-08-01 17:11:41,953 scrape-log INFO - attractions_data - Start retrieving attraction information from url #57
+2023-08-01 17:11:42,094 scrape-log INFO - attraction_data_update - Data from url #57 successfully retrieved
+2023-08-01 17:11:42,096 scrape-log INFO - attractions_data - Start retrieving attraction information from url #58
+2023-08-01 17:11:42,262 scrape-log INFO - attraction_data_update - Data from url #58 successfully retrieved
+2023-08-01 17:11:42,262 scrape-log INFO - attractions_data - Start retrieving attraction information from url #59
+2023-08-01 17:11:42,530 scrape-log INFO - attraction_data_update - Data from url #59 successfully retrieved
+2023-08-01 17:11:42,530 scrape-log INFO - attractions_data - Start retrieving attraction information from url #60
+2023-08-01 17:11:42,707 scrape-log INFO - attraction_data_update - Data from url #60 successfully retrieved
+2023-08-01 17:11:44,442 scrape-log INFO - attractions_data - Start retrieving attraction information from url #61
+2023-08-01 17:11:44,593 scrape-log INFO - attraction_data_update - Data from url #61 successfully retrieved
+2023-08-01 17:11:44,593 scrape-log INFO - attractions_data - Start retrieving attraction information from url #62
+2023-08-01 17:11:44,840 scrape-log INFO - attraction_data_update - Data from url #62 successfully retrieved
+2023-08-01 17:11:44,840 scrape-log INFO - attractions_data - Start retrieving attraction information from url #63
+2023-08-01 17:11:45,022 scrape-log INFO - attraction_data_update - Data from url #63 successfully retrieved
+2023-08-01 17:11:45,022 scrape-log INFO - attractions_data - Start retrieving attraction information from url #64
+2023-08-01 17:11:45,170 scrape-log INFO - attraction_data_update - Data from url #64 successfully retrieved
+2023-08-01 17:11:45,170 scrape-log INFO - attractions_data - Start retrieving attraction information from url #65
+2023-08-01 17:11:45,308 scrape-log INFO - attraction_data_update - Data from url #65 successfully retrieved
+2023-08-01 17:11:46,875 scrape-log INFO - attractions_data - Start retrieving attraction information from url #66
+2023-08-01 17:11:47,150 scrape-log INFO - attraction_data_update - Data from url #66 successfully retrieved
+2023-08-01 17:11:47,150 scrape-log INFO - attractions_data - Start retrieving attraction information from url #67
+2023-08-01 17:11:47,338 scrape-log INFO - attraction_data_update - Data from url #67 successfully retrieved
+2023-08-01 17:11:47,338 scrape-log INFO - attractions_data - Start retrieving attraction information from url #68
+2023-08-01 17:11:47,515 scrape-log INFO - attraction_data_update - Data from url #68 successfully retrieved
+2023-08-01 17:11:47,515 scrape-log INFO - attractions_data - Start retrieving attraction information from url #69
+2023-08-01 17:11:47,751 scrape-log INFO - attraction_data_update - Data from url #69 successfully retrieved
+2023-08-01 17:11:47,751 scrape-log INFO - attractions_data - Start retrieving attraction information from url #70
+2023-08-01 17:11:47,876 scrape-log INFO - attraction_data_update - Data from url #70 successfully retrieved
+2023-08-01 17:11:49,631 scrape-log INFO - attractions_data - Start retrieving attraction information from url #71
+2023-08-01 17:11:49,796 scrape-log INFO - attraction_data_update - Data from url #71 successfully retrieved
+2023-08-01 17:11:49,796 scrape-log INFO - attractions_data - Start retrieving attraction information from url #72
+2023-08-01 17:11:49,965 scrape-log INFO - attraction_data_update - Data from url #72 successfully retrieved
+2023-08-01 17:11:49,965 scrape-log INFO - attractions_data - Start retrieving attraction information from url #73
+2023-08-01 17:11:50,247 scrape-log INFO - attraction_data_update - Data from url #73 successfully retrieved
+2023-08-01 17:11:50,247 scrape-log INFO - attractions_data - Start retrieving attraction information from url #74
+2023-08-01 17:11:50,370 scrape-log INFO - attraction_data_update - Data from url #74 successfully retrieved
+2023-08-01 17:11:50,370 scrape-log INFO - attractions_data - Start retrieving attraction information from url #75
+2023-08-01 17:11:50,523 scrape-log INFO - attraction_data_update - Data from url #75 successfully retrieved
+2023-08-01 17:11:55,651 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:00,805 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:05,908 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:11,009 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:16,112 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:21,271 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:26,376 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:31,482 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:36,595 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:41,710 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:46,796 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:51,946 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:12:57,037 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:02,133 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:07,235 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:12,385 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:17,489 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:22,654 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:27,759 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:32,848 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:37,966 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:43,053 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:48,162 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:53,244 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:13:58,338 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:03,429 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:08,528 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:13,622 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:18,720 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:23,843 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:28,960 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:34,106 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:39,252 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:44,383 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:49,494 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:54,588 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:14:59,687 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:04,790 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:09,912 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:15,011 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:20,132 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:25,281 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:30,375 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:35,461 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:40,576 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:45,726 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:50,847 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:55,934 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:15:58,291 scrape-log INFO - attractions_data - Start retrieving attraction information from url #76
+2023-08-01 17:15:58,594 scrape-log INFO - attraction_data_update - Data from url #76 successfully retrieved
+2023-08-01 17:15:58,594 scrape-log INFO - attractions_data - Start retrieving attraction information from url #77
+2023-08-01 17:15:58,771 scrape-log INFO - attraction_data_update - Data from url #77 successfully retrieved
+2023-08-01 17:15:58,772 scrape-log INFO - attractions_data - Start retrieving attraction information from url #78
+2023-08-01 17:15:58,936 scrape-log INFO - attraction_data_update - Data from url #78 successfully retrieved
+2023-08-01 17:15:58,936 scrape-log INFO - attractions_data - Start retrieving attraction information from url #79
+2023-08-01 17:15:59,094 scrape-log INFO - attraction_data_update - Data from url #79 successfully retrieved
+2023-08-01 17:15:59,094 scrape-log INFO - attractions_data - Start retrieving attraction information from url #80
+2023-08-01 17:15:59,369 scrape-log INFO - attraction_data_update - Data from url #80 successfully retrieved
+2023-08-01 17:16:01,358 scrape-log INFO - attractions_data - Start retrieving attraction information from url #81
+2023-08-01 17:16:01,514 scrape-log INFO - attraction_data_update - Data from url #81 successfully retrieved
+2023-08-01 17:16:01,514 scrape-log INFO - attractions_data - Start retrieving attraction information from url #82
+2023-08-01 17:16:01,681 scrape-log INFO - attraction_data_update - Data from url #82 successfully retrieved
+2023-08-01 17:16:01,681 scrape-log INFO - attractions_data - Start retrieving attraction information from url #83
+2023-08-01 17:16:01,833 scrape-log INFO - attraction_data_update - Data from url #83 successfully retrieved
+2023-08-01 17:16:01,833 scrape-log INFO - attractions_data - Start retrieving attraction information from url #84
+2023-08-01 17:16:02,112 scrape-log INFO - attraction_data_update - Data from url #84 successfully retrieved
+2023-08-01 17:16:02,112 scrape-log INFO - attractions_data - Start retrieving attraction information from url #85
+2023-08-01 17:16:02,274 scrape-log INFO - attraction_data_update - Data from url #85 successfully retrieved
+2023-08-01 17:16:04,409 scrape-log INFO - attractions_data - Start retrieving attraction information from url #86
+2023-08-01 17:16:04,556 scrape-log INFO - attraction_data_update - Data from url #86 successfully retrieved
+2023-08-01 17:16:04,556 scrape-log INFO - attractions_data - Start retrieving attraction information from url #87
+2023-08-01 17:16:04,790 scrape-log INFO - attraction_data_update - Data from url #87 successfully retrieved
+2023-08-01 17:16:04,791 scrape-log INFO - attractions_data - Start retrieving attraction information from url #88
+2023-08-01 17:16:04,923 scrape-log INFO - attraction_data_update - Data from url #88 successfully retrieved
+2023-08-01 17:16:04,923 scrape-log INFO - attractions_data - Start retrieving attraction information from url #89
+2023-08-01 17:16:05,107 scrape-log INFO - attraction_data_update - Data from url #89 successfully retrieved
+2023-08-01 17:16:05,107 scrape-log INFO - attractions_data - Start retrieving attraction information from url #90
+2023-08-01 17:16:05,244 scrape-log INFO - attraction_data_update - Data from url #90 successfully retrieved
+2023-08-01 17:16:07,263 scrape-log INFO - attractions_data - Start retrieving attraction information from url #91
+2023-08-01 17:16:07,525 scrape-log INFO - attraction_data_update - Data from url #91 successfully retrieved
+2023-08-01 17:16:07,525 scrape-log INFO - attractions_data - Start retrieving attraction information from url #92
+2023-08-01 17:16:07,668 scrape-log INFO - attraction_data_update - Data from url #92 successfully retrieved
+2023-08-01 17:16:07,668 scrape-log INFO - attractions_data - Start retrieving attraction information from url #93
+2023-08-01 17:16:07,852 scrape-log INFO - attraction_data_update - Data from url #93 successfully retrieved
+2023-08-01 17:16:07,852 scrape-log INFO - attractions_data - Start retrieving attraction information from url #94
+2023-08-01 17:16:07,979 scrape-log INFO - attraction_data_update - Data from url #94 successfully retrieved
+2023-08-01 17:16:07,979 scrape-log INFO - attractions_data - Start retrieving attraction information from url #95
+2023-08-01 17:16:08,266 scrape-log INFO - attraction_data_update - Data from url #95 successfully retrieved
+2023-08-01 17:16:10,211 scrape-log INFO - attractions_data - Start retrieving attraction information from url #96
+2023-08-01 17:16:10,372 scrape-log INFO - attraction_data_update - Data from url #96 successfully retrieved
+2023-08-01 17:16:10,372 scrape-log INFO - attractions_data - Start retrieving attraction information from url #97
+2023-08-01 17:16:10,520 scrape-log INFO - attraction_data_update - Data from url #97 successfully retrieved
+2023-08-01 17:16:10,520 scrape-log INFO - attractions_data - Start retrieving attraction information from url #98
+2023-08-01 17:16:10,691 scrape-log INFO - attraction_data_update - Data from url #98 successfully retrieved
+2023-08-01 17:16:10,691 scrape-log INFO - attractions_data - Start retrieving attraction information from url #99
+2023-08-01 17:16:10,939 scrape-log INFO - attraction_data_update - Data from url #99 successfully retrieved
+2023-08-01 17:16:10,939 scrape-log INFO - attractions_data - Start retrieving attraction information from url #100
+2023-08-01 17:16:11,092 scrape-log INFO - attraction_data_update - Data from url #100 successfully retrieved
+2023-08-01 17:16:13,164 scrape-log INFO - attractions_data - Start retrieving attraction information from url #101
+2023-08-01 17:16:13,320 scrape-log INFO - attraction_data_update - Data from url #101 successfully retrieved
+2023-08-01 17:16:13,320 scrape-log INFO - attractions_data - Start retrieving attraction information from url #102
+2023-08-01 17:16:13,467 scrape-log INFO - attraction_data_update - Data from url #102 successfully retrieved
+2023-08-01 17:16:13,468 scrape-log INFO - attractions_data - Start retrieving attraction information from url #103
+2023-08-01 17:16:13,744 scrape-log INFO - attraction_data_update - Data from url #103 successfully retrieved
+2023-08-01 17:16:13,744 scrape-log INFO - attractions_data - Start retrieving attraction information from url #104
+2023-08-01 17:16:13,904 scrape-log INFO - attraction_data_update - Data from url #104 successfully retrieved
+2023-08-01 17:16:13,904 scrape-log INFO - attractions_data - Start retrieving attraction information from url #105
+2023-08-01 17:16:14,068 scrape-log INFO - attraction_data_update - Data from url #105 successfully retrieved
+2023-08-01 17:16:15,751 scrape-log INFO - attractions_data - Start retrieving attraction information from url #106
+2023-08-01 17:16:16,009 scrape-log INFO - attraction_data_update - Data from url #106 successfully retrieved
+2023-08-01 17:16:16,009 scrape-log INFO - attractions_data - Start retrieving attraction information from url #107
+2023-08-01 17:16:16,163 scrape-log INFO - attraction_data_update - Data from url #107 successfully retrieved
+2023-08-01 17:16:16,164 scrape-log INFO - attractions_data - Start retrieving attraction information from url #108
+2023-08-01 17:16:16,349 scrape-log INFO - attraction_data_update - Data from url #108 successfully retrieved
+2023-08-01 17:16:16,349 scrape-log INFO - attractions_data - Start retrieving attraction information from url #109
+2023-08-01 17:16:16,507 scrape-log INFO - attraction_data_update - Data from url #109 successfully retrieved
+2023-08-01 17:16:16,507 scrape-log INFO - attractions_data - Start retrieving attraction information from url #110
+2023-08-01 17:16:16,783 scrape-log INFO - attraction_data_update - Data from url #110 successfully retrieved
+2023-08-01 17:16:19,288 scrape-log INFO - attractions_data - Start retrieving attraction information from url #111
+2023-08-01 17:16:19,430 scrape-log INFO - attraction_data_update - Data from url #111 successfully retrieved
+2023-08-01 17:16:19,430 scrape-log INFO - attractions_data - Start retrieving attraction information from url #112
+2023-08-01 17:16:19,571 scrape-log INFO - attraction_data_update - Data from url #112 successfully retrieved
+2023-08-01 17:16:19,571 scrape-log INFO - attractions_data - Start retrieving attraction information from url #113
+2023-08-01 17:16:19,840 scrape-log INFO - attraction_data_update - Data from url #113 successfully retrieved
+2023-08-01 17:16:19,840 scrape-log INFO - attractions_data - Start retrieving attraction information from url #114
+2023-08-01 17:16:19,965 scrape-log INFO - attraction_data_update - Data from url #114 successfully retrieved
+2023-08-01 17:16:19,965 scrape-log INFO - attractions_data - Start retrieving attraction information from url #115
+2023-08-01 17:16:20,106 scrape-log INFO - attraction_data_update - Data from url #115 successfully retrieved
+2023-08-01 17:16:22,257 scrape-log INFO - attractions_data - Start retrieving attraction information from url #116
+2023-08-01 17:16:22,448 scrape-log INFO - attraction_data_update - Data from url #116 successfully retrieved
+2023-08-01 17:16:22,448 scrape-log INFO - attractions_data - Start retrieving attraction information from url #117
+2023-08-01 17:16:22,697 scrape-log INFO - attraction_data_update - Data from url #117 successfully retrieved
+2023-08-01 17:16:22,697 scrape-log INFO - attractions_data - Start retrieving attraction information from url #118
+2023-08-01 17:16:22,851 scrape-log INFO - attraction_data_update - Data from url #118 successfully retrieved
+2023-08-01 17:16:22,851 scrape-log INFO - attractions_data - Start retrieving attraction information from url #119
+2023-08-01 17:16:23,071 scrape-log INFO - attraction_data_update - Data from url #119 successfully retrieved
+2023-08-01 17:16:23,071 scrape-log INFO - attractions_data - Start retrieving attraction information from url #120
+2023-08-01 17:16:23,240 scrape-log INFO - attraction_data_update - Data from url #120 successfully retrieved
+2023-08-01 17:16:25,273 scrape-log INFO - attractions_data - Start retrieving attraction information from url #121
+2023-08-01 17:16:25,592 scrape-log INFO - attraction_data_update - Data from url #121 successfully retrieved
+2023-08-01 17:16:25,592 scrape-log INFO - attractions_data - Start retrieving attraction information from url #122
+2023-08-01 17:16:25,762 scrape-log INFO - attraction_data_update - Data from url #122 successfully retrieved
+2023-08-01 17:16:25,763 scrape-log INFO - attractions_data - Start retrieving attraction information from url #123
+2023-08-01 17:16:25,919 scrape-log INFO - attraction_data_update - Data from url #123 successfully retrieved
+2023-08-01 17:16:25,920 scrape-log INFO - attractions_data - Start retrieving attraction information from url #124
+2023-08-01 17:16:26,186 scrape-log INFO - attraction_data_update - Data from url #124 successfully retrieved
+2023-08-01 17:16:26,186 scrape-log INFO - attractions_data - Start retrieving attraction information from url #125
+2023-08-01 17:16:26,345 scrape-log INFO - attraction_data_update - Data from url #125 successfully retrieved
+2023-08-01 17:16:29,464 scrape-log INFO - attractions_data - Start retrieving attraction information from url #126
+2023-08-01 17:16:29,637 scrape-log INFO - attraction_data_update - Data from url #126 successfully retrieved
+2023-08-01 17:16:29,638 scrape-log INFO - attractions_data - Start retrieving attraction information from url #127
+2023-08-01 17:16:29,935 scrape-log INFO - attraction_data_update - Data from url #127 successfully retrieved
+2023-08-01 17:16:29,935 scrape-log INFO - attractions_data - Start retrieving attraction information from url #128
+2023-08-01 17:16:30,093 scrape-log INFO - attraction_data_update - Data from url #128 successfully retrieved
+2023-08-01 17:16:30,093 scrape-log INFO - attractions_data - Start retrieving attraction information from url #129
+2023-08-01 17:16:30,275 scrape-log INFO - attraction_data_update - Data from url #129 successfully retrieved
+2023-08-01 17:16:30,275 scrape-log INFO - attractions_data - Start retrieving attraction information from url #130
+2023-08-01 17:16:30,554 scrape-log INFO - attraction_data_update - Data from url #130 successfully retrieved
+2023-08-01 17:16:32,429 scrape-log INFO - attractions_data - Start retrieving attraction information from url #131
+2023-08-01 17:16:32,607 scrape-log INFO - attraction_data_update - Data from url #131 successfully retrieved
+2023-08-01 17:16:32,607 scrape-log INFO - attractions_data - Start retrieving attraction information from url #132
+2023-08-01 17:16:32,773 scrape-log INFO - attraction_data_update - Data from url #132 successfully retrieved
+2023-08-01 17:16:32,773 scrape-log INFO - attractions_data - Start retrieving attraction information from url #133
+2023-08-01 17:16:32,932 scrape-log INFO - attraction_data_update - Data from url #133 successfully retrieved
+2023-08-01 17:16:32,932 scrape-log INFO - attractions_data - Start retrieving attraction information from url #134
+2023-08-01 17:16:33,260 scrape-log INFO - attraction_data_update - Data from url #134 successfully retrieved
+2023-08-01 17:16:33,260 scrape-log INFO - attractions_data - Start retrieving attraction information from url #135
+2023-08-01 17:16:33,434 scrape-log INFO - attraction_data_update - Data from url #135 successfully retrieved
+2023-08-01 17:16:35,353 scrape-log INFO - attractions_data - Start retrieving attraction information from url #136
+2023-08-01 17:16:35,550 scrape-log INFO - attraction_data_update - Data from url #136 successfully retrieved
+2023-08-01 17:16:35,550 scrape-log INFO - attractions_data - Start retrieving attraction information from url #137
+2023-08-01 17:16:35,747 scrape-log INFO - attraction_data_update - Data from url #137 successfully retrieved
+2023-08-01 17:16:35,747 scrape-log INFO - attractions_data - Start retrieving attraction information from url #138
+2023-08-01 17:16:36,041 scrape-log INFO - attraction_data_update - Data from url #138 successfully retrieved
+2023-08-01 17:16:36,042 scrape-log INFO - attractions_data - Start retrieving attraction information from url #139
+2023-08-01 17:16:36,198 scrape-log INFO - attraction_data_update - Data from url #139 successfully retrieved
+2023-08-01 17:16:36,198 scrape-log INFO - attractions_data - Start retrieving attraction information from url #140
+2023-08-01 17:16:36,363 scrape-log INFO - attraction_data_update - Data from url #140 successfully retrieved
+2023-08-01 17:16:38,154 scrape-log INFO - attractions_data - Start retrieving attraction information from url #141
+2023-08-01 17:16:38,479 scrape-log INFO - attraction_data_update - Data from url #141 successfully retrieved
+2023-08-01 17:16:38,480 scrape-log INFO - attractions_data - Start retrieving attraction information from url #142
+2023-08-01 17:16:38,716 scrape-log INFO - attraction_data_update - Data from url #142 successfully retrieved
+2023-08-01 17:16:38,717 scrape-log INFO - attractions_data - Start retrieving attraction information from url #143
+2023-08-01 17:16:38,982 scrape-log INFO - attraction_data_update - Data from url #143 successfully retrieved
+2023-08-01 17:16:38,982 scrape-log INFO - attractions_data - Start retrieving attraction information from url #144
+2023-08-01 17:16:39,521 scrape-log INFO - attraction_data_update - Data from url #144 successfully retrieved
+2023-08-01 17:16:39,521 scrape-log INFO - attractions_data - Start retrieving attraction information from url #145
+2023-08-01 17:16:39,713 scrape-log INFO - attraction_data_update - Data from url #145 successfully retrieved
+2023-08-01 17:16:41,838 scrape-log INFO - attractions_data - Start retrieving attraction information from url #146
+2023-08-01 17:16:42,066 scrape-log INFO - attraction_data_update - Data from url #146 successfully retrieved
+2023-08-01 17:16:42,066 scrape-log INFO - attractions_data - Start retrieving attraction information from url #147
+2023-08-01 17:16:42,309 scrape-log INFO - attraction_data_update - Data from url #147 successfully retrieved
+2023-08-01 17:16:42,309 scrape-log INFO - attractions_data - Start retrieving attraction information from url #148
+2023-08-01 17:16:42,642 scrape-log INFO - attraction_data_update - Data from url #148 successfully retrieved
+2023-08-01 17:16:42,643 scrape-log INFO - attractions_data - Start retrieving attraction information from url #149
+2023-08-01 17:16:42,819 scrape-log INFO - attraction_data_update - Data from url #149 successfully retrieved
+2023-08-01 17:16:42,819 scrape-log INFO - attractions_data - Start retrieving attraction information from url #150
+2023-08-01 17:16:43,014 scrape-log INFO - attraction_data_update - Data from url #150 successfully retrieved
+2023-08-01 17:16:45,621 scrape-log INFO - attractions_data - Start retrieving attraction information from url #151
+2023-08-01 17:16:46,189 scrape-log INFO - attraction_data_update - Data from url #151 successfully retrieved
+2023-08-01 17:16:46,189 scrape-log INFO - attractions_data - Start retrieving attraction information from url #152
+2023-08-01 17:16:46,427 scrape-log INFO - attraction_data_update - Data from url #152 successfully retrieved
+2023-08-01 17:16:46,428 scrape-log INFO - attractions_data - Start retrieving attraction information from url #153
+2023-08-01 17:16:46,637 scrape-log INFO - attraction_data_update - Data from url #153 successfully retrieved
+2023-08-01 17:16:46,638 scrape-log INFO - attractions_data - Start retrieving attraction information from url #154
+2023-08-01 17:16:46,818 scrape-log INFO - attraction_data_update - Data from url #154 successfully retrieved
+2023-08-01 17:16:46,818 scrape-log INFO - attractions_data - Start retrieving attraction information from url #155
+2023-08-01 17:16:47,113 scrape-log INFO - attraction_data_update - Data from url #155 successfully retrieved
+2023-08-01 17:16:49,277 scrape-log INFO - attractions_data - Start retrieving attraction information from url #156
+2023-08-01 17:16:49,441 scrape-log INFO - attraction_data_update - Data from url #156 successfully retrieved
+2023-08-01 17:16:49,441 scrape-log INFO - attractions_data - Start retrieving attraction information from url #157
+2023-08-01 17:16:49,602 scrape-log INFO - attraction_data_update - Data from url #157 successfully retrieved
+2023-08-01 17:16:49,602 scrape-log INFO - attractions_data - Start retrieving attraction information from url #158
+2023-08-01 17:16:49,756 scrape-log INFO - attraction_data_update - Data from url #158 successfully retrieved
+2023-08-01 17:16:49,757 scrape-log INFO - attractions_data - Start retrieving attraction information from url #159
+2023-08-01 17:16:50,021 scrape-log INFO - attraction_data_update - Data from url #159 successfully retrieved
+2023-08-01 17:16:50,021 scrape-log INFO - attractions_data - Start retrieving attraction information from url #160
+2023-08-01 17:16:50,190 scrape-log INFO - attraction_data_update - Data from url #160 successfully retrieved
+2023-08-01 17:16:55,274 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:00,368 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:05,481 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:10,565 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:15,660 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:20,773 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:25,905 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:30,994 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:36,103 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:41,228 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:46,334 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:51,450 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:17:56,617 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:01,719 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:06,843 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:11,948 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:17,050 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:22,137 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:27,308 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:32,397 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:37,508 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:42,604 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:47,727 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:52,892 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:18:58,028 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:03,166 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:08,370 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:13,616 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:18,739 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:23,925 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:29,091 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:34,185 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:39,344 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:44,523 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:49,636 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:54,730 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:19:59,829 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:20:04,956 scrape-log ERROR - attractions_data - Couldn't get response from attraction.
+2023-08-01 17:20:07,712 scrape-log INFO - attractions_data - Start retrieving attraction information from url #161
+2023-08-01 17:20:07,966 scrape-log INFO - attraction_data_update - Data from url #161 successfully retrieved
+2023-08-01 17:20:07,966 scrape-log INFO - attractions_data - Start retrieving attraction information from url #162
+2023-08-01 17:20:08,308 scrape-log INFO - attraction_data_update - Data from url #162 successfully retrieved
+2023-08-01 17:20:08,308 scrape-log INFO - attractions_data - Start retrieving attraction information from url #163
+2023-08-01 17:20:08,521 scrape-log INFO - attraction_data_update - Data from url #163 successfully retrieved
+2023-08-01 17:20:08,522 scrape-log INFO - attractions_data - Start retrieving attraction information from url #164
+2023-08-01 17:20:08,685 scrape-log INFO - attraction_data_update - Data from url #164 successfully retrieved
+2023-08-01 17:20:08,685 scrape-log INFO - attractions_data - Start retrieving attraction information from url #165
+2023-08-01 17:20:08,888 scrape-log INFO - attraction_data_update - Data from url #165 successfully retrieved
+2023-08-01 17:20:10,657 scrape-log INFO - attractions_data - Start retrieving attraction information from url #166
+2023-08-01 17:20:11,087 scrape-log INFO - attraction_data_update - Data from url #166 successfully retrieved
+2023-08-01 17:20:11,087 scrape-log INFO - attractions_data - Start retrieving attraction information from url #167
+2023-08-01 17:20:11,337 scrape-log INFO - attraction_data_update - Data from url #167 successfully retrieved
+2023-08-01 17:20:11,337 scrape-log INFO - attractions_data - Start retrieving attraction information from url #168
+2023-08-01 17:20:11,544 scrape-log INFO - attraction_data_update - Data from url #168 successfully retrieved
+2023-08-01 17:20:11,544 scrape-log INFO - attractions_data - Start retrieving attraction information from url #169
+2023-08-01 17:20:11,919 scrape-log INFO - attraction_data_update - Data from url #169 successfully retrieved
+2023-08-01 17:20:11,919 scrape-log INFO - attractions_data - Start retrieving attraction information from url #170
+2023-08-01 17:20:12,730 scrape-log INFO - attraction_data_update - Data from url #170 successfully retrieved
+2023-08-01 17:20:14,380 scrape-log INFO - attractions_data - Start retrieving attraction information from url #171
+2023-08-01 17:20:14,911 scrape-log INFO - attraction_data_update - Data from url #171 successfully retrieved
+2023-08-01 17:20:14,911 scrape-log INFO - attractions_data - Start retrieving attraction information from url #172
+2023-08-01 17:20:15,364 scrape-log INFO - attraction_data_update - Data from url #172 successfully retrieved
+2023-08-01 17:20:15,364 scrape-log INFO - attractions_data - Start retrieving attraction information from url #173
+2023-08-01 17:20:15,982 scrape-log INFO - attraction_data_update - Data from url #173 successfully retrieved
+2023-08-01 17:20:15,982 scrape-log INFO - attractions_data - Start retrieving attraction information from url #174
+2023-08-01 17:20:16,285 scrape-log INFO - attraction_data_update - Data from url #174 successfully retrieved
+2023-08-01 17:20:16,285 scrape-log INFO - attractions_data - Start retrieving attraction information from url #175
+2023-08-01 17:20:16,660 scrape-log INFO - attraction_data_update - Data from url #175 successfully retrieved
+2023-08-01 17:20:18,883 scrape-log INFO - attractions_data - Start retrieving attraction information from url #176
+2023-08-01 17:20:19,448 scrape-log INFO - attraction_data_update - Data from url #176 successfully retrieved
+2023-08-01 17:20:19,448 scrape-log INFO - attractions_data - Start retrieving attraction information from url #177
+2023-08-01 17:20:19,703 scrape-log INFO - attraction_data_update - Data from url #177 successfully retrieved
+2023-08-01 17:20:19,703 scrape-log INFO - attractions_data - Start retrieving attraction information from url #178
+2023-08-01 17:20:20,031 scrape-log INFO - attraction_data_update - Data from url #178 successfully retrieved
+2023-08-01 17:20:20,032 scrape-log INFO - attractions_data - Start retrieving attraction information from url #179
+2023-08-01 17:20:20,474 scrape-log INFO - attraction_data_update - Data from url #179 successfully retrieved
+2023-08-01 17:20:20,474 scrape-log INFO - attractions_data - Start retrieving attraction information from url #180
+2023-08-01 17:20:20,986 scrape-log INFO - attraction_data_update - Data from url #180 successfully retrieved
+2023-08-01 17:20:22,784 scrape-log INFO - attractions_data - Start retrieving attraction information from url #181
+2023-08-01 17:20:23,117 scrape-log INFO - attraction_data_update - Data from url #181 successfully retrieved
+2023-08-01 17:20:23,117 scrape-log INFO - attractions_data - Start retrieving attraction information from url #182
+2023-08-01 17:20:23,487 scrape-log INFO - attraction_data_update - Data from url #182 successfully retrieved
+2023-08-01 17:20:23,487 scrape-log INFO - attractions_data - Start retrieving attraction information from url #183
+2023-08-01 17:20:24,028 scrape-log INFO - attraction_data_update - Data from url #183 successfully retrieved
+2023-08-01 17:20:24,028 scrape-log INFO - attractions_data - Start retrieving attraction information from url #184
+2023-08-01 17:20:24,260 scrape-log INFO - attraction_data_update - Data from url #184 successfully retrieved
+2023-08-01 17:20:24,260 scrape-log INFO - attractions_data - Start retrieving attraction information from url #185
+2023-08-01 17:20:24,553 scrape-log INFO - attraction_data_update - Data from url #185 successfully retrieved
+2023-08-01 17:20:26,403 scrape-log INFO - attractions_data - Start retrieving attraction information from url #186
+2023-08-01 17:20:26,720 scrape-log INFO - attraction_data_update - Data from url #186 successfully retrieved
+2023-08-01 17:20:26,720 scrape-log INFO - attractions_data - Start retrieving attraction information from url #187
+2023-08-01 17:20:27,195 scrape-log INFO - attraction_data_update - Data from url #187 successfully retrieved
+2023-08-01 17:20:27,195 scrape-log INFO - attractions_data - Start retrieving attraction information from url #188
+2023-08-01 17:20:27,545 scrape-log INFO - attraction_data_update - Data from url #188 successfully retrieved
+2023-08-01 17:20:27,546 scrape-log INFO - attractions_data - Start retrieving attraction information from url #189
+2023-08-01 17:20:27,837 scrape-log INFO - attraction_data_update - Data from url #189 successfully retrieved
+2023-08-01 17:20:27,837 scrape-log INFO - attractions_data - Start retrieving attraction information from url #190
+2023-08-01 17:20:28,330 scrape-log INFO - attraction_data_update - Data from url #190 successfully retrieved
+2023-08-01 17:20:30,371 scrape-log INFO - attractions_data - Start retrieving attraction information from url #191
+2023-08-01 17:20:30,653 scrape-log INFO - attraction_data_update - Data from url #191 successfully retrieved
+2023-08-01 17:20:30,653 scrape-log INFO - attractions_data - Start retrieving attraction information from url #192
+2023-08-01 17:20:30,974 scrape-log INFO - attraction_data_update - Data from url #192 successfully retrieved
+2023-08-01 17:20:30,974 scrape-log INFO - attractions_data - Start retrieving attraction information from url #193
+2023-08-01 17:20:31,246 scrape-log INFO - attraction_data_update - Data from url #193 successfully retrieved
+2023-08-01 17:20:31,246 scrape-log INFO - attractions_data - Start retrieving attraction information from url #194
+2023-08-01 17:20:31,703 scrape-log INFO - attraction_data_update - Data from url #194 successfully retrieved
+2023-08-01 17:20:31,704 scrape-log INFO - attractions_data - Start retrieving attraction information from url #195
+2023-08-01 17:20:32,007 scrape-log INFO - attraction_data_update - Data from url #195 successfully retrieved
+2023-08-01 17:20:34,283 scrape-log INFO - attractions_data - Start retrieving attraction information from url #196
+2023-08-01 17:20:34,635 scrape-log INFO - attraction_data_update - Data from url #196 successfully retrieved
+2023-08-01 17:20:34,635 scrape-log INFO - attractions_data - Start retrieving attraction information from url #197
+2023-08-01 17:20:35,120 scrape-log INFO - attraction_data_update - Data from url #197 successfully retrieved
+2023-08-01 17:20:35,120 scrape-log INFO - attractions_data - Start retrieving attraction information from url #198
+2023-08-01 17:20:35,458 scrape-log INFO - attraction_data_update - Data from url #198 successfully retrieved
+2023-08-01 17:20:35,459 scrape-log INFO - attractions_data - Start retrieving attraction information from url #199
+2023-08-01 17:20:35,834 scrape-log INFO - attraction_data_update - Data from url #199 successfully retrieved
+2023-08-01 17:20:35,835 scrape-log INFO - attractions_data - Start retrieving attraction information from url #200
+2023-08-01 17:20:36,147 scrape-log INFO - attraction_data_update - Data from url #200 successfully retrieved
+2023-08-01 17:20:38,318 scrape-log INFO - attractions_data - Start retrieving attraction information from url #201
+2023-08-01 17:20:38,747 scrape-log INFO - attraction_data_update - Data from url #201 successfully retrieved
+2023-08-01 17:20:38,747 scrape-log INFO - attractions_data - Start retrieving attraction information from url #202
+2023-08-01 17:20:39,024 scrape-log INFO - attraction_data_update - Data from url #202 successfully retrieved
+2023-08-01 17:20:39,024 scrape-log INFO - attractions_data - Start retrieving attraction information from url #203
+2023-08-01 17:20:39,243 scrape-log INFO - attraction_data_update - Data from url #203 successfully retrieved
+2023-08-01 17:20:39,243 scrape-log INFO - attractions_data - Start retrieving attraction information from url #204
+2023-08-01 17:20:39,680 scrape-log INFO - attraction_data_update - Data from url #204 successfully retrieved
+2023-08-01 17:20:39,680 scrape-log INFO - attractions_data - Start retrieving attraction information from url #205
+2023-08-01 17:20:39,973 scrape-log INFO - attraction_data_update - Data from url #205 successfully retrieved
+2023-08-01 17:20:41,659 scrape-log INFO - attractions_data - Start retrieving attraction information from url #206
+2023-08-01 17:20:41,854 scrape-log INFO - attraction_data_update - Data from url #206 successfully retrieved
+2023-08-01 17:20:41,855 scrape-log INFO - attractions_data - Start retrieving attraction information from url #207
+2023-08-01 17:20:42,055 scrape-log INFO - attraction_data_update - Data from url #207 successfully retrieved
+2023-08-01 17:20:42,055 scrape-log INFO - attractions_data - Start retrieving attraction information from url #208
+2023-08-01 17:20:42,373 scrape-log INFO - attraction_data_update - Data from url #208 successfully retrieved
+2023-08-01 17:20:42,373 scrape-log INFO - attractions_data - Start retrieving attraction information from url #209
+2023-08-01 17:20:42,592 scrape-log INFO - attraction_data_update - Data from url #209 successfully retrieved
+2023-08-01 17:20:42,592 scrape-log INFO - attractions_data - Start retrieving attraction information from url #210
+2023-08-01 17:20:42,832 scrape-log INFO - attraction_data_update - Data from url #210 successfully retrieved
+2023-08-01 17:20:45,793 scrape-log INFO - attractions_data - Start retrieving attraction information from url #211
+2023-08-01 17:20:45,984 scrape-log INFO - attraction_data_update - Data from url #211 successfully retrieved
+2023-08-01 17:20:45,984 scrape-log INFO - attractions_data - Start retrieving attraction information from url #212
+2023-08-01 17:20:46,364 scrape-log INFO - attraction_data_update - Data from url #212 successfully retrieved
+2023-08-01 17:20:46,365 scrape-log INFO - attractions_data - Start retrieving attraction information from url #213
+2023-08-01 17:20:46,600 scrape-log INFO - attraction_data_update - Data from url #213 successfully retrieved
+2023-08-01 17:20:46,601 scrape-log INFO - attractions_data - Start retrieving attraction information from url #214
+2023-08-01 17:20:46,771 scrape-log INFO - attraction_data_update - Data from url #214 successfully retrieved
+2023-08-01 17:20:46,771 scrape-log INFO - attractions_data - Start retrieving attraction information from url #215
+2023-08-01 17:20:46,971 scrape-log INFO - attraction_data_update - Data from url #215 successfully retrieved
+2023-08-01 17:20:48,735 scrape-log INFO - attractions_data - Start retrieving attraction information from url #216
+2023-08-01 17:20:49,106 scrape-log INFO - attraction_data_update - Data from url #216 successfully retrieved
+2023-08-01 17:20:49,106 scrape-log INFO - attractions_data - Start retrieving attraction information from url #217
+2023-08-01 17:20:49,353 scrape-log INFO - attraction_data_update - Data from url #217 successfully retrieved
+2023-08-01 17:20:49,353 scrape-log INFO - attractions_data - Start retrieving attraction information from url #218
+2023-08-01 17:20:49,632 scrape-log INFO - attraction_data_update - Data from url #218 successfully retrieved
+2023-08-01 17:20:49,632 scrape-log INFO - attractions_data - Start retrieving attraction information from url #219
+2023-08-01 17:20:49,953 scrape-log INFO - attraction_data_update - Data from url #219 successfully retrieved
+2023-08-01 17:20:49,953 scrape-log INFO - attractions_data - Start retrieving attraction information from url #220
+2023-08-01 17:20:50,498 scrape-log INFO - attraction_data_update - Data from url #220 successfully retrieved
+2023-08-01 17:20:52,470 scrape-log INFO - attractions_data - Start retrieving attraction information from url #221
+2023-08-01 17:20:52,712 scrape-log INFO - attraction_data_update - Data from url #221 successfully retrieved
+2023-08-01 17:20:52,712 scrape-log INFO - attractions_data - Start retrieving attraction information from url #222
+2023-08-01 17:20:52,914 scrape-log INFO - attraction_data_update - Data from url #222 successfully retrieved
+2023-08-01 17:20:52,914 scrape-log INFO - attractions_data - Start retrieving attraction information from url #223
+2023-08-01 17:20:53,120 scrape-log INFO - attraction_data_update - Data from url #223 successfully retrieved
+2023-08-01 17:20:53,121 scrape-log INFO - attractions_data - Start retrieving attraction information from url #224
+2023-08-01 17:20:53,783 scrape-log INFO - attraction_data_update - Data from url #224 successfully retrieved
+2023-08-01 17:20:53,783 scrape-log INFO - attractions_data - Start retrieving attraction information from url #225
+2023-08-01 17:20:54,142 scrape-log INFO - attraction_data_update - Data from url #225 successfully retrieved
+2023-08-01 17:20:55,865 scrape-log INFO - attractions_data - Start retrieving attraction information from url #226
+2023-08-01 17:20:56,208 scrape-log INFO - attraction_data_update - Data from url #226 successfully retrieved
+2023-08-01 17:20:56,208 scrape-log INFO - attractions_data - Start retrieving attraction information from url #227
+2023-08-01 17:20:56,475 scrape-log INFO - attraction_data_update - Data from url #227 successfully retrieved
+2023-08-01 17:20:56,475 scrape-log INFO - attractions_data - Start retrieving attraction information from url #228
+2023-08-01 17:20:56,838 scrape-log INFO - attraction_data_update - Data from url #228 successfully retrieved
+2023-08-01 17:20:56,838 scrape-log INFO - attractions_data - Start retrieving attraction information from url #229
+2023-08-01 17:20:57,059 scrape-log INFO - attraction_data_update - Data from url #229 successfully retrieved
+2023-08-01 17:20:57,059 scrape-log INFO - attractions_data - Start retrieving attraction information from url #230
+2023-08-01 17:20:57,291 scrape-log INFO - attraction_data_update - Data from url #230 successfully retrieved
+2023-08-01 17:20:59,553 scrape-log INFO - attractions_data - Start retrieving attraction information from url #231
+2023-08-01 17:20:59,684 scrape-log INFO - attraction_data_update - Data from url #231 successfully retrieved
+2023-08-01 17:20:59,685 scrape-log INFO - attractions_data - Start retrieving attraction information from url #232
+2023-08-01 17:20:59,819 scrape-log INFO - attraction_data_update - Data from url #232 successfully retrieved
+2023-08-01 17:20:59,819 scrape-log INFO - attractions_data - Start retrieving attraction information from url #233
+2023-08-01 17:21:00,137 scrape-log INFO - attraction_data_update - Data from url #233 successfully retrieved
+2023-08-01 17:21:00,137 scrape-log INFO - attractions_data - Start retrieving attraction information from url #234
+2023-08-01 17:21:00,415 scrape-log INFO - attraction_data_update - Data from url #234 successfully retrieved
+2023-08-01 17:21:00,415 scrape-log INFO - attractions_data - Start retrieving attraction information from url #235
+2023-08-01 17:21:00,653 scrape-log INFO - attraction_data_update - Data from url #235 successfully retrieved
+2023-08-01 17:21:02,712 scrape-log INFO - attractions_data - Start retrieving attraction information from url #236
+2023-08-01 17:21:03,065 scrape-log INFO - attraction_data_update - Data from url #236 successfully retrieved
+2023-08-01 17:21:03,066 scrape-log INFO - attractions_data - Start retrieving attraction information from url #237
+2023-08-01 17:21:03,263 scrape-log INFO - attraction_data_update - Data from url #237 successfully retrieved
+2023-08-01 17:21:03,263 scrape-log INFO - attractions_data - Start retrieving attraction information from url #238
+2023-08-01 17:21:03,488 scrape-log INFO - attraction_data_update - Data from url #238 successfully retrieved
+2023-08-01 17:21:03,488 scrape-log INFO - attractions_data - Start retrieving attraction information from url #239
+2023-08-01 17:21:03,756 scrape-log INFO - attraction_data_update - Data from url #239 successfully retrieved
+2023-08-01 17:21:03,756 scrape-log INFO - attractions_data - Start retrieving attraction information from url #240
+2023-08-01 17:21:04,195 scrape-log INFO - attraction_data_update - Data from url #240 successfully retrieved
+2023-08-01 17:21:06,072 scrape-log INFO - attractions_data - Start retrieving attraction information from url #241
+2023-08-01 17:21:06,401 scrape-log INFO - attraction_data_update - Data from url #241 successfully retrieved
+2023-08-01 17:21:06,401 scrape-log INFO - attractions_data - Start retrieving attraction information from url #242
+2023-08-01 17:21:06,742 scrape-log INFO - attraction_data_update - Data from url #242 successfully retrieved
+2023-08-01 17:21:06,742 scrape-log INFO - attractions_data - Start retrieving attraction information from url #243
+2023-08-01 17:21:07,186 scrape-log INFO - attraction_data_update - Data from url #243 successfully retrieved
+2023-08-01 17:21:07,187 scrape-log INFO - attractions_data - Start retrieving attraction information from url #244
+2023-08-01 17:21:07,476 scrape-log INFO - attraction_data_update - Data from url #244 successfully retrieved
+2023-08-01 17:21:07,476 scrape-log INFO - attractions_data - Start retrieving attraction information from url #245
+2023-08-01 17:21:07,913 scrape-log INFO - attraction_data_update - Data from url #245 successfully retrieved
+2023-08-01 17:21:10,061 scrape-log INFO - attractions_data - Start retrieving attraction information from url #246
+2023-08-01 17:21:10,418 scrape-log INFO - attraction_data_update - Data from url #246 successfully retrieved
+2023-08-01 17:21:10,418 scrape-log INFO - attractions_data - Start retrieving attraction information from url #247
+2023-08-01 17:21:10,649 scrape-log INFO - attraction_data_update - Data from url #247 successfully retrieved
+2023-08-01 17:21:10,649 scrape-log INFO - attractions_data - Start retrieving attraction information from url #248
+2023-08-01 17:21:10,914 scrape-log INFO - attraction_data_update - Data from url #248 successfully retrieved
+2023-08-01 17:21:10,914 scrape-log INFO - attractions_data - Start retrieving attraction information from url #249
+2023-08-01 17:21:11,230 scrape-log INFO - attraction_data_update - Data from url #249 successfully retrieved
+2023-08-01 17:21:11,230 scrape-log INFO - attractions_data - Start retrieving attraction information from url #250
+2023-08-01 17:21:11,659 scrape-log INFO - attraction_data_update - Data from url #250 successfully retrieved
+2023-08-01 17:21:13,937 scrape-log INFO - attractions_data - Start retrieving attraction information from url #251
+2023-08-01 17:21:14,187 scrape-log INFO - attraction_data_update - Data from url #251 successfully retrieved
+2023-08-01 17:21:14,187 scrape-log INFO - attractions_data - Start retrieving attraction information from url #252
+2023-08-01 17:21:14,641 scrape-log INFO - attraction_data_update - Data from url #252 successfully retrieved
+2023-08-01 17:21:14,641 scrape-log INFO - attractions_data - Start retrieving attraction information from url #253
+2023-08-01 17:21:15,309 scrape-log INFO - attraction_data_update - Data from url #253 successfully retrieved
+2023-08-01 17:21:15,309 scrape-log INFO - attractions_data - Start retrieving attraction information from url #254
+2023-08-01 17:21:15,723 scrape-log INFO - attraction_data_update - Data from url #254 successfully retrieved
+2023-08-01 17:21:15,724 scrape-log INFO - attractions_data - Start retrieving attraction information from url #255
+2023-08-01 17:21:16,011 scrape-log INFO - attraction_data_update - Data from url #255 successfully retrieved
+2023-08-01 17:21:18,081 scrape-log INFO - attractions_data - Start retrieving attraction information from url #256
+2023-08-01 17:21:18,357 scrape-log INFO - attraction_data_update - Data from url #256 successfully retrieved
+2023-08-01 17:21:18,357 scrape-log INFO - attractions_data - Start retrieving attraction information from url #257
+2023-08-01 17:21:18,775 scrape-log INFO - attraction_data_update - Data from url #257 successfully retrieved
+2023-08-01 17:21:18,776 scrape-log INFO - attractions_data - Start retrieving attraction information from url #258
+2023-08-01 17:21:19,037 scrape-log INFO - attraction_data_update - Data from url #258 successfully retrieved
+2023-08-01 17:21:19,038 scrape-log INFO - attractions_data - Start retrieving attraction information from url #259
+2023-08-01 17:21:19,442 scrape-log INFO - attraction_data_update - Data from url #259 successfully retrieved
+2023-08-01 17:21:19,443 scrape-log INFO - attractions_data - Start retrieving attraction information from url #260
+2023-08-01 17:21:19,923 scrape-log INFO - attraction_data_update - Data from url #260 successfully retrieved
+2023-08-01 17:21:21,633 scrape-log INFO - attractions_data - Start retrieving attraction information from url #261
+2023-08-01 17:21:21,841 scrape-log INFO - attraction_data_update - Data from url #261 successfully retrieved
+2023-08-01 17:21:21,842 scrape-log INFO - attractions_data - Start retrieving attraction information from url #262
+2023-08-01 17:21:22,053 scrape-log INFO - attraction_data_update - Data from url #262 successfully retrieved
+2023-08-01 17:21:22,053 scrape-log INFO - attractions_data - Start retrieving attraction information from url #263
+2023-08-01 17:21:22,266 scrape-log INFO - attraction_data_update - Data from url #263 successfully retrieved
+2023-08-01 17:21:22,266 scrape-log INFO - attractions_data - Start retrieving attraction information from url #264
+2023-08-01 17:21:22,636 scrape-log INFO - attraction_data_update - Data from url #264 successfully retrieved
+2023-08-01 17:21:22,636 scrape-log INFO - attractions_data - Start retrieving attraction information from url #265
+2023-08-01 17:21:22,881 scrape-log INFO - attraction_data_update - Data from url #265 successfully retrieved
+2023-08-01 17:21:24,598 scrape-log INFO - attractions_data - Start retrieving attraction information from url #266
+2023-08-01 17:21:25,015 scrape-log INFO - attraction_data_update - Data from url #266 successfully retrieved
+2023-08-01 17:21:25,016 scrape-log INFO - attractions_data - Start retrieving attraction information from url #267
+2023-08-01 17:21:25,398 scrape-log INFO - attraction_data_update - Data from url #267 successfully retrieved
+2023-08-01 17:21:25,399 scrape-log INFO - attractions_data - Start retrieving attraction information from url #268
+2023-08-01 17:21:25,970 scrape-log INFO - attraction_data_update - Data from url #268 successfully retrieved
+2023-08-01 17:21:25,970 scrape-log INFO - attractions_data - Start retrieving attraction information from url #269
+2023-08-01 17:21:26,243 scrape-log INFO - attraction_data_update - Data from url #269 successfully retrieved
+2023-08-01 17:21:26,243 scrape-log INFO - attractions_data - Start retrieving attraction information from url #270
+2023-08-01 17:21:26,582 scrape-log INFO - attraction_data_update - Data from url #270 successfully retrieved
+2023-08-01 17:21:28,543 scrape-log INFO - attractions_data - Start retrieving attraction information from url #271
+2023-08-01 17:21:29,042 scrape-log INFO - attraction_data_update - Data from url #271 successfully retrieved
+2023-08-01 17:21:29,042 scrape-log INFO - attractions_data - Start retrieving attraction information from url #272
+2023-08-01 17:21:29,360 scrape-log INFO - attraction_data_update - Data from url #272 successfully retrieved
+2023-08-01 17:21:29,360 scrape-log INFO - attractions_data - Start retrieving attraction information from url #273
+2023-08-01 17:21:29,581 scrape-log INFO - attraction_data_update - Data from url #273 successfully retrieved
+2023-08-01 17:21:29,581 scrape-log INFO - attractions_data - Start retrieving attraction information from url #274
+2023-08-01 17:21:29,855 scrape-log INFO - attraction_data_update - Data from url #274 successfully retrieved
+2023-08-01 17:21:29,855 scrape-log INFO - attractions_data - Start retrieving attraction information from url #275
+2023-08-01 17:21:30,297 scrape-log INFO - attraction_data_update - Data from url #275 successfully retrieved
+2023-08-01 17:21:32,013 scrape-log INFO - attractions_data - Start retrieving attraction information from url #276
+2023-08-01 17:21:32,186 scrape-log INFO - attraction_data_update - Data from url #276 successfully retrieved
+2023-08-01 17:21:32,186 scrape-log INFO - attractions_data - Start retrieving attraction information from url #277
+2023-08-01 17:21:32,387 scrape-log INFO - attraction_data_update - Data from url #277 successfully retrieved
+2023-08-01 17:21:32,387 scrape-log INFO - attractions_data - Start retrieving attraction information from url #278
+2023-08-01 17:21:32,597 scrape-log INFO - attraction_data_update - Data from url #278 successfully retrieved
+2023-08-01 17:21:32,597 scrape-log INFO - attractions_data - Start retrieving attraction information from url #279
+2023-08-01 17:21:32,893 scrape-log INFO - attraction_data_update - Data from url #279 successfully retrieved
+2023-08-01 17:21:32,893 scrape-log INFO - attractions_data - Start retrieving attraction information from url #280
+2023-08-01 17:21:33,080 scrape-log INFO - attraction_data_update - Data from url #280 successfully retrieved
+2023-08-01 17:21:34,835 scrape-log INFO - attractions_data - Start retrieving attraction information from url #281
+2023-08-01 17:21:34,985 scrape-log INFO - attraction_data_update - Data from url #281 successfully retrieved
+2023-08-01 17:21:34,985 scrape-log INFO - attractions_data - Start retrieving attraction information from url #282
+2023-08-01 17:21:35,157 scrape-log INFO - attraction_data_update - Data from url #282 successfully retrieved
+2023-08-01 17:21:35,158 scrape-log INFO - attractions_data - Start retrieving attraction information from url #283
+2023-08-01 17:21:35,325 scrape-log INFO - attraction_data_update - Data from url #283 successfully retrieved
+2023-08-01 17:21:35,325 scrape-log INFO - attractions_data - Start retrieving attraction information from url #284
+2023-08-01 17:21:35,642 scrape-log INFO - attraction_data_update - Data from url #284 successfully retrieved
+2023-08-01 17:21:35,642 scrape-log INFO - attractions_data - Start retrieving attraction information from url #285
+2023-08-01 17:21:35,803 scrape-log INFO - attraction_data_update - Data from url #285 successfully retrieved
+2023-08-01 17:21:37,754 scrape-log INFO - attractions_data - Start retrieving attraction information from url #286
+2023-08-01 17:21:37,885 scrape-log INFO - attraction_data_update - Data from url #286 successfully retrieved
+2023-08-01 17:21:37,886 scrape-log INFO - attractions_data - Start retrieving attraction information from url #287
+2023-08-01 17:21:38,041 scrape-log INFO - attraction_data_update - Data from url #287 successfully retrieved
+2023-08-01 17:21:38,041 scrape-log INFO - attractions_data - Start retrieving attraction information from url #288
+2023-08-01 17:21:38,365 scrape-log INFO - attraction_data_update - Data from url #288 successfully retrieved
+2023-08-01 17:21:38,366 scrape-log INFO - attractions_data - Start retrieving attraction information from url #289
+2023-08-01 17:21:38,623 scrape-log INFO - attraction_data_update - Data from url #289 successfully retrieved
+2023-08-01 17:21:38,623 scrape-log INFO - attractions_data - Start retrieving attraction information from url #290
+2023-08-01 17:21:38,956 scrape-log INFO - attraction_data_update - Data from url #290 successfully retrieved
+2023-08-01 17:21:42,199 scrape-log INFO - attractions_data - Start retrieving attraction information from url #291
+2023-08-01 17:21:42,685 scrape-log INFO - attraction_data_update - Data from url #291 successfully retrieved
+2023-08-01 17:21:42,685 scrape-log INFO - attractions_data - Start retrieving attraction information from url #292
+2023-08-01 17:21:42,941 scrape-log INFO - attraction_data_update - Data from url #292 successfully retrieved
+2023-08-01 17:21:42,942 scrape-log INFO - attractions_data - Start retrieving attraction information from url #293
+2023-08-01 17:21:43,253 scrape-log INFO - attraction_data_update - Data from url #293 successfully retrieved
+2023-08-01 17:21:43,253 scrape-log INFO - attractions_data - Start retrieving attraction information from url #294
+2023-08-01 17:21:43,512 scrape-log INFO - attraction_data_update - Data from url #294 successfully retrieved
+2023-08-01 17:21:43,512 scrape-log INFO - attractions_data - Start retrieving attraction information from url #295
+2023-08-01 17:21:43,904 scrape-log INFO - attraction_data_update - Data from url #295 successfully retrieved
+2023-08-01 17:21:46,341 scrape-log INFO - attractions_data - Start retrieving attraction information from url #296
+2023-08-01 17:21:46,828 scrape-log INFO - attraction_data_update - Data from url #296 successfully retrieved
+2023-08-01 17:21:46,828 scrape-log INFO - attractions_data - Start retrieving attraction information from url #297
+2023-08-01 17:21:47,308 scrape-log INFO - attraction_data_update - Data from url #297 successfully retrieved
+2023-08-01 17:21:47,308 scrape-log INFO - attractions_data - Start retrieving attraction information from url #298
+2023-08-01 17:21:47,614 scrape-log INFO - attraction_data_update - Data from url #298 successfully retrieved
+2023-08-01 17:21:47,615 scrape-log INFO - attractions_data - Start retrieving attraction information from url #299
+2023-08-01 17:21:47,944 scrape-log INFO - attraction_data_update - Data from url #299 successfully retrieved
+2023-08-01 17:21:47,945 scrape-log INFO - attractions_data - Start retrieving attraction information from url #300
+2023-08-01 17:21:48,188 scrape-log INFO - attraction_data_update - Data from url #300 successfully retrieved
+2023-08-01 17:21:50,315 scrape-log INFO - attractions_data - Start retrieving attraction information from url #301
+2023-08-01 17:21:50,479 scrape-log INFO - attraction_data_update - Data from url #301 successfully retrieved
+2023-08-01 17:21:50,479 scrape-log INFO - attractions_data - Start retrieving attraction information from url #302
+2023-08-01 17:21:50,713 scrape-log INFO - attraction_data_update - Data from url #302 successfully retrieved
+2023-08-01 17:21:50,713 scrape-log INFO - attractions_data - Start retrieving attraction information from url #303
+2023-08-01 17:21:51,020 scrape-log INFO - attraction_data_update - Data from url #303 successfully retrieved
+2023-08-01 17:21:51,020 scrape-log INFO - attractions_data - Start retrieving attraction information from url #304
+2023-08-01 17:21:51,253 scrape-log INFO - attraction_data_update - Data from url #304 successfully retrieved
+2023-08-01 17:21:51,254 scrape-log INFO - attractions_data - Start retrieving attraction information from url #305
+2023-08-01 17:21:51,511 scrape-log INFO - attraction_data_update - Data from url #305 successfully retrieved
+2023-08-01 17:21:53,391 scrape-log INFO - attractions_data - Start retrieving attraction information from url #306
+2023-08-01 17:21:53,788 scrape-log INFO - attraction_data_update - Data from url #306 successfully retrieved
+2023-08-01 17:21:53,788 scrape-log INFO - attractions_data - Start retrieving attraction information from url #307
+2023-08-01 17:21:54,401 scrape-log INFO - attraction_data_update - Data from url #307 successfully retrieved
+2023-08-01 17:21:54,401 scrape-log INFO - attractions_data - Start retrieving attraction information from url #308
+2023-08-01 17:21:54,781 scrape-log INFO - attraction_data_update - Data from url #308 successfully retrieved
+2023-08-01 17:21:54,781 scrape-log INFO - attractions_data - Start retrieving attraction information from url #309
+2023-08-01 17:21:55,102 scrape-log INFO - attraction_data_update - Data from url #309 successfully retrieved
+2023-08-01 17:21:55,103 scrape-log INFO - attractions_data - Start retrieving attraction information from url #310
+2023-08-01 17:21:55,451 scrape-log INFO - attraction_data_update - Data from url #310 successfully retrieved
+2023-08-01 17:21:57,573 scrape-log INFO - attractions_data - Start retrieving attraction information from url #311
+2023-08-01 17:21:57,876 scrape-log INFO - attraction_data_update - Data from url #311 successfully retrieved
+2023-08-01 17:21:57,877 scrape-log INFO - attractions_data - Start retrieving attraction information from url #312
+2023-08-01 17:21:58,128 scrape-log INFO - attraction_data_update - Data from url #312 successfully retrieved
+2023-08-01 17:21:58,128 scrape-log INFO - attractions_data - Start retrieving attraction information from url #313
+2023-08-01 17:21:58,289 scrape-log INFO - attraction_data_update - Data from url #313 successfully retrieved
+2023-08-01 17:21:58,289 scrape-log INFO - attractions_data - Start retrieving attraction information from url #314
+2023-08-01 17:21:58,533 scrape-log INFO - attraction_data_update - Data from url #314 successfully retrieved
+2023-08-01 17:21:58,533 scrape-log INFO - attractions_data - Start retrieving attraction information from url #315
+2023-08-01 17:21:58,715 scrape-log INFO - attraction_data_update - Data from url #315 successfully retrieved
+2023-08-01 17:22:00,299 scrape-log INFO - attractions_data - Start retrieving attraction information from url #316
+2023-08-01 17:22:00,651 scrape-log INFO - attraction_data_update - Data from url #316 successfully retrieved
+2023-08-01 17:22:00,652 scrape-log INFO - attractions_data - Start retrieving attraction information from url #317
+2023-08-01 17:22:00,833 scrape-log INFO - attraction_data_update - Data from url #317 successfully retrieved
+2023-08-01 17:22:00,833 scrape-log INFO - attractions_data - Start retrieving attraction information from url #318
+2023-08-01 17:22:01,034 scrape-log INFO - attraction_data_update - Data from url #318 successfully retrieved
+2023-08-01 17:22:01,034 scrape-log INFO - attractions_data - Start retrieving attraction information from url #319
+2023-08-01 17:22:01,197 scrape-log INFO - attraction_data_update - Data from url #319 successfully retrieved
+2023-08-01 17:22:01,198 scrape-log INFO - attractions_data - Start retrieving attraction information from url #320
+2023-08-01 17:22:01,681 scrape-log INFO - attraction_data_update - Data from url #320 successfully retrieved
+2023-08-01 17:22:03,072 scrape-log INFO - attractions_data - Start retrieving attraction information from url #321
+2023-08-01 17:22:03,200 scrape-log INFO - attraction_data_update - Data from url #321 successfully retrieved
+2023-08-01 17:22:03,200 scrape-log INFO - attractions_data - Start retrieving attraction information from url #322
+2023-08-01 17:22:03,338 scrape-log INFO - attraction_data_update - Data from url #322 successfully retrieved
+2023-08-01 17:22:03,338 scrape-log INFO - attractions_data - Start retrieving attraction information from url #323
+2023-08-01 17:22:03,476 scrape-log INFO - attraction_data_update - Data from url #323 successfully retrieved
+2023-08-01 17:22:03,476 scrape-log INFO - attractions_data - Start retrieving attraction information from url #324
+2023-08-01 17:22:03,826 scrape-log INFO - attraction_data_update - Data from url #324 successfully retrieved
+2023-08-01 17:22:03,827 scrape-log INFO - attractions_data - Start retrieving attraction information from url #325
+2023-08-01 17:22:04,051 scrape-log INFO - attraction_data_update - Data from url #325 successfully retrieved
+2023-08-01 17:22:06,042 scrape-log INFO - attractions_data - Start retrieving attraction information from url #326
+2023-08-01 17:22:06,209 scrape-log INFO - attraction_data_update - Data from url #326 successfully retrieved
+2023-08-01 17:22:06,209 scrape-log INFO - attractions_data - Start retrieving attraction information from url #327
+2023-08-01 17:22:06,395 scrape-log INFO - attraction_data_update - Data from url #327 successfully retrieved
+2023-08-01 17:22:06,395 scrape-log INFO - attractions_data - Start retrieving attraction information from url #328
+2023-08-01 17:22:06,786 scrape-log INFO - attraction_data_update - Data from url #328 successfully retrieved
+2023-08-01 17:22:06,786 scrape-log INFO - attractions_data - Start retrieving attraction information from url #329
+2023-08-01 17:22:07,280 scrape-log INFO - attraction_data_update - Data from url #329 successfully retrieved
+2023-08-01 17:22:07,281 scrape-log INFO - attractions_data - Start retrieving attraction information from url #330
+2023-08-01 17:22:07,826 scrape-log INFO - attraction_data_update - Data from url #330 successfully retrieved
+2023-08-01 17:22:09,488 scrape-log INFO - attractions_data - Start retrieving attraction information from url #331
+2023-08-01 17:22:09,821 scrape-log INFO - attraction_data_update - Data from url #331 successfully retrieved
+2023-08-01 17:22:09,821 scrape-log INFO - attractions_data - Start retrieving attraction information from url #332
+2023-08-01 17:22:10,018 scrape-log INFO - attraction_data_update - Data from url #332 successfully retrieved
+2023-08-01 17:22:10,018 scrape-log INFO - attractions_data - Start retrieving attraction information from url #333
+2023-08-01 17:22:10,189 scrape-log INFO - attraction_data_update - Data from url #333 successfully retrieved
+2023-08-01 17:22:10,189 scrape-log INFO - attractions_data - Start retrieving attraction information from url #334
+2023-08-01 17:22:10,578 scrape-log INFO - attraction_data_update - Data from url #334 successfully retrieved
+2023-08-01 17:22:10,579 scrape-log INFO - attractions_data - Start retrieving attraction information from url #335
+2023-08-01 17:22:10,805 scrape-log INFO - attraction_data_update - Data from url #335 successfully retrieved
+2023-08-01 17:22:12,545 scrape-log INFO - attractions_data - Start retrieving attraction information from url #336
+2023-08-01 17:22:12,795 scrape-log INFO - attraction_data_update - Data from url #336 successfully retrieved
+2023-08-01 17:22:12,795 scrape-log INFO - attractions_data - Start retrieving attraction information from url #337
+2023-08-01 17:22:13,005 scrape-log INFO - attraction_data_update - Data from url #337 successfully retrieved
+2023-08-01 17:22:13,005 scrape-log INFO - attractions_data - Start retrieving attraction information from url #338
+2023-08-01 17:22:13,401 scrape-log INFO - attraction_data_update - Data from url #338 successfully retrieved
+2023-08-01 17:22:13,401 scrape-log INFO - attractions_data - Start retrieving attraction information from url #339
+2023-08-01 17:22:13,634 scrape-log INFO - attraction_data_update - Data from url #339 successfully retrieved
+2023-08-01 17:22:13,634 scrape-log INFO - attractions_data - Start retrieving attraction information from url #340
+2023-08-01 17:22:13,839 scrape-log INFO - attraction_data_update - Data from url #340 successfully retrieved
+2023-08-01 17:22:15,335 scrape-log INFO - attractions_data - Start retrieving attraction information from url #341
+2023-08-01 17:22:15,494 scrape-log INFO - attraction_data_update - Data from url #341 successfully retrieved
+2023-08-01 17:22:15,495 scrape-log INFO - attractions_data - Start retrieving attraction information from url #342
+2023-08-01 17:22:15,733 scrape-log INFO - attraction_data_update - Data from url #342 successfully retrieved
+2023-08-01 17:22:15,733 scrape-log INFO - attractions_data - Start retrieving attraction information from url #343
+2023-08-01 17:22:15,988 scrape-log INFO - attraction_data_update - Data from url #343 successfully retrieved
+2023-08-01 17:22:15,989 scrape-log INFO - attractions_data - Start retrieving attraction information from url #344
+2023-08-01 17:22:16,511 scrape-log INFO - attraction_data_update - Data from url #344 successfully retrieved
+2023-08-01 17:22:16,511 scrape-log INFO - attractions_data - Start retrieving attraction information from url #345
+2023-08-01 17:22:16,818 scrape-log INFO - attraction_data_update - Data from url #345 successfully retrieved
+2023-08-01 17:22:18,374 scrape-log INFO - attractions_data - Start retrieving attraction information from url #346
+2023-08-01 17:22:18,629 scrape-log INFO - attraction_data_update - Data from url #346 successfully retrieved
+2023-08-01 17:22:18,629 scrape-log INFO - attractions_data - Start retrieving attraction information from url #347
+2023-08-01 17:22:18,987 scrape-log INFO - attraction_data_update - Data from url #347 successfully retrieved
+2023-08-01 17:22:18,987 scrape-log INFO - attractions_data - Start retrieving attraction information from url #348
+2023-08-01 17:22:19,513 scrape-log INFO - attraction_data_update - Data from url #348 successfully retrieved
+2023-08-01 17:22:19,513 scrape-log INFO - attractions_data - Start retrieving attraction information from url #349
+2023-08-01 17:22:19,772 scrape-log INFO - attraction_data_update - Data from url #349 successfully retrieved
+2023-08-01 17:22:19,773 scrape-log INFO - attractions_data - Start retrieving attraction information from url #350
+2023-08-01 17:22:20,031 scrape-log INFO - attraction_data_update - Data from url #350 successfully retrieved
+2023-08-01 17:22:22,342 scrape-log INFO - attractions_data - Start retrieving attraction information from url #351
+2023-08-01 17:22:22,485 scrape-log INFO - attraction_data_update - Data from url #351 successfully retrieved
+2023-08-01 17:22:22,485 scrape-log INFO - attractions_data - Start retrieving attraction information from url #352
+2023-08-01 17:22:22,592 scrape-log INFO - attraction_data_update - Data from url #352 successfully retrieved
+2023-08-01 17:22:22,592 scrape-log INFO - attractions_data - Start retrieving attraction information from url #353
+2023-08-01 17:22:22,889 scrape-log INFO - attraction_data_update - Data from url #353 successfully retrieved
+2023-08-01 17:22:22,889 scrape-log INFO - attractions_data - Start retrieving attraction information from url #354
+2023-08-01 17:22:23,016 scrape-log INFO - attraction_data_update - Data from url #354 successfully retrieved
+2023-08-01 17:22:23,016 scrape-log INFO - attractions_data - Start retrieving attraction information from url #355
+2023-08-01 17:22:23,170 scrape-log INFO - attraction_data_update - Data from url #355 successfully retrieved
+2023-08-01 17:22:25,481 scrape-log INFO - attractions_data - Start retrieving attraction information from url #356
+2023-08-01 17:22:25,640 scrape-log INFO - attraction_data_update - Data from url #356 successfully retrieved
+2023-08-01 17:22:25,640 scrape-log INFO - attractions_data - Start retrieving attraction information from url #357
+2023-08-01 17:22:25,751 scrape-log INFO - attraction_data_update - Data from url #357 successfully retrieved
+2023-08-01 17:22:25,751 scrape-log INFO - attractions_data - Start retrieving attraction information from url #358
+2023-08-01 17:22:26,004 scrape-log INFO - attraction_data_update - Data from url #358 successfully retrieved
+2023-08-01 17:22:26,004 scrape-log INFO - attractions_data - Start retrieving attraction information from url #359
+2023-08-01 17:22:26,141 scrape-log INFO - attraction_data_update - Data from url #359 successfully retrieved
+2023-08-01 17:22:26,141 scrape-log INFO - attractions_data - Start retrieving attraction information from url #360
+2023-08-01 17:22:26,346 scrape-log INFO - attraction_data_update - Data from url #360 successfully retrieved
+2023-08-01 17:22:26,393 scrape-log INFO - storing_data - Created Data frame with annual weather data in Paris,Seoul,Cairo
+2023-08-01 17:22:28,472 scrape-log INFO - storing_data - Created attraction Data-Base
+2023-08-01 17:27:31,627 scrape-log INFO - storing_data - populate_tables and meteorological_data added to DB
+2023-08-01 17:28:02,574 scrape-log INFO - main - Filtered attractions report stored successfully
+2023-08-01 17:28:02,576 scrape-log INFO - main - Filtered and weather data stored successfully
+2023-08-01 18:49:46,826 scrape-log INFO - checking_inputs - Will start working on retrieving data for meteorological and museum attractions data in Paris, Seoul, Cairo.
+2023-08-01 18:50:00,547 scrape-log INFO - storing_data - Received 120 urls for the attractions of Paris
+2023-08-01 18:50:13,917 scrape-log INFO - storing_data - Received 120 urls for the attractions of Seoul
+2023-08-01 18:50:27,201 scrape-log INFO - storing_data - Received 120 urls for the attractions of Cairo
+2023-08-01 18:50:29,490 scrape-log INFO - attractions_data - Start retrieving attraction information from url #1
+2023-08-01 18:50:29,720 scrape-log INFO - attraction_data_update - Data from url #1 successfully retrieved
+2023-08-01 18:50:29,720 scrape-log INFO - attractions_data - Start retrieving attraction information from url #2
+2023-08-01 18:50:29,907 scrape-log INFO - attraction_data_update - Data from url #2 successfully retrieved
+2023-08-01 18:50:29,907 scrape-log INFO - attractions_data - Start retrieving attraction information from url #3
+2023-08-01 18:50:30,257 scrape-log INFO - attraction_data_update - Data from url #3 successfully retrieved
+2023-08-01 18:50:30,257 scrape-log INFO - attractions_data - Start retrieving attraction information from url #4
+2023-08-01 18:50:30,492 scrape-log INFO - attraction_data_update - Data from url #4 successfully retrieved
+2023-08-01 18:50:30,492 scrape-log INFO - attractions_data - Start retrieving attraction information from url #5
+2023-08-01 18:50:30,705 scrape-log INFO - attraction_data_update - Data from url #5 successfully retrieved
+2023-08-01 18:50:33,030 scrape-log INFO - attractions_data - Start retrieving attraction information from url #6
+2023-08-01 18:50:33,349 scrape-log INFO - attraction_data_update - Data from url #6 successfully retrieved
+2023-08-01 18:50:33,349 scrape-log INFO - attractions_data - Start retrieving attraction information from url #7
+2023-08-01 18:50:33,542 scrape-log INFO - attraction_data_update - Data from url #7 successfully retrieved
+2023-08-01 18:50:33,542 scrape-log INFO - attractions_data - Start retrieving attraction information from url #8
+2023-08-01 18:50:33,763 scrape-log INFO - attraction_data_update - Data from url #8 successfully retrieved
+2023-08-01 18:50:33,763 scrape-log INFO - attractions_data - Start retrieving attraction information from url #9
+2023-08-01 18:50:34,074 scrape-log INFO - attraction_data_update - Data from url #9 successfully retrieved
+2023-08-01 18:50:34,074 scrape-log INFO - attractions_data - Start retrieving attraction information from url #10
+2023-08-01 18:50:34,308 scrape-log INFO - attraction_data_update - Data from url #10 successfully retrieved
+2023-08-01 18:50:37,090 scrape-log INFO - attractions_data - Start retrieving attraction information from url #11
+2023-08-01 18:50:37,246 scrape-log INFO - attraction_data_update - Data from url #11 successfully retrieved
+2023-08-01 18:50:37,246 scrape-log INFO - attractions_data - Start retrieving attraction information from url #12
+2023-08-01 18:50:37,542 scrape-log INFO - attraction_data_update - Data from url #12 successfully retrieved
+2023-08-01 18:50:37,542 scrape-log INFO - attractions_data - Start retrieving attraction information from url #13
+2023-08-01 18:50:37,744 scrape-log INFO - attraction_data_update - Data from url #13 successfully retrieved
+2023-08-01 18:50:37,744 scrape-log INFO - attractions_data - Start retrieving attraction information from url #14
+2023-08-01 18:50:37,922 scrape-log INFO - attraction_data_update - Data from url #14 successfully retrieved
+2023-08-01 18:50:37,922 scrape-log INFO - attractions_data - Start retrieving attraction information from url #15
+2023-08-01 18:50:38,175 scrape-log INFO - attraction_data_update - Data from url #15 successfully retrieved
+2023-08-01 18:50:39,985 scrape-log INFO - attractions_data - Start retrieving attraction information from url #16
+2023-08-01 18:50:40,098 scrape-log INFO - attraction_data_update - Data from url #16 successfully retrieved
+2023-08-01 18:50:40,098 scrape-log INFO - attractions_data - Start retrieving attraction information from url #17
+2023-08-01 18:50:40,220 scrape-log INFO - attraction_data_update - Data from url #17 successfully retrieved
+2023-08-01 18:50:40,220 scrape-log INFO - attractions_data - Start retrieving attraction information from url #18
+2023-08-01 18:50:40,396 scrape-log INFO - attraction_data_update - Data from url #18 successfully retrieved
+2023-08-01 18:50:40,396 scrape-log INFO - attractions_data - Start retrieving attraction information from url #19
+2023-08-01 18:50:40,500 scrape-log INFO - attraction_data_update - Data from url #19 successfully retrieved
+2023-08-01 18:50:40,500 scrape-log INFO - attractions_data - Start retrieving attraction information from url #20
+2023-08-01 18:50:40,722 scrape-log INFO - attraction_data_update - Data from url #20 successfully retrieved
+2023-08-01 18:50:42,667 scrape-log INFO - attractions_data - Start retrieving attraction information from url #21
+2023-08-01 18:50:42,872 scrape-log INFO - attraction_data_update - Data from url #21 successfully retrieved
+2023-08-01 18:50:42,872 scrape-log INFO - attractions_data - Start retrieving attraction information from url #22
+2023-08-01 18:50:42,975 scrape-log INFO - attraction_data_update - Data from url #22 successfully retrieved
+2023-08-01 18:50:42,975 scrape-log INFO - attractions_data - Start retrieving attraction information from url #23
+2023-08-01 18:50:43,308 scrape-log INFO - attraction_data_update - Data from url #23 successfully retrieved
+2023-08-01 18:50:43,308 scrape-log INFO - attractions_data - Start retrieving attraction information from url #24
+2023-08-01 18:50:43,513 scrape-log INFO - attraction_data_update - Data from url #24 successfully retrieved
+2023-08-01 18:50:43,513 scrape-log INFO - attractions_data - Start retrieving attraction information from url #25
+2023-08-01 18:50:43,675 scrape-log INFO - attraction_data_update - Data from url #25 successfully retrieved
+2023-08-01 18:50:45,338 scrape-log INFO - attractions_data - Start retrieving attraction information from url #26
+2023-08-01 18:50:45,437 scrape-log INFO - attraction_data_update - Data from url #26 successfully retrieved
+2023-08-01 18:50:45,438 scrape-log INFO - attractions_data - Start retrieving attraction information from url #27
+2023-08-01 18:50:45,674 scrape-log INFO - attraction_data_update - Data from url #27 successfully retrieved
+2023-08-01 18:50:45,674 scrape-log INFO - attractions_data - Start retrieving attraction information from url #28
+2023-08-01 18:50:45,837 scrape-log INFO - attraction_data_update - Data from url #28 successfully retrieved
+2023-08-01 18:50:45,837 scrape-log INFO - attractions_data - Start retrieving attraction information from url #29
+2023-08-01 18:50:45,953 scrape-log INFO - attraction_data_update - Data from url #29 successfully retrieved
+2023-08-01 18:50:45,953 scrape-log INFO - attractions_data - Start retrieving attraction information from url #30
+2023-08-01 18:50:46,047 scrape-log INFO - attraction_data_update - Data from url #30 successfully retrieved
+2023-08-01 18:50:47,898 scrape-log INFO - attractions_data - Start retrieving attraction information from url #31
+2023-08-01 18:50:48,096 scrape-log INFO - attraction_data_update - Data from url #31 successfully retrieved
+2023-08-01 18:50:48,096 scrape-log INFO - attractions_data - Start retrieving attraction information from url #32
+2023-08-01 18:50:48,398 scrape-log INFO - attraction_data_update - Data from url #32 successfully retrieved
+2023-08-01 18:50:48,398 scrape-log INFO - attractions_data - Start retrieving attraction information from url #33
+2023-08-01 18:50:48,594 scrape-log INFO - attraction_data_update - Data from url #33 successfully retrieved
+2023-08-01 18:50:48,594 scrape-log INFO - attractions_data - Start retrieving attraction information from url #34
+2023-08-01 18:50:48,758 scrape-log INFO - attraction_data_update - Data from url #34 successfully retrieved
+2023-08-01 18:50:48,758 scrape-log INFO - attractions_data - Start retrieving attraction information from url #35
+2023-08-01 18:50:49,060 scrape-log INFO - attraction_data_update - Data from url #35 successfully retrieved
+2023-08-01 18:50:50,644 scrape-log INFO - attractions_data - Start retrieving attraction information from url #36
+2023-08-01 18:50:50,799 scrape-log INFO - attraction_data_update - Data from url #36 successfully retrieved
+2023-08-01 18:50:50,799 scrape-log INFO - attractions_data - Start retrieving attraction information from url #37
+2023-08-01 18:50:50,970 scrape-log INFO - attraction_data_update - Data from url #37 successfully retrieved
+2023-08-01 18:50:50,970 scrape-log INFO - attractions_data - Start retrieving attraction information from url #38
+2023-08-01 18:50:51,137 scrape-log INFO - attraction_data_update - Data from url #38 successfully retrieved
+2023-08-01 18:50:51,137 scrape-log INFO - attractions_data - Start retrieving attraction information from url #39
+2023-08-01 18:50:51,409 scrape-log INFO - attraction_data_update - Data from url #39 successfully retrieved
+2023-08-01 18:50:51,410 scrape-log INFO - attractions_data - Start retrieving attraction information from url #40
+2023-08-01 18:50:51,607 scrape-log INFO - attraction_data_update - Data from url #40 successfully retrieved
+2023-08-01 18:50:53,513 scrape-log INFO - attractions_data - Start retrieving attraction information from url #41
+2023-08-01 18:50:53,686 scrape-log INFO - attraction_data_update - Data from url #41 successfully retrieved
+2023-08-01 18:50:53,686 scrape-log INFO - attractions_data - Start retrieving attraction information from url #42
+2023-08-01 18:50:53,945 scrape-log INFO - attraction_data_update - Data from url #42 successfully retrieved
+2023-08-01 18:50:53,945 scrape-log INFO - attractions_data - Start retrieving attraction information from url #43
+2023-08-01 18:50:54,112 scrape-log INFO - attraction_data_update - Data from url #43 successfully retrieved
+2023-08-01 18:50:54,112 scrape-log INFO - attractions_data - Start retrieving attraction information from url #44
+2023-08-01 18:50:54,290 scrape-log INFO - attraction_data_update - Data from url #44 successfully retrieved
+2023-08-01 18:50:54,290 scrape-log INFO - attractions_data - Start retrieving attraction information from url #45
+2023-08-01 18:50:54,576 scrape-log INFO - attraction_data_update - Data from url #45 successfully retrieved
+2023-08-01 18:50:56,957 scrape-log INFO - attractions_data - Start retrieving attraction information from url #46
+2023-08-01 18:50:57,132 scrape-log INFO - attraction_data_update - Data from url #46 successfully retrieved
+2023-08-01 18:50:57,132 scrape-log INFO - attractions_data - Start retrieving attraction information from url #47
+2023-08-01 18:50:57,293 scrape-log INFO - attraction_data_update - Data from url #47 successfully retrieved
+2023-08-01 18:50:57,293 scrape-log INFO - attractions_data - Start retrieving attraction information from url #48
+2023-08-01 18:50:57,467 scrape-log INFO - attraction_data_update - Data from url #48 successfully retrieved
+2023-08-01 18:50:57,467 scrape-log INFO - attractions_data - Start retrieving attraction information from url #49
+2023-08-01 18:50:57,810 scrape-log INFO - attraction_data_update - Data from url #49 successfully retrieved
+2023-08-01 18:50:57,810 scrape-log INFO - attractions_data - Start retrieving attraction information from url #50
+2023-08-01 18:50:57,966 scrape-log INFO - attraction_data_update - Data from url #50 successfully retrieved
+2023-08-01 18:50:59,901 scrape-log INFO - attractions_data - Start retrieving attraction information from url #51
+2023-08-01 18:51:00,102 scrape-log INFO - attraction_data_update - Data from url #51 successfully retrieved
+2023-08-01 18:51:00,102 scrape-log INFO - attractions_data - Start retrieving attraction information from url #52
+2023-08-01 18:51:00,379 scrape-log INFO - attraction_data_update - Data from url #52 successfully retrieved
+2023-08-01 18:51:00,379 scrape-log INFO - attractions_data - Start retrieving attraction information from url #53
+2023-08-01 18:51:00,534 scrape-log INFO - attraction_data_update - Data from url #53 successfully retrieved
+2023-08-01 18:51:00,535 scrape-log INFO - attractions_data - Start retrieving attraction information from url #54
+2023-08-01 18:51:00,710 scrape-log INFO - attraction_data_update - Data from url #54 successfully retrieved
+2023-08-01 18:51:00,710 scrape-log INFO - attractions_data - Start retrieving attraction information from url #55
+2023-08-01 18:51:00,938 scrape-log INFO - attraction_data_update - Data from url #55 successfully retrieved
+2023-08-01 18:51:03,003 scrape-log INFO - attractions_data - Start retrieving attraction information from url #56
+2023-08-01 18:51:03,286 scrape-log INFO - attraction_data_update - Data from url #56 successfully retrieved
+2023-08-01 18:51:03,287 scrape-log INFO - attractions_data - Start retrieving attraction information from url #57
+2023-08-01 18:51:03,427 scrape-log INFO - attraction_data_update - Data from url #57 successfully retrieved
+2023-08-01 18:51:03,427 scrape-log INFO - attractions_data - Start retrieving attraction information from url #58
+2023-08-01 18:51:03,612 scrape-log INFO - attraction_data_update - Data from url #58 successfully retrieved
+2023-08-01 18:51:03,612 scrape-log INFO - attractions_data - Start retrieving attraction information from url #59
+2023-08-01 18:51:03,769 scrape-log INFO - attraction_data_update - Data from url #59 successfully retrieved
+2023-08-01 18:51:03,769 scrape-log INFO - attractions_data - Start retrieving attraction information from url #60
+2023-08-01 18:51:04,038 scrape-log INFO - attraction_data_update - Data from url #60 successfully retrieved
+2023-08-01 18:51:05,810 scrape-log INFO - attractions_data - Start retrieving attraction information from url #61
+2023-08-01 18:51:05,969 scrape-log INFO - attraction_data_update - Data from url #61 successfully retrieved
+2023-08-01 18:51:05,969 scrape-log INFO - attractions_data - Start retrieving attraction information from url #62
+2023-08-01 18:51:06,120 scrape-log INFO - attraction_data_update - Data from url #62 successfully retrieved
+2023-08-01 18:51:06,120 scrape-log INFO - attractions_data - Start retrieving attraction information from url #63
+2023-08-01 18:51:06,372 scrape-log INFO - attraction_data_update - Data from url #63 successfully retrieved
+2023-08-01 18:51:06,372 scrape-log INFO - attractions_data - Start retrieving attraction information from url #64
+2023-08-01 18:51:06,561 scrape-log INFO - attraction_data_update - Data from url #64 successfully retrieved
+2023-08-01 18:51:06,562 scrape-log INFO - attractions_data - Start retrieving attraction information from url #65
+2023-08-01 18:51:06,699 scrape-log INFO - attraction_data_update - Data from url #65 successfully retrieved
+2023-08-01 18:51:08,842 scrape-log INFO - attractions_data - Start retrieving attraction information from url #66
+2023-08-01 18:51:09,158 scrape-log INFO - attraction_data_update - Data from url #66 successfully retrieved
+2023-08-01 18:51:09,158 scrape-log INFO - attractions_data - Start retrieving attraction information from url #67
+2023-08-01 18:51:09,363 scrape-log INFO - attraction_data_update - Data from url #67 successfully retrieved
+2023-08-01 18:51:09,363 scrape-log INFO - attractions_data - Start retrieving attraction information from url #68
+2023-08-01 18:51:09,554 scrape-log INFO - attraction_data_update - Data from url #68 successfully retrieved
+2023-08-01 18:51:09,554 scrape-log INFO - attractions_data - Start retrieving attraction information from url #69
+2023-08-01 18:51:09,728 scrape-log INFO - attraction_data_update - Data from url #69 successfully retrieved
+2023-08-01 18:51:09,728 scrape-log INFO - attractions_data - Start retrieving attraction information from url #70
+2023-08-01 18:51:10,031 scrape-log INFO - attraction_data_update - Data from url #70 successfully retrieved
+2023-08-01 18:51:11,981 scrape-log INFO - attractions_data - Start retrieving attraction information from url #71
+2023-08-01 18:51:12,116 scrape-log INFO - attraction_data_update - Data from url #71 successfully retrieved
+2023-08-01 18:51:12,116 scrape-log INFO - attractions_data - Start retrieving attraction information from url #72
+2023-08-01 18:51:12,295 scrape-log INFO - attraction_data_update - Data from url #72 successfully retrieved
+2023-08-01 18:51:12,295 scrape-log INFO - attractions_data - Start retrieving attraction information from url #73
+2023-08-01 18:51:12,471 scrape-log INFO - attraction_data_update - Data from url #73 successfully retrieved
+2023-08-01 18:51:12,472 scrape-log INFO - attractions_data - Start retrieving attraction information from url #74
+2023-08-01 18:51:12,778 scrape-log INFO - attraction_data_update - Data from url #74 successfully retrieved
+2023-08-01 18:51:12,778 scrape-log INFO - attractions_data - Start retrieving attraction information from url #75
+2023-08-01 18:51:12,901 scrape-log INFO - attraction_data_update - Data from url #75 successfully retrieved
+2023-08-01 18:51:14,798 scrape-log INFO - attractions_data - Start retrieving attraction information from url #76
+2023-08-01 18:51:14,979 scrape-log INFO - attraction_data_update - Data from url #76 successfully retrieved
+2023-08-01 18:51:14,979 scrape-log INFO - attractions_data - Start retrieving attraction information from url #77
+2023-08-01 18:51:15,298 scrape-log INFO - attraction_data_update - Data from url #77 successfully retrieved
+2023-08-01 18:51:15,299 scrape-log INFO - attractions_data - Start retrieving attraction information from url #78
+2023-08-01 18:51:15,468 scrape-log INFO - attraction_data_update - Data from url #78 successfully retrieved
+2023-08-01 18:51:15,468 scrape-log INFO - attractions_data - Start retrieving attraction information from url #79
+2023-08-01 18:51:15,632 scrape-log INFO - attraction_data_update - Data from url #79 successfully retrieved
+2023-08-01 18:51:15,632 scrape-log INFO - attractions_data - Start retrieving attraction information from url #80
+2023-08-01 18:51:15,828 scrape-log INFO - attraction_data_update - Data from url #80 successfully retrieved
+2023-08-01 18:51:18,365 scrape-log INFO - attractions_data - Start retrieving attraction information from url #81
+2023-08-01 18:51:18,592 scrape-log INFO - attraction_data_update - Data from url #81 successfully retrieved
+2023-08-01 18:51:18,593 scrape-log INFO - attractions_data - Start retrieving attraction information from url #82
+2023-08-01 18:51:18,794 scrape-log INFO - attraction_data_update - Data from url #82 successfully retrieved
+2023-08-01 18:51:18,794 scrape-log INFO - attractions_data - Start retrieving attraction information from url #83
+2023-08-01 18:51:19,010 scrape-log INFO - attraction_data_update - Data from url #83 successfully retrieved
+2023-08-01 18:51:19,010 scrape-log INFO - attractions_data - Start retrieving attraction information from url #84
+2023-08-01 18:51:19,361 scrape-log INFO - attraction_data_update - Data from url #84 successfully retrieved
+2023-08-01 18:51:19,361 scrape-log INFO - attractions_data - Start retrieving attraction information from url #85
+2023-08-01 18:51:19,535 scrape-log INFO - attraction_data_update - Data from url #85 successfully retrieved
+2023-08-01 18:51:21,239 scrape-log INFO - attractions_data - Start retrieving attraction information from url #86
+2023-08-01 18:51:21,427 scrape-log INFO - attraction_data_update - Data from url #86 successfully retrieved
+2023-08-01 18:51:21,427 scrape-log INFO - attractions_data - Start retrieving attraction information from url #87
+2023-08-01 18:51:21,592 scrape-log INFO - attraction_data_update - Data from url #87 successfully retrieved
+2023-08-01 18:51:21,592 scrape-log INFO - attractions_data - Start retrieving attraction information from url #88
+2023-08-01 18:51:21,867 scrape-log INFO - attraction_data_update - Data from url #88 successfully retrieved
+2023-08-01 18:51:21,867 scrape-log INFO - attractions_data - Start retrieving attraction information from url #89
+2023-08-01 18:51:22,093 scrape-log INFO - attraction_data_update - Data from url #89 successfully retrieved
+2023-08-01 18:51:22,093 scrape-log INFO - attractions_data - Start retrieving attraction information from url #90
+2023-08-01 18:51:22,369 scrape-log INFO - attraction_data_update - Data from url #90 successfully retrieved
+2023-08-01 18:51:23,868 scrape-log INFO - attractions_data - Start retrieving attraction information from url #91
+2023-08-01 18:51:24,120 scrape-log INFO - attraction_data_update - Data from url #91 successfully retrieved
+2023-08-01 18:51:24,120 scrape-log INFO - attractions_data - Start retrieving attraction information from url #92
+2023-08-01 18:51:24,239 scrape-log INFO - attraction_data_update - Data from url #92 successfully retrieved
+2023-08-01 18:51:24,239 scrape-log INFO - attractions_data - Start retrieving attraction information from url #93
+2023-08-01 18:51:24,346 scrape-log INFO - attraction_data_update - Data from url #93 successfully retrieved
+2023-08-01 18:51:24,346 scrape-log INFO - attractions_data - Start retrieving attraction information from url #94
+2023-08-01 18:51:24,507 scrape-log INFO - attraction_data_update - Data from url #94 successfully retrieved
+2023-08-01 18:51:24,507 scrape-log INFO - attractions_data - Start retrieving attraction information from url #95
+2023-08-01 18:51:24,646 scrape-log INFO - attraction_data_update - Data from url #95 successfully retrieved
+2023-08-01 18:51:26,346 scrape-log INFO - attractions_data - Start retrieving attraction information from url #96
+2023-08-01 18:51:26,647 scrape-log INFO - attraction_data_update - Data from url #96 successfully retrieved
+2023-08-01 18:51:26,647 scrape-log INFO - attractions_data - Start retrieving attraction information from url #97
+2023-08-01 18:51:26,820 scrape-log INFO - attraction_data_update - Data from url #97 successfully retrieved
+2023-08-01 18:51:26,820 scrape-log INFO - attractions_data - Start retrieving attraction information from url #98
+2023-08-01 18:51:26,944 scrape-log INFO - attraction_data_update - Data from url #98 successfully retrieved
+2023-08-01 18:51:26,945 scrape-log INFO - attractions_data - Start retrieving attraction information from url #99
+2023-08-01 18:51:27,169 scrape-log INFO - attraction_data_update - Data from url #99 successfully retrieved
+2023-08-01 18:51:27,170 scrape-log INFO - attractions_data - Start retrieving attraction information from url #100
+2023-08-01 18:51:27,277 scrape-log INFO - attraction_data_update - Data from url #100 successfully retrieved
+2023-08-01 18:51:29,290 scrape-log INFO - attractions_data - Start retrieving attraction information from url #101
+2023-08-01 18:51:29,406 scrape-log INFO - attraction_data_update - Data from url #101 successfully retrieved
+2023-08-01 18:51:29,407 scrape-log INFO - attractions_data - Start retrieving attraction information from url #102
+2023-08-01 18:51:29,582 scrape-log INFO - attraction_data_update - Data from url #102 successfully retrieved
+2023-08-01 18:51:29,583 scrape-log INFO - attractions_data - Start retrieving attraction information from url #103
+2023-08-01 18:51:29,720 scrape-log INFO - attraction_data_update - Data from url #103 successfully retrieved
+2023-08-01 18:51:29,720 scrape-log INFO - attractions_data - Start retrieving attraction information from url #104
+2023-08-01 18:51:30,090 scrape-log INFO - attraction_data_update - Data from url #104 successfully retrieved
+2023-08-01 18:51:30,090 scrape-log INFO - attractions_data - Start retrieving attraction information from url #105
+2023-08-01 18:51:30,222 scrape-log INFO - attraction_data_update - Data from url #105 successfully retrieved
+2023-08-01 18:51:32,372 scrape-log INFO - attractions_data - Start retrieving attraction information from url #106
+2023-08-01 18:51:32,478 scrape-log INFO - attraction_data_update - Data from url #106 successfully retrieved
+2023-08-01 18:51:32,478 scrape-log INFO - attractions_data - Start retrieving attraction information from url #107
+2023-08-01 18:51:32,583 scrape-log INFO - attraction_data_update - Data from url #107 successfully retrieved
+2023-08-01 18:51:32,583 scrape-log INFO - attractions_data - Start retrieving attraction information from url #108
+2023-08-01 18:51:32,679 scrape-log INFO - attraction_data_update - Data from url #108 successfully retrieved
+2023-08-01 18:51:32,680 scrape-log INFO - attractions_data - Start retrieving attraction information from url #109
+2023-08-01 18:51:32,899 scrape-log INFO - attraction_data_update - Data from url #109 successfully retrieved
+2023-08-01 18:51:32,899 scrape-log INFO - attractions_data - Start retrieving attraction information from url #110
+2023-08-01 18:51:33,026 scrape-log INFO - attraction_data_update - Data from url #110 successfully retrieved
+2023-08-01 18:51:34,756 scrape-log INFO - attractions_data - Start retrieving attraction information from url #111
+2023-08-01 18:51:34,871 scrape-log INFO - attraction_data_update - Data from url #111 successfully retrieved
+2023-08-01 18:51:34,872 scrape-log INFO - attractions_data - Start retrieving attraction information from url #112
+2023-08-01 18:51:35,021 scrape-log INFO - attraction_data_update - Data from url #112 successfully retrieved
+2023-08-01 18:51:35,021 scrape-log INFO - attractions_data - Start retrieving attraction information from url #113
+2023-08-01 18:51:35,276 scrape-log INFO - attraction_data_update - Data from url #113 successfully retrieved
+2023-08-01 18:51:35,276 scrape-log INFO - attractions_data - Start retrieving attraction information from url #114
+2023-08-01 18:51:35,391 scrape-log INFO - attraction_data_update - Data from url #114 successfully retrieved
+2023-08-01 18:51:35,391 scrape-log INFO - attractions_data - Start retrieving attraction information from url #115
+2023-08-01 18:51:35,489 scrape-log INFO - attraction_data_update - Data from url #115 successfully retrieved
+2023-08-01 18:51:37,322 scrape-log INFO - attractions_data - Start retrieving attraction information from url #116
+2023-08-01 18:51:37,471 scrape-log INFO - attraction_data_update - Data from url #116 successfully retrieved
+2023-08-01 18:51:37,472 scrape-log INFO - attractions_data - Start retrieving attraction information from url #117
+2023-08-01 18:51:37,579 scrape-log INFO - attraction_data_update - Data from url #117 successfully retrieved
+2023-08-01 18:51:37,579 scrape-log INFO - attractions_data - Start retrieving attraction information from url #118
+2023-08-01 18:51:37,777 scrape-log INFO - attraction_data_update - Data from url #118 successfully retrieved
+2023-08-01 18:51:37,777 scrape-log INFO - attractions_data - Start retrieving attraction information from url #119
+2023-08-01 18:51:37,951 scrape-log INFO - attraction_data_update - Data from url #119 successfully retrieved
+2023-08-01 18:51:37,951 scrape-log INFO - attractions_data - Start retrieving attraction information from url #120
+2023-08-01 18:51:38,073 scrape-log INFO - attraction_data_update - Data from url #120 successfully retrieved
+2023-08-01 18:51:40,285 scrape-log INFO - attractions_data - Start retrieving attraction information from url #121
+2023-08-01 18:51:40,511 scrape-log INFO - attraction_data_update - Data from url #121 successfully retrieved
+2023-08-01 18:51:40,511 scrape-log INFO - attractions_data - Start retrieving attraction information from url #122
+2023-08-01 18:51:40,776 scrape-log INFO - attraction_data_update - Data from url #122 successfully retrieved
+2023-08-01 18:51:40,776 scrape-log INFO - attractions_data - Start retrieving attraction information from url #123
+2023-08-01 18:51:40,964 scrape-log INFO - attraction_data_update - Data from url #123 successfully retrieved
+2023-08-01 18:51:40,964 scrape-log INFO - attractions_data - Start retrieving attraction information from url #124
+2023-08-01 18:51:41,132 scrape-log INFO - attraction_data_update - Data from url #124 successfully retrieved
+2023-08-01 18:51:41,133 scrape-log INFO - attractions_data - Start retrieving attraction information from url #125
+2023-08-01 18:51:41,422 scrape-log INFO - attraction_data_update - Data from url #125 successfully retrieved
+2023-08-01 18:51:43,286 scrape-log INFO - attractions_data - Start retrieving attraction information from url #126
+2023-08-01 18:51:43,508 scrape-log INFO - attraction_data_update - Data from url #126 successfully retrieved
+2023-08-01 18:51:43,508 scrape-log INFO - attractions_data - Start retrieving attraction information from url #127
+2023-08-01 18:51:43,702 scrape-log INFO - attraction_data_update - Data from url #127 successfully retrieved
+2023-08-01 18:51:43,702 scrape-log INFO - attractions_data - Start retrieving attraction information from url #128
+2023-08-01 18:51:44,045 scrape-log INFO - attraction_data_update - Data from url #128 successfully retrieved
+2023-08-01 18:51:44,045 scrape-log INFO - attractions_data - Start retrieving attraction information from url #129
+2023-08-01 18:51:44,264 scrape-log INFO - attraction_data_update - Data from url #129 successfully retrieved
+2023-08-01 18:51:44,264 scrape-log INFO - attractions_data - Start retrieving attraction information from url #130
+2023-08-01 18:51:44,462 scrape-log INFO - attraction_data_update - Data from url #130 successfully retrieved
+2023-08-01 18:51:46,200 scrape-log INFO - attractions_data - Start retrieving attraction information from url #131
+2023-08-01 18:51:46,376 scrape-log INFO - attraction_data_update - Data from url #131 successfully retrieved
+2023-08-01 18:51:46,376 scrape-log INFO - attractions_data - Start retrieving attraction information from url #132
+2023-08-01 18:51:46,645 scrape-log INFO - attraction_data_update - Data from url #132 successfully retrieved
+2023-08-01 18:51:46,645 scrape-log INFO - attractions_data - Start retrieving attraction information from url #133
+2023-08-01 18:51:46,804 scrape-log INFO - attraction_data_update - Data from url #133 successfully retrieved
+2023-08-01 18:51:46,804 scrape-log INFO - attractions_data - Start retrieving attraction information from url #134
+2023-08-01 18:51:46,964 scrape-log INFO - attraction_data_update - Data from url #134 successfully retrieved
+2023-08-01 18:51:46,964 scrape-log INFO - attractions_data - Start retrieving attraction information from url #135
+2023-08-01 18:51:47,296 scrape-log INFO - attraction_data_update - Data from url #135 successfully retrieved
+2023-08-01 18:51:49,035 scrape-log INFO - attractions_data - Start retrieving attraction information from url #136
+2023-08-01 18:51:49,264 scrape-log INFO - attraction_data_update - Data from url #136 successfully retrieved
+2023-08-01 18:51:49,264 scrape-log INFO - attractions_data - Start retrieving attraction information from url #137
+2023-08-01 18:51:49,486 scrape-log INFO - attraction_data_update - Data from url #137 successfully retrieved
+2023-08-01 18:51:49,487 scrape-log INFO - attractions_data - Start retrieving attraction information from url #138
+2023-08-01 18:51:49,661 scrape-log INFO - attraction_data_update - Data from url #138 successfully retrieved
+2023-08-01 18:51:49,661 scrape-log INFO - attractions_data - Start retrieving attraction information from url #139
+2023-08-01 18:51:49,972 scrape-log INFO - attraction_data_update - Data from url #139 successfully retrieved
+2023-08-01 18:51:49,972 scrape-log INFO - attractions_data - Start retrieving attraction information from url #140
+2023-08-01 18:51:50,157 scrape-log INFO - attraction_data_update - Data from url #140 successfully retrieved
+2023-08-01 18:51:52,431 scrape-log INFO - attractions_data - Start retrieving attraction information from url #141
+2023-08-01 18:51:52,640 scrape-log INFO - attraction_data_update - Data from url #141 successfully retrieved
+2023-08-01 18:51:52,640 scrape-log INFO - attractions_data - Start retrieving attraction information from url #142
+2023-08-01 18:51:53,011 scrape-log INFO - attraction_data_update - Data from url #142 successfully retrieved
+2023-08-01 18:51:53,011 scrape-log INFO - attractions_data - Start retrieving attraction information from url #143
+2023-08-01 18:51:53,227 scrape-log INFO - attraction_data_update - Data from url #143 successfully retrieved
+2023-08-01 18:51:53,227 scrape-log INFO - attractions_data - Start retrieving attraction information from url #144
+2023-08-01 18:51:53,415 scrape-log INFO - attraction_data_update - Data from url #144 successfully retrieved
+2023-08-01 18:51:53,415 scrape-log INFO - attractions_data - Start retrieving attraction information from url #145
+2023-08-01 18:51:53,823 scrape-log INFO - attraction_data_update - Data from url #145 successfully retrieved
+2023-08-01 18:51:55,849 scrape-log INFO - attractions_data - Start retrieving attraction information from url #146
+2023-08-01 18:51:56,031 scrape-log INFO - attraction_data_update - Data from url #146 successfully retrieved
+2023-08-01 18:51:56,031 scrape-log INFO - attractions_data - Start retrieving attraction information from url #147
+2023-08-01 18:51:56,259 scrape-log INFO - attraction_data_update - Data from url #147 successfully retrieved
+2023-08-01 18:51:56,259 scrape-log INFO - attractions_data - Start retrieving attraction information from url #148
+2023-08-01 18:51:56,433 scrape-log INFO - attraction_data_update - Data from url #148 successfully retrieved
+2023-08-01 18:51:56,433 scrape-log INFO - attractions_data - Start retrieving attraction information from url #149
+2023-08-01 18:51:56,752 scrape-log INFO - attraction_data_update - Data from url #149 successfully retrieved
+2023-08-01 18:51:56,752 scrape-log INFO - attractions_data - Start retrieving attraction information from url #150
+2023-08-01 18:51:56,980 scrape-log INFO - attraction_data_update - Data from url #150 successfully retrieved
+2023-08-01 18:51:58,920 scrape-log INFO - attractions_data - Start retrieving attraction information from url #151
+2023-08-01 18:51:59,137 scrape-log INFO - attraction_data_update - Data from url #151 successfully retrieved
+2023-08-01 18:51:59,137 scrape-log INFO - attractions_data - Start retrieving attraction information from url #152
+2023-08-01 18:51:59,429 scrape-log INFO - attraction_data_update - Data from url #152 successfully retrieved
+2023-08-01 18:51:59,429 scrape-log INFO - attractions_data - Start retrieving attraction information from url #153
+2023-08-01 18:51:59,666 scrape-log INFO - attraction_data_update - Data from url #153 successfully retrieved
+2023-08-01 18:51:59,666 scrape-log INFO - attractions_data - Start retrieving attraction information from url #154
+2023-08-01 18:51:59,835 scrape-log INFO - attraction_data_update - Data from url #154 successfully retrieved
+2023-08-01 18:51:59,835 scrape-log INFO - attractions_data - Start retrieving attraction information from url #155
+2023-08-01 18:51:59,996 scrape-log INFO - attraction_data_update - Data from url #155 successfully retrieved
+2023-08-01 18:52:01,519 scrape-log INFO - attractions_data - Start retrieving attraction information from url #156
+2023-08-01 18:52:01,827 scrape-log INFO - attraction_data_update - Data from url #156 successfully retrieved
+2023-08-01 18:52:01,827 scrape-log INFO - attractions_data - Start retrieving attraction information from url #157
+2023-08-01 18:52:02,045 scrape-log INFO - attraction_data_update - Data from url #157 successfully retrieved
+2023-08-01 18:52:02,045 scrape-log INFO - attractions_data - Start retrieving attraction information from url #158
+2023-08-01 18:52:02,240 scrape-log INFO - attraction_data_update - Data from url #158 successfully retrieved
+2023-08-01 18:52:02,240 scrape-log INFO - attractions_data - Start retrieving attraction information from url #159
+2023-08-01 18:52:02,584 scrape-log INFO - attraction_data_update - Data from url #159 successfully retrieved
+2023-08-01 18:52:02,585 scrape-log INFO - attractions_data - Start retrieving attraction information from url #160
+2023-08-01 18:52:02,873 scrape-log INFO - attraction_data_update - Data from url #160 successfully retrieved
+2023-08-01 18:52:04,285 scrape-log INFO - attractions_data - Start retrieving attraction information from url #161
+2023-08-01 18:52:04,450 scrape-log INFO - attraction_data_update - Data from url #161 successfully retrieved
+2023-08-01 18:52:04,450 scrape-log INFO - attractions_data - Start retrieving attraction information from url #162
+2023-08-01 18:52:04,734 scrape-log INFO - attraction_data_update - Data from url #162 successfully retrieved
+2023-08-01 18:52:04,734 scrape-log INFO - attractions_data - Start retrieving attraction information from url #163
+2023-08-01 18:52:04,915 scrape-log INFO - attraction_data_update - Data from url #163 successfully retrieved
+2023-08-01 18:52:04,915 scrape-log INFO - attractions_data - Start retrieving attraction information from url #164
+2023-08-01 18:52:05,154 scrape-log INFO - attraction_data_update - Data from url #164 successfully retrieved
+2023-08-01 18:52:05,155 scrape-log INFO - attractions_data - Start retrieving attraction information from url #165
+2023-08-01 18:52:05,374 scrape-log INFO - attraction_data_update - Data from url #165 successfully retrieved
+2023-08-01 18:52:06,918 scrape-log INFO - attractions_data - Start retrieving attraction information from url #166
+2023-08-01 18:52:07,255 scrape-log INFO - attraction_data_update - Data from url #166 successfully retrieved
+2023-08-01 18:52:07,255 scrape-log INFO - attractions_data - Start retrieving attraction information from url #167
+2023-08-01 18:52:07,455 scrape-log INFO - attraction_data_update - Data from url #167 successfully retrieved
+2023-08-01 18:52:07,455 scrape-log INFO - attractions_data - Start retrieving attraction information from url #168
+2023-08-01 18:52:07,663 scrape-log INFO - attraction_data_update - Data from url #168 successfully retrieved
+2023-08-01 18:52:07,663 scrape-log INFO - attractions_data - Start retrieving attraction information from url #169
+2023-08-01 18:52:07,826 scrape-log INFO - attraction_data_update - Data from url #169 successfully retrieved
+2023-08-01 18:52:07,826 scrape-log INFO - attractions_data - Start retrieving attraction information from url #170
+2023-08-01 18:52:08,130 scrape-log INFO - attraction_data_update - Data from url #170 successfully retrieved
+2023-08-01 18:52:10,146 scrape-log INFO - attractions_data - Start retrieving attraction information from url #171
+2023-08-01 18:52:10,445 scrape-log INFO - attraction_data_update - Data from url #171 successfully retrieved
+2023-08-01 18:52:10,445 scrape-log INFO - attractions_data - Start retrieving attraction information from url #172
+2023-08-01 18:52:10,723 scrape-log INFO - attraction_data_update - Data from url #172 successfully retrieved
+2023-08-01 18:52:10,723 scrape-log INFO - attractions_data - Start retrieving attraction information from url #173
+2023-08-01 18:52:11,081 scrape-log INFO - attraction_data_update - Data from url #173 successfully retrieved
+2023-08-01 18:52:11,081 scrape-log INFO - attractions_data - Start retrieving attraction information from url #174
+2023-08-01 18:52:11,243 scrape-log INFO - attraction_data_update - Data from url #174 successfully retrieved
+2023-08-01 18:52:11,244 scrape-log INFO - attractions_data - Start retrieving attraction information from url #175
+2023-08-01 18:52:11,434 scrape-log INFO - attraction_data_update - Data from url #175 successfully retrieved
+2023-08-01 18:52:13,121 scrape-log INFO - attractions_data - Start retrieving attraction information from url #176
+2023-08-01 18:52:13,332 scrape-log INFO - attraction_data_update - Data from url #176 successfully retrieved
+2023-08-01 18:52:13,332 scrape-log INFO - attractions_data - Start retrieving attraction information from url #177
+2023-08-01 18:52:13,600 scrape-log INFO - attraction_data_update - Data from url #177 successfully retrieved
+2023-08-01 18:52:13,600 scrape-log INFO - attractions_data - Start retrieving attraction information from url #178
+2023-08-01 18:52:13,793 scrape-log INFO - attraction_data_update - Data from url #178 successfully retrieved
+2023-08-01 18:52:13,793 scrape-log INFO - attractions_data - Start retrieving attraction information from url #179
+2023-08-01 18:52:13,982 scrape-log INFO - attraction_data_update - Data from url #179 successfully retrieved
+2023-08-01 18:52:13,983 scrape-log INFO - attractions_data - Start retrieving attraction information from url #180
+2023-08-01 18:52:14,319 scrape-log INFO - attraction_data_update - Data from url #180 successfully retrieved
+2023-08-01 18:52:16,228 scrape-log INFO - attractions_data - Start retrieving attraction information from url #181
+2023-08-01 18:52:16,353 scrape-log INFO - attraction_data_update - Data from url #181 successfully retrieved
+2023-08-01 18:52:16,353 scrape-log INFO - attractions_data - Start retrieving attraction information from url #182
+2023-08-01 18:52:16,619 scrape-log INFO - attraction_data_update - Data from url #182 successfully retrieved
+2023-08-01 18:52:16,619 scrape-log INFO - attractions_data - Start retrieving attraction information from url #183
+2023-08-01 18:52:16,917 scrape-log INFO - attraction_data_update - Data from url #183 successfully retrieved
+2023-08-01 18:52:16,918 scrape-log INFO - attractions_data - Start retrieving attraction information from url #184
+2023-08-01 18:52:17,436 scrape-log INFO - attraction_data_update - Data from url #184 successfully retrieved
+2023-08-01 18:52:17,436 scrape-log INFO - attractions_data - Start retrieving attraction information from url #185
+2023-08-01 18:52:17,905 scrape-log INFO - attraction_data_update - Data from url #185 successfully retrieved
+2023-08-01 18:52:19,391 scrape-log INFO - attractions_data - Start retrieving attraction information from url #186
+2023-08-01 18:52:19,707 scrape-log INFO - attraction_data_update - Data from url #186 successfully retrieved
+2023-08-01 18:52:19,707 scrape-log INFO - attractions_data - Start retrieving attraction information from url #187
+2023-08-01 18:52:19,928 scrape-log INFO - attraction_data_update - Data from url #187 successfully retrieved
+2023-08-01 18:52:19,928 scrape-log INFO - attractions_data - Start retrieving attraction information from url #188
+2023-08-01 18:52:20,257 scrape-log INFO - attraction_data_update - Data from url #188 successfully retrieved
+2023-08-01 18:52:20,257 scrape-log INFO - attractions_data - Start retrieving attraction information from url #189
+2023-08-01 18:52:20,390 scrape-log INFO - attraction_data_update - Data from url #189 successfully retrieved
+2023-08-01 18:52:20,391 scrape-log INFO - attractions_data - Start retrieving attraction information from url #190
+2023-08-01 18:52:20,622 scrape-log INFO - attraction_data_update - Data from url #190 successfully retrieved
+2023-08-01 18:52:22,880 scrape-log INFO - attractions_data - Start retrieving attraction information from url #191
+2023-08-01 18:52:23,068 scrape-log INFO - attraction_data_update - Data from url #191 successfully retrieved
+2023-08-01 18:52:23,068 scrape-log INFO - attractions_data - Start retrieving attraction information from url #192
+2023-08-01 18:52:23,398 scrape-log INFO - attraction_data_update - Data from url #192 successfully retrieved
+2023-08-01 18:52:23,398 scrape-log INFO - attractions_data - Start retrieving attraction information from url #193
+2023-08-01 18:52:23,560 scrape-log INFO - attraction_data_update - Data from url #193 successfully retrieved
+2023-08-01 18:52:23,560 scrape-log INFO - attractions_data - Start retrieving attraction information from url #194
+2023-08-01 18:52:23,713 scrape-log INFO - attraction_data_update - Data from url #194 successfully retrieved
+2023-08-01 18:52:23,714 scrape-log INFO - attractions_data - Start retrieving attraction information from url #195
+2023-08-01 18:52:23,991 scrape-log INFO - attraction_data_update - Data from url #195 successfully retrieved
+2023-08-01 18:52:25,393 scrape-log INFO - attractions_data - Start retrieving attraction information from url #196
+2023-08-01 18:52:25,587 scrape-log INFO - attraction_data_update - Data from url #196 successfully retrieved
+2023-08-01 18:52:25,587 scrape-log INFO - attractions_data - Start retrieving attraction information from url #197
+2023-08-01 18:52:25,775 scrape-log INFO - attraction_data_update - Data from url #197 successfully retrieved
+2023-08-01 18:52:25,776 scrape-log INFO - attractions_data - Start retrieving attraction information from url #198
+2023-08-01 18:52:25,940 scrape-log INFO - attraction_data_update - Data from url #198 successfully retrieved
+2023-08-01 18:52:25,940 scrape-log INFO - attractions_data - Start retrieving attraction information from url #199
+2023-08-01 18:52:26,227 scrape-log INFO - attraction_data_update - Data from url #199 successfully retrieved
+2023-08-01 18:52:26,228 scrape-log INFO - attractions_data - Start retrieving attraction information from url #200
+2023-08-01 18:52:26,431 scrape-log INFO - attraction_data_update - Data from url #200 successfully retrieved
+2023-08-01 18:52:28,192 scrape-log INFO - attractions_data - Start retrieving attraction information from url #201
+2023-08-01 18:52:28,366 scrape-log INFO - attraction_data_update - Data from url #201 successfully retrieved
+2023-08-01 18:52:28,366 scrape-log INFO - attractions_data - Start retrieving attraction information from url #202
+2023-08-01 18:52:28,676 scrape-log INFO - attraction_data_update - Data from url #202 successfully retrieved
+2023-08-01 18:52:28,676 scrape-log INFO - attractions_data - Start retrieving attraction information from url #203
+2023-08-01 18:52:28,839 scrape-log INFO - attraction_data_update - Data from url #203 successfully retrieved
+2023-08-01 18:52:28,839 scrape-log INFO - attractions_data - Start retrieving attraction information from url #204
+2023-08-01 18:52:28,931 scrape-log INFO - attraction_data_update - Data from url #204 successfully retrieved
+2023-08-01 18:52:28,931 scrape-log INFO - attractions_data - Start retrieving attraction information from url #205
+2023-08-01 18:52:29,101 scrape-log INFO - attraction_data_update - Data from url #205 successfully retrieved
+2023-08-01 18:52:31,193 scrape-log INFO - attractions_data - Start retrieving attraction information from url #206
+2023-08-01 18:52:31,369 scrape-log INFO - attraction_data_update - Data from url #206 successfully retrieved
+2023-08-01 18:52:31,369 scrape-log INFO - attractions_data - Start retrieving attraction information from url #207
+2023-08-01 18:52:31,648 scrape-log INFO - attraction_data_update - Data from url #207 successfully retrieved
+2023-08-01 18:52:31,648 scrape-log INFO - attractions_data - Start retrieving attraction information from url #208
+2023-08-01 18:52:31,849 scrape-log INFO - attraction_data_update - Data from url #208 successfully retrieved
+2023-08-01 18:52:31,849 scrape-log INFO - attractions_data - Start retrieving attraction information from url #209
+2023-08-01 18:52:32,048 scrape-log INFO - attraction_data_update - Data from url #209 successfully retrieved
+2023-08-01 18:52:32,048 scrape-log INFO - attractions_data - Start retrieving attraction information from url #210
+2023-08-01 18:52:32,376 scrape-log INFO - attraction_data_update - Data from url #210 successfully retrieved
+2023-08-01 18:52:34,614 scrape-log INFO - attractions_data - Start retrieving attraction information from url #211
+2023-08-01 18:52:34,819 scrape-log INFO - attraction_data_update - Data from url #211 successfully retrieved
+2023-08-01 18:52:34,819 scrape-log INFO - attractions_data - Start retrieving attraction information from url #212
+2023-08-01 18:52:34,998 scrape-log INFO - attraction_data_update - Data from url #212 successfully retrieved
+2023-08-01 18:52:34,998 scrape-log INFO - attractions_data - Start retrieving attraction information from url #213
+2023-08-01 18:52:35,163 scrape-log INFO - attraction_data_update - Data from url #213 successfully retrieved
+2023-08-01 18:52:35,163 scrape-log INFO - attractions_data - Start retrieving attraction information from url #214
+2023-08-01 18:52:35,417 scrape-log INFO - attraction_data_update - Data from url #214 successfully retrieved
+2023-08-01 18:52:35,417 scrape-log INFO - attractions_data - Start retrieving attraction information from url #215
+2023-08-01 18:52:35,564 scrape-log INFO - attraction_data_update - Data from url #215 successfully retrieved
+2023-08-01 18:52:37,039 scrape-log INFO - attractions_data - Start retrieving attraction information from url #216
+2023-08-01 18:52:37,190 scrape-log INFO - attraction_data_update - Data from url #216 successfully retrieved
+2023-08-01 18:52:37,190 scrape-log INFO - attractions_data - Start retrieving attraction information from url #217
+2023-08-01 18:52:37,353 scrape-log INFO - attraction_data_update - Data from url #217 successfully retrieved
+2023-08-01 18:52:37,354 scrape-log INFO - attractions_data - Start retrieving attraction information from url #218
+2023-08-01 18:52:37,523 scrape-log INFO - attraction_data_update - Data from url #218 successfully retrieved
+2023-08-01 18:52:37,524 scrape-log INFO - attractions_data - Start retrieving attraction information from url #219
+2023-08-01 18:52:37,919 scrape-log INFO - attraction_data_update - Data from url #219 successfully retrieved
+2023-08-01 18:52:37,919 scrape-log INFO - attractions_data - Start retrieving attraction information from url #220
+2023-08-01 18:52:38,245 scrape-log INFO - attraction_data_update - Data from url #220 successfully retrieved
+2023-08-01 18:52:40,692 scrape-log INFO - attractions_data - Start retrieving attraction information from url #221
+2023-08-01 18:52:40,921 scrape-log INFO - attraction_data_update - Data from url #221 successfully retrieved
+2023-08-01 18:52:40,921 scrape-log INFO - attractions_data - Start retrieving attraction information from url #222
+2023-08-01 18:52:41,183 scrape-log INFO - attraction_data_update - Data from url #222 successfully retrieved
+2023-08-01 18:52:41,183 scrape-log INFO - attractions_data - Start retrieving attraction information from url #223
+2023-08-01 18:52:41,339 scrape-log INFO - attraction_data_update - Data from url #223 successfully retrieved
+2023-08-01 18:52:41,339 scrape-log INFO - attractions_data - Start retrieving attraction information from url #224
+2023-08-01 18:52:41,587 scrape-log INFO - attraction_data_update - Data from url #224 successfully retrieved
+2023-08-01 18:52:41,587 scrape-log INFO - attractions_data - Start retrieving attraction information from url #225
+2023-08-01 18:52:41,747 scrape-log INFO - attraction_data_update - Data from url #225 successfully retrieved
+2023-08-01 18:52:44,139 scrape-log INFO - attractions_data - Start retrieving attraction information from url #226
+2023-08-01 18:52:44,426 scrape-log INFO - attraction_data_update - Data from url #226 successfully retrieved
+2023-08-01 18:52:44,426 scrape-log INFO - attractions_data - Start retrieving attraction information from url #227
+2023-08-01 18:52:44,580 scrape-log INFO - attraction_data_update - Data from url #227 successfully retrieved
+2023-08-01 18:52:44,580 scrape-log INFO - attractions_data - Start retrieving attraction information from url #228
+2023-08-01 18:52:44,727 scrape-log INFO - attraction_data_update - Data from url #228 successfully retrieved
+2023-08-01 18:52:44,727 scrape-log INFO - attractions_data - Start retrieving attraction information from url #229
+2023-08-01 18:52:44,913 scrape-log INFO - attraction_data_update - Data from url #229 successfully retrieved
+2023-08-01 18:52:44,913 scrape-log INFO - attractions_data - Start retrieving attraction information from url #230
+2023-08-01 18:52:45,228 scrape-log INFO - attraction_data_update - Data from url #230 successfully retrieved
+2023-08-01 18:52:46,760 scrape-log INFO - attractions_data - Start retrieving attraction information from url #231
+2023-08-01 18:52:46,882 scrape-log INFO - attraction_data_update - Data from url #231 successfully retrieved
+2023-08-01 18:52:46,882 scrape-log INFO - attractions_data - Start retrieving attraction information from url #232
+2023-08-01 18:52:47,003 scrape-log INFO - attraction_data_update - Data from url #232 successfully retrieved
+2023-08-01 18:52:47,003 scrape-log INFO - attractions_data - Start retrieving attraction information from url #233
+2023-08-01 18:52:47,156 scrape-log INFO - attraction_data_update - Data from url #233 successfully retrieved
+2023-08-01 18:52:47,156 scrape-log INFO - attractions_data - Start retrieving attraction information from url #234
+2023-08-01 18:52:47,461 scrape-log INFO - attraction_data_update - Data from url #234 successfully retrieved
+2023-08-01 18:52:47,461 scrape-log INFO - attractions_data - Start retrieving attraction information from url #235
+2023-08-01 18:52:47,635 scrape-log INFO - attraction_data_update - Data from url #235 successfully retrieved
+2023-08-01 18:52:49,368 scrape-log INFO - attractions_data - Start retrieving attraction information from url #236
+2023-08-01 18:52:49,582 scrape-log INFO - attraction_data_update - Data from url #236 successfully retrieved
+2023-08-01 18:52:49,582 scrape-log INFO - attractions_data - Start retrieving attraction information from url #237
+2023-08-01 18:52:49,740 scrape-log INFO - attraction_data_update - Data from url #237 successfully retrieved
+2023-08-01 18:52:49,740 scrape-log INFO - attractions_data - Start retrieving attraction information from url #238
+2023-08-01 18:52:50,059 scrape-log INFO - attraction_data_update - Data from url #238 successfully retrieved
+2023-08-01 18:52:50,060 scrape-log INFO - attractions_data - Start retrieving attraction information from url #239
+2023-08-01 18:52:50,217 scrape-log INFO - attraction_data_update - Data from url #239 successfully retrieved
+2023-08-01 18:52:50,217 scrape-log INFO - attractions_data - Start retrieving attraction information from url #240
+2023-08-01 18:52:50,391 scrape-log INFO - attraction_data_update - Data from url #240 successfully retrieved
+2023-08-01 18:52:52,244 scrape-log INFO - attractions_data - Start retrieving attraction information from url #241
+2023-08-01 18:52:52,604 scrape-log INFO - attraction_data_update - Data from url #241 successfully retrieved
+2023-08-01 18:52:52,604 scrape-log INFO - attractions_data - Start retrieving attraction information from url #242
+2023-08-01 18:52:52,716 scrape-log INFO - attraction_data_update - Data from url #242 successfully retrieved
+2023-08-01 18:52:52,716 scrape-log INFO - attractions_data - Start retrieving attraction information from url #243
+2023-08-01 18:52:52,844 scrape-log INFO - attraction_data_update - Data from url #243 successfully retrieved
+2023-08-01 18:52:52,845 scrape-log INFO - attractions_data - Start retrieving attraction information from url #244
+2023-08-01 18:52:52,978 scrape-log INFO - attraction_data_update - Data from url #244 successfully retrieved
+2023-08-01 18:52:52,978 scrape-log INFO - attractions_data - Start retrieving attraction information from url #245
+2023-08-01 18:52:53,098 scrape-log INFO - attraction_data_update - Data from url #245 successfully retrieved
+2023-08-01 18:52:55,213 scrape-log INFO - attractions_data - Start retrieving attraction information from url #246
+2023-08-01 18:52:55,449 scrape-log INFO - attraction_data_update - Data from url #246 successfully retrieved
+2023-08-01 18:52:55,449 scrape-log INFO - attractions_data - Start retrieving attraction information from url #247
+2023-08-01 18:52:55,563 scrape-log INFO - attraction_data_update - Data from url #247 successfully retrieved
+2023-08-01 18:52:55,564 scrape-log INFO - attractions_data - Start retrieving attraction information from url #248
+2023-08-01 18:52:55,691 scrape-log INFO - attraction_data_update - Data from url #248 successfully retrieved
+2023-08-01 18:52:55,691 scrape-log INFO - attractions_data - Start retrieving attraction information from url #249
+2023-08-01 18:52:55,839 scrape-log INFO - attraction_data_update - Data from url #249 successfully retrieved
+2023-08-01 18:52:55,839 scrape-log INFO - attractions_data - Start retrieving attraction information from url #250
+2023-08-01 18:52:56,093 scrape-log INFO - attraction_data_update - Data from url #250 successfully retrieved
+2023-08-01 18:52:57,779 scrape-log INFO - attractions_data - Start retrieving attraction information from url #251
+2023-08-01 18:52:57,914 scrape-log INFO - attraction_data_update - Data from url #251 successfully retrieved
+2023-08-01 18:52:57,914 scrape-log INFO - attractions_data - Start retrieving attraction information from url #252
+2023-08-01 18:52:58,036 scrape-log INFO - attraction_data_update - Data from url #252 successfully retrieved
+2023-08-01 18:52:58,036 scrape-log INFO - attractions_data - Start retrieving attraction information from url #253
+2023-08-01 18:52:58,137 scrape-log INFO - attraction_data_update - Data from url #253 successfully retrieved
+2023-08-01 18:52:58,138 scrape-log INFO - attractions_data - Start retrieving attraction information from url #254
+2023-08-01 18:52:58,260 scrape-log INFO - attraction_data_update - Data from url #254 successfully retrieved
+2023-08-01 18:52:58,260 scrape-log INFO - attractions_data - Start retrieving attraction information from url #255
+2023-08-01 18:52:58,515 scrape-log INFO - attraction_data_update - Data from url #255 successfully retrieved
+2023-08-01 18:53:01,012 scrape-log INFO - attractions_data - Start retrieving attraction information from url #256
+2023-08-01 18:53:01,128 scrape-log INFO - attraction_data_update - Data from url #256 successfully retrieved
+2023-08-01 18:53:01,128 scrape-log INFO - attractions_data - Start retrieving attraction information from url #257
+2023-08-01 18:53:01,327 scrape-log INFO - attraction_data_update - Data from url #257 successfully retrieved
+2023-08-01 18:53:01,327 scrape-log INFO - attractions_data - Start retrieving attraction information from url #258
+2023-08-01 18:53:01,472 scrape-log INFO - attraction_data_update - Data from url #258 successfully retrieved
+2023-08-01 18:53:01,472 scrape-log INFO - attractions_data - Start retrieving attraction information from url #259
+2023-08-01 18:53:01,589 scrape-log INFO - attraction_data_update - Data from url #259 successfully retrieved
+2023-08-01 18:53:01,590 scrape-log INFO - attractions_data - Start retrieving attraction information from url #260
+2023-08-01 18:53:01,827 scrape-log INFO - attraction_data_update - Data from url #260 successfully retrieved
+2023-08-01 18:53:03,559 scrape-log INFO - attractions_data - Start retrieving attraction information from url #261
+2023-08-01 18:53:03,703 scrape-log INFO - attraction_data_update - Data from url #261 successfully retrieved
+2023-08-01 18:53:03,703 scrape-log INFO - attractions_data - Start retrieving attraction information from url #262
+2023-08-01 18:53:03,814 scrape-log INFO - attraction_data_update - Data from url #262 successfully retrieved
+2023-08-01 18:53:03,815 scrape-log INFO - attractions_data - Start retrieving attraction information from url #263
+2023-08-01 18:53:03,983 scrape-log INFO - attraction_data_update - Data from url #263 successfully retrieved
+2023-08-01 18:53:03,983 scrape-log INFO - attractions_data - Start retrieving attraction information from url #264
+2023-08-01 18:53:04,091 scrape-log INFO - attraction_data_update - Data from url #264 successfully retrieved
+2023-08-01 18:53:04,091 scrape-log INFO - attractions_data - Start retrieving attraction information from url #265
+2023-08-01 18:53:04,384 scrape-log INFO - attraction_data_update - Data from url #265 successfully retrieved
+2023-08-01 18:53:06,326 scrape-log INFO - attractions_data - Start retrieving attraction information from url #266
+2023-08-01 18:53:06,449 scrape-log INFO - attraction_data_update - Data from url #266 successfully retrieved
+2023-08-01 18:53:06,449 scrape-log INFO - attractions_data - Start retrieving attraction information from url #267
+2023-08-01 18:53:06,582 scrape-log INFO - attraction_data_update - Data from url #267 successfully retrieved
+2023-08-01 18:53:06,583 scrape-log INFO - attractions_data - Start retrieving attraction information from url #268
+2023-08-01 18:53:06,685 scrape-log INFO - attraction_data_update - Data from url #268 successfully retrieved
+2023-08-01 18:53:06,686 scrape-log INFO - attractions_data - Start retrieving attraction information from url #269
+2023-08-01 18:53:06,811 scrape-log INFO - attraction_data_update - Data from url #269 successfully retrieved
+2023-08-01 18:53:06,811 scrape-log INFO - attractions_data - Start retrieving attraction information from url #270
+2023-08-01 18:53:07,048 scrape-log INFO - attraction_data_update - Data from url #270 successfully retrieved
+2023-08-01 18:53:08,608 scrape-log INFO - attractions_data - Start retrieving attraction information from url #271
+2023-08-01 18:53:08,719 scrape-log INFO - attraction_data_update - Data from url #271 successfully retrieved
+2023-08-01 18:53:08,719 scrape-log INFO - attractions_data - Start retrieving attraction information from url #272
+2023-08-01 18:53:08,826 scrape-log INFO - attraction_data_update - Data from url #272 successfully retrieved
+2023-08-01 18:53:08,826 scrape-log INFO - attractions_data - Start retrieving attraction information from url #273
+2023-08-01 18:53:08,925 scrape-log INFO - attraction_data_update - Data from url #273 successfully retrieved
+2023-08-01 18:53:08,925 scrape-log INFO - attractions_data - Start retrieving attraction information from url #274
+2023-08-01 18:53:09,036 scrape-log INFO - attraction_data_update - Data from url #274 successfully retrieved
+2023-08-01 18:53:09,036 scrape-log INFO - attractions_data - Start retrieving attraction information from url #275
+2023-08-01 18:53:09,135 scrape-log INFO - attraction_data_update - Data from url #275 successfully retrieved
+2023-08-01 18:53:10,596 scrape-log INFO - attractions_data - Start retrieving attraction information from url #276
+2023-08-01 18:53:10,841 scrape-log INFO - attraction_data_update - Data from url #276 successfully retrieved
+2023-08-01 18:53:10,841 scrape-log INFO - attractions_data - Start retrieving attraction information from url #277
+2023-08-01 18:53:10,932 scrape-log INFO - attraction_data_update - Data from url #277 successfully retrieved
+2023-08-01 18:53:10,932 scrape-log INFO - attractions_data - Start retrieving attraction information from url #278
+2023-08-01 18:53:11,046 scrape-log INFO - attraction_data_update - Data from url #278 successfully retrieved
+2023-08-01 18:53:11,046 scrape-log INFO - attractions_data - Start retrieving attraction information from url #279
+2023-08-01 18:53:11,131 scrape-log INFO - attraction_data_update - Data from url #279 successfully retrieved
+2023-08-01 18:53:11,131 scrape-log INFO - attractions_data - Start retrieving attraction information from url #280
+2023-08-01 18:53:11,233 scrape-log INFO - attraction_data_update - Data from url #280 successfully retrieved
+2023-08-01 18:53:12,609 scrape-log INFO - attractions_data - Start retrieving attraction information from url #281
+2023-08-01 18:53:12,700 scrape-log INFO - attraction_data_update - Data from url #281 successfully retrieved
+2023-08-01 18:53:12,701 scrape-log INFO - attractions_data - Start retrieving attraction information from url #282
+2023-08-01 18:53:12,923 scrape-log INFO - attraction_data_update - Data from url #282 successfully retrieved
+2023-08-01 18:53:12,923 scrape-log INFO - attractions_data - Start retrieving attraction information from url #283
+2023-08-01 18:53:13,030 scrape-log INFO - attraction_data_update - Data from url #283 successfully retrieved
+2023-08-01 18:53:13,030 scrape-log INFO - attractions_data - Start retrieving attraction information from url #284
+2023-08-01 18:53:13,121 scrape-log INFO - attraction_data_update - Data from url #284 successfully retrieved
+2023-08-01 18:53:13,121 scrape-log INFO - attractions_data - Start retrieving attraction information from url #285
+2023-08-01 18:53:13,253 scrape-log INFO - attraction_data_update - Data from url #285 successfully retrieved
+2023-08-01 18:53:16,260 scrape-log INFO - attractions_data - Start retrieving attraction information from url #286
+2023-08-01 18:53:16,378 scrape-log INFO - attraction_data_update - Data from url #286 successfully retrieved
+2023-08-01 18:53:16,378 scrape-log INFO - attractions_data - Start retrieving attraction information from url #287
+2023-08-01 18:53:16,591 scrape-log INFO - attraction_data_update - Data from url #287 successfully retrieved
+2023-08-01 18:53:16,591 scrape-log INFO - attractions_data - Start retrieving attraction information from url #288
+2023-08-01 18:53:16,735 scrape-log INFO - attraction_data_update - Data from url #288 successfully retrieved
+2023-08-01 18:53:16,735 scrape-log INFO - attractions_data - Start retrieving attraction information from url #289
+2023-08-01 18:53:16,883 scrape-log INFO - attraction_data_update - Data from url #289 successfully retrieved
+2023-08-01 18:53:16,883 scrape-log INFO - attractions_data - Start retrieving attraction information from url #290
+2023-08-01 18:53:17,021 scrape-log INFO - attraction_data_update - Data from url #290 successfully retrieved
+2023-08-01 18:53:18,625 scrape-log INFO - attractions_data - Start retrieving attraction information from url #291
+2023-08-01 18:53:18,863 scrape-log INFO - attraction_data_update - Data from url #291 successfully retrieved
+2023-08-01 18:53:18,863 scrape-log INFO - attractions_data - Start retrieving attraction information from url #292
+2023-08-01 18:53:18,980 scrape-log INFO - attraction_data_update - Data from url #292 successfully retrieved
+2023-08-01 18:53:18,981 scrape-log INFO - attractions_data - Start retrieving attraction information from url #293
+2023-08-01 18:53:19,068 scrape-log INFO - attraction_data_update - Data from url #293 successfully retrieved
+2023-08-01 18:53:19,068 scrape-log INFO - attractions_data - Start retrieving attraction information from url #294
+2023-08-01 18:53:19,163 scrape-log INFO - attraction_data_update - Data from url #294 successfully retrieved
+2023-08-01 18:53:19,164 scrape-log INFO - attractions_data - Start retrieving attraction information from url #295
+2023-08-01 18:53:19,274 scrape-log INFO - attraction_data_update - Data from url #295 successfully retrieved
+2023-08-01 18:53:20,742 scrape-log INFO - attractions_data - Start retrieving attraction information from url #296
+2023-08-01 18:53:20,863 scrape-log INFO - attraction_data_update - Data from url #296 successfully retrieved
+2023-08-01 18:53:20,863 scrape-log INFO - attractions_data - Start retrieving attraction information from url #297
+2023-08-01 18:53:21,093 scrape-log INFO - attraction_data_update - Data from url #297 successfully retrieved
+2023-08-01 18:53:21,094 scrape-log INFO - attractions_data - Start retrieving attraction information from url #298
+2023-08-01 18:53:21,208 scrape-log INFO - attraction_data_update - Data from url #298 successfully retrieved
+2023-08-01 18:53:21,208 scrape-log INFO - attractions_data - Start retrieving attraction information from url #299
+2023-08-01 18:53:21,298 scrape-log INFO - attraction_data_update - Data from url #299 successfully retrieved
+2023-08-01 18:53:21,299 scrape-log INFO - attractions_data - Start retrieving attraction information from url #300
+2023-08-01 18:53:21,390 scrape-log INFO - attraction_data_update - Data from url #300 successfully retrieved
+2023-08-01 18:53:23,422 scrape-log INFO - attractions_data - Start retrieving attraction information from url #301
+2023-08-01 18:53:23,520 scrape-log INFO - attraction_data_update - Data from url #301 successfully retrieved
+2023-08-01 18:53:23,520 scrape-log INFO - attractions_data - Start retrieving attraction information from url #302
+2023-08-01 18:53:23,610 scrape-log INFO - attraction_data_update - Data from url #302 successfully retrieved
+2023-08-01 18:53:23,610 scrape-log INFO - attractions_data - Start retrieving attraction information from url #303
+2023-08-01 18:53:23,826 scrape-log INFO - attraction_data_update - Data from url #303 successfully retrieved
+2023-08-01 18:53:23,826 scrape-log INFO - attractions_data - Start retrieving attraction information from url #304
+2023-08-01 18:53:23,935 scrape-log INFO - attraction_data_update - Data from url #304 successfully retrieved
+2023-08-01 18:53:23,936 scrape-log INFO - attractions_data - Start retrieving attraction information from url #305
+2023-08-01 18:53:24,072 scrape-log INFO - attraction_data_update - Data from url #305 successfully retrieved
+2023-08-01 18:53:25,865 scrape-log INFO - attractions_data - Start retrieving attraction information from url #306
+2023-08-01 18:53:25,962 scrape-log INFO - attraction_data_update - Data from url #306 successfully retrieved
+2023-08-01 18:53:25,962 scrape-log INFO - attractions_data - Start retrieving attraction information from url #307
+2023-08-01 18:53:26,099 scrape-log INFO - attraction_data_update - Data from url #307 successfully retrieved
+2023-08-01 18:53:26,099 scrape-log INFO - attractions_data - Start retrieving attraction information from url #308
+2023-08-01 18:53:26,319 scrape-log INFO - attraction_data_update - Data from url #308 successfully retrieved
+2023-08-01 18:53:26,320 scrape-log INFO - attractions_data - Start retrieving attraction information from url #309
+2023-08-01 18:53:26,444 scrape-log INFO - attraction_data_update - Data from url #309 successfully retrieved
+2023-08-01 18:53:26,445 scrape-log INFO - attractions_data - Start retrieving attraction information from url #310
+2023-08-01 18:53:26,564 scrape-log INFO - attraction_data_update - Data from url #310 successfully retrieved
+2023-08-01 18:53:28,274 scrape-log INFO - attractions_data - Start retrieving attraction information from url #311
+2023-08-01 18:53:28,409 scrape-log INFO - attraction_data_update - Data from url #311 successfully retrieved
+2023-08-01 18:53:28,409 scrape-log INFO - attractions_data - Start retrieving attraction information from url #312
+2023-08-01 18:53:28,518 scrape-log INFO - attraction_data_update - Data from url #312 successfully retrieved
+2023-08-01 18:53:28,518 scrape-log INFO - attractions_data - Start retrieving attraction information from url #313
+2023-08-01 18:53:28,807 scrape-log INFO - attraction_data_update - Data from url #313 successfully retrieved
+2023-08-01 18:53:28,808 scrape-log INFO - attractions_data - Start retrieving attraction information from url #314
+2023-08-01 18:53:28,955 scrape-log INFO - attraction_data_update - Data from url #314 successfully retrieved
+2023-08-01 18:53:28,955 scrape-log INFO - attractions_data - Start retrieving attraction information from url #315
+2023-08-01 18:53:29,060 scrape-log INFO - attraction_data_update - Data from url #315 successfully retrieved
+2023-08-01 18:53:31,241 scrape-log INFO - attractions_data - Start retrieving attraction information from url #316
+2023-08-01 18:53:31,363 scrape-log INFO - attraction_data_update - Data from url #316 successfully retrieved
+2023-08-01 18:53:31,363 scrape-log INFO - attractions_data - Start retrieving attraction information from url #317
+2023-08-01 18:53:31,583 scrape-log INFO - attraction_data_update - Data from url #317 successfully retrieved
+2023-08-01 18:53:31,583 scrape-log INFO - attractions_data - Start retrieving attraction information from url #318
+2023-08-01 18:53:31,669 scrape-log INFO - attraction_data_update - Data from url #318 successfully retrieved
+2023-08-01 18:53:31,669 scrape-log INFO - attractions_data - Start retrieving attraction information from url #319
+2023-08-01 18:53:31,766 scrape-log INFO - attraction_data_update - Data from url #319 successfully retrieved
+2023-08-01 18:53:31,766 scrape-log INFO - attractions_data - Start retrieving attraction information from url #320
+2023-08-01 18:53:31,888 scrape-log INFO - attraction_data_update - Data from url #320 successfully retrieved
+2023-08-01 18:53:33,404 scrape-log INFO - attractions_data - Start retrieving attraction information from url #321
+2023-08-01 18:53:33,509 scrape-log INFO - attraction_data_update - Data from url #321 successfully retrieved
+2023-08-01 18:53:33,510 scrape-log INFO - attractions_data - Start retrieving attraction information from url #322
+2023-08-01 18:53:33,622 scrape-log INFO - attraction_data_update - Data from url #322 successfully retrieved
+2023-08-01 18:53:33,622 scrape-log INFO - attractions_data - Start retrieving attraction information from url #323
+2023-08-01 18:53:33,810 scrape-log INFO - attraction_data_update - Data from url #323 successfully retrieved
+2023-08-01 18:53:33,810 scrape-log INFO - attractions_data - Start retrieving attraction information from url #324
+2023-08-01 18:53:33,911 scrape-log INFO - attraction_data_update - Data from url #324 successfully retrieved
+2023-08-01 18:53:33,911 scrape-log INFO - attractions_data - Start retrieving attraction information from url #325
+2023-08-01 18:53:34,031 scrape-log INFO - attraction_data_update - Data from url #325 successfully retrieved
+2023-08-01 18:53:35,756 scrape-log INFO - attractions_data - Start retrieving attraction information from url #326
+2023-08-01 18:53:35,878 scrape-log INFO - attraction_data_update - Data from url #326 successfully retrieved
+2023-08-01 18:53:35,878 scrape-log INFO - attractions_data - Start retrieving attraction information from url #327
+2023-08-01 18:53:35,985 scrape-log INFO - attraction_data_update - Data from url #327 successfully retrieved
+2023-08-01 18:53:35,985 scrape-log INFO - attractions_data - Start retrieving attraction information from url #328
+2023-08-01 18:53:36,219 scrape-log INFO - attraction_data_update - Data from url #328 successfully retrieved
+2023-08-01 18:53:36,219 scrape-log INFO - attractions_data - Start retrieving attraction information from url #329
+2023-08-01 18:53:36,327 scrape-log INFO - attraction_data_update - Data from url #329 successfully retrieved
+2023-08-01 18:53:36,327 scrape-log INFO - attractions_data - Start retrieving attraction information from url #330
+2023-08-01 18:53:36,433 scrape-log INFO - attraction_data_update - Data from url #330 successfully retrieved
+2023-08-01 18:53:38,730 scrape-log INFO - attractions_data - Start retrieving attraction information from url #331
+2023-08-01 18:53:39,026 scrape-log INFO - attraction_data_update - Data from url #331 successfully retrieved
+2023-08-01 18:53:39,026 scrape-log INFO - attractions_data - Start retrieving attraction information from url #332
+2023-08-01 18:53:39,241 scrape-log INFO - attraction_data_update - Data from url #332 successfully retrieved
+2023-08-01 18:53:39,241 scrape-log INFO - attractions_data - Start retrieving attraction information from url #333
+2023-08-01 18:53:39,350 scrape-log INFO - attraction_data_update - Data from url #333 successfully retrieved
+2023-08-01 18:53:39,350 scrape-log INFO - attractions_data - Start retrieving attraction information from url #334
+2023-08-01 18:53:39,465 scrape-log INFO - attraction_data_update - Data from url #334 successfully retrieved
+2023-08-01 18:53:39,465 scrape-log INFO - attractions_data - Start retrieving attraction information from url #335
+2023-08-01 18:53:39,612 scrape-log INFO - attraction_data_update - Data from url #335 successfully retrieved
+2023-08-01 18:53:41,304 scrape-log INFO - attractions_data - Start retrieving attraction information from url #336
+2023-08-01 18:53:41,436 scrape-log INFO - attraction_data_update - Data from url #336 successfully retrieved
+2023-08-01 18:53:41,436 scrape-log INFO - attractions_data - Start retrieving attraction information from url #337
+2023-08-01 18:53:41,692 scrape-log INFO - attraction_data_update - Data from url #337 successfully retrieved
+2023-08-01 18:53:41,692 scrape-log INFO - attractions_data - Start retrieving attraction information from url #338
+2023-08-01 18:53:41,811 scrape-log INFO - attraction_data_update - Data from url #338 successfully retrieved
+2023-08-01 18:53:41,811 scrape-log INFO - attractions_data - Start retrieving attraction information from url #339
+2023-08-01 18:53:41,918 scrape-log INFO - attraction_data_update - Data from url #339 successfully retrieved
+2023-08-01 18:53:41,919 scrape-log INFO - attractions_data - Start retrieving attraction information from url #340
+2023-08-01 18:53:42,045 scrape-log INFO - attraction_data_update - Data from url #340 successfully retrieved
+2023-08-01 18:53:43,530 scrape-log INFO - attractions_data - Start retrieving attraction information from url #341
+2023-08-01 18:53:43,642 scrape-log INFO - attraction_data_update - Data from url #341 successfully retrieved
+2023-08-01 18:53:43,642 scrape-log INFO - attractions_data - Start retrieving attraction information from url #342
+2023-08-01 18:53:43,925 scrape-log INFO - attraction_data_update - Data from url #342 successfully retrieved
+2023-08-01 18:53:43,926 scrape-log INFO - attractions_data - Start retrieving attraction information from url #343
+2023-08-01 18:53:44,054 scrape-log INFO - attraction_data_update - Data from url #343 successfully retrieved
+2023-08-01 18:53:44,054 scrape-log INFO - attractions_data - Start retrieving attraction information from url #344
+2023-08-01 18:53:44,190 scrape-log INFO - attraction_data_update - Data from url #344 successfully retrieved
+2023-08-01 18:53:44,190 scrape-log INFO - attractions_data - Start retrieving attraction information from url #345
+2023-08-01 18:53:44,312 scrape-log INFO - attraction_data_update - Data from url #345 successfully retrieved
+2023-08-01 18:53:46,295 scrape-log INFO - attractions_data - Start retrieving attraction information from url #346
+2023-08-01 18:53:46,534 scrape-log INFO - attraction_data_update - Data from url #346 successfully retrieved
+2023-08-01 18:53:46,535 scrape-log INFO - attractions_data - Start retrieving attraction information from url #347
+2023-08-01 18:53:46,667 scrape-log INFO - attraction_data_update - Data from url #347 successfully retrieved
+2023-08-01 18:53:46,667 scrape-log INFO - attractions_data - Start retrieving attraction information from url #348
+2023-08-01 18:53:46,794 scrape-log INFO - attraction_data_update - Data from url #348 successfully retrieved
+2023-08-01 18:53:46,794 scrape-log INFO - attractions_data - Start retrieving attraction information from url #349
+2023-08-01 18:53:46,895 scrape-log INFO - attraction_data_update - Data from url #349 successfully retrieved
+2023-08-01 18:53:46,895 scrape-log INFO - attractions_data - Start retrieving attraction information from url #350
+2023-08-01 18:53:47,052 scrape-log INFO - attraction_data_update - Data from url #350 successfully retrieved
+2023-08-01 18:53:48,245 scrape-log INFO - attractions_data - Start retrieving attraction information from url #351
+2023-08-01 18:53:48,517 scrape-log INFO - attraction_data_update - Data from url #351 successfully retrieved
+2023-08-01 18:53:48,517 scrape-log INFO - attractions_data - Start retrieving attraction information from url #352
+2023-08-01 18:53:48,630 scrape-log INFO - attraction_data_update - Data from url #352 successfully retrieved
+2023-08-01 18:53:48,630 scrape-log INFO - attractions_data - Start retrieving attraction information from url #353
+2023-08-01 18:53:48,778 scrape-log INFO - attraction_data_update - Data from url #353 successfully retrieved
+2023-08-01 18:53:48,778 scrape-log INFO - attractions_data - Start retrieving attraction information from url #354
+2023-08-01 18:53:48,879 scrape-log INFO - attraction_data_update - Data from url #354 successfully retrieved
+2023-08-01 18:53:48,879 scrape-log INFO - attractions_data - Start retrieving attraction information from url #355
+2023-08-01 18:53:49,003 scrape-log INFO - attraction_data_update - Data from url #355 successfully retrieved
+2023-08-01 18:53:50,432 scrape-log INFO - attractions_data - Start retrieving attraction information from url #356
+2023-08-01 18:53:50,661 scrape-log INFO - attraction_data_update - Data from url #356 successfully retrieved
+2023-08-01 18:53:50,661 scrape-log INFO - attractions_data - Start retrieving attraction information from url #357
+2023-08-01 18:53:50,766 scrape-log INFO - attraction_data_update - Data from url #357 successfully retrieved
+2023-08-01 18:53:50,766 scrape-log INFO - attractions_data - Start retrieving attraction information from url #358
+2023-08-01 18:53:50,877 scrape-log INFO - attraction_data_update - Data from url #358 successfully retrieved
+2023-08-01 18:53:50,877 scrape-log INFO - attractions_data - Start retrieving attraction information from url #359
+2023-08-01 18:53:50,974 scrape-log INFO - attraction_data_update - Data from url #359 successfully retrieved
+2023-08-01 18:53:50,974 scrape-log INFO - attractions_data - Start retrieving attraction information from url #360
+2023-08-01 18:53:51,095 scrape-log INFO - attraction_data_update - Data from url #360 successfully retrieved
+2023-08-01 18:53:51,149 scrape-log INFO - storing_data - Created Data frame with annual weather data in Paris,Seoul,Cairo
+2023-08-01 18:53:53,220 scrape-log INFO - storing_data - Created attraction Data-Base
+2023-08-01 19:08:04,490 scrape-log INFO - storing_data - populate_tables and meteorological_data added to DB
+2023-08-01 19:08:29,259 scrape-log INFO - main - Filtered attractions report stored successfully
+2023-08-01 19:08:29,260 scrape-log INFO - main - Filtered and weather data stored successfully

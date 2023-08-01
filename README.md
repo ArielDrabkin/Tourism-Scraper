@@ -74,7 +74,7 @@
     to search for in each city.
     <li>Finally, select the type output you prefer: "all" to scrape all attractions in chosen cities,
     or "key_words" to scrape attractions by keyword.
-    <li><strong>Usage example: "Paris,Cairo" "river,boat,bridge" 420 "key_words".</strong>
+    <li>Usage example:  <strong>main.py "Paris, Seoul, Cairo" "museum" 100 "key_words".</strong>
     </li>
 </ul>
 
@@ -92,7 +92,11 @@
     <h2>Example for the output report:</h2>
 </div>
 
-![db_diagram](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/db_diagram.png)
+![city](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/city.jpg)
+![words](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/cords.jpg)
+![stats](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/stats.jpg)
+![interactions](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/interactions.jpg)
+![correlation.jpg](https://github.com/ArielDrabkin/Tourism_Scraper/blob/readme/correlation.jpg.jpg)
 
 
 <div style="background-color:#00AA6C; color:white; text-align:center">

@@ -259,15 +259,15 @@ def get_city_top_attractions_url(city_string):
 
     # find search bar
     search_bar = wait.until(EC.visibility_of_element_located((By.XPATH, SEARCH_BAR_XPATH)))
-
+    city_string = str(city_string+" ")
     while True:
         # erase any existing values in the search-bar
         clear_search_bar(search_bar)
 
         search_bar.send_keys(city_string)
-        driver.implicitly_wait(150)  # Thanks Hannah for the suggestion
+        driver.implicitly_wait(15000)
         search_bar.send_keys(Keys.ARROW_DOWN)
-        driver.implicitly_wait(150)
+        driver.implicitly_wait(15000)
         try:
             a_element = wait.until(EC.presence_of_all_elements_located((By.XPATH, SUGGESTION_XPATH)))
             url = a_element[0].get_attribute("href")

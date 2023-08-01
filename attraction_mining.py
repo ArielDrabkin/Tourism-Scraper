@@ -81,7 +81,12 @@ def tripadvisor_name_rate(soup):
     except AttributeError:
         rate = ['empty']
         city = rate
-    name = soup.find('h1', NAME_TAG).text.strip()
+    name_element = soup.find('h1', NAME_TAG)
+    if name_element is not None:
+        name = name_element.text.strip()
+    else:
+        name = 'N/A'
+
     popular_mentions = tripadvisor_popular_mentions(soup)
 
     info_dict = {"City": city, "Name": name, "Popular Mentions": popular_mentions}

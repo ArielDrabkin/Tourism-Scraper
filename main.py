@@ -6,6 +6,9 @@ from attraction_mining import attractions_data
 from handle_database import populate_tables, meteorological_data, create_database
 import argparse
 from api_access import generate_weather_df, request_from_weather_api
+from ydata_profiling import ProfileReport
+import warnings
+warnings.filterwarnings("ignore")
 
 # Load configuration settings from a JSON file
 with open("config.json", "r") as config_file:
@@ -149,6 +152,8 @@ def main():
     # give user their desired output
     if select_output == "all":
         attraction_df.to_csv("top_attractions.csv", index=False)
+        ProfileReport(attraction_df).to_file("attractions_report.html")
+        logger.info(f"Attractions report stored successfully")
         met_df.to_csv("meteorological_data.csv", index=False)
         logger.info(f"Attractions and weather data stored successfully")
 
@@ -156,12 +161,14 @@ def main():
     elif select_output == "key_words":
         try:
             # filtered attraction data
-            attraction_df.to_csv("top_attractions.csv")
+            attraction_df.to_csv("top_attractions.csv", index=False)
             filtered_df = pd.read_csv("top_attractions.csv")
             filtered_attractions = filtered_df[
                 filtered_df["Popular Mentions"].apply(lambda x: any(word in x for word in key_words))]
             # Save filtered attraction data and meteorological data to CSV files
             filtered_attractions.to_csv("filtered_attractions.csv", index=False)
+            ProfileReport(filtered_attractions).to_file("filtered_attractions_report.html")
+            logger.info(f"Filtered attractions report stored successfully")
             met_df.to_csv("meteorological_data.csv", index=False)
             logger.info(f"Filtered and weather data stored successfully")
         except TypeError as e:
