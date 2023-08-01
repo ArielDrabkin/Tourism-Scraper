@@ -11,10 +11,9 @@
     <h3><strong>Overview:</strong></h3>
 </div>
 <div style="color:white; text-align:justify; padding:20px">
-    <p>The purpose of this app is to compare the quality of tourist attractions in tourist cities worldwide, users can input the name of any city in the world that they are interested in researching, as well as keywords related to their specific interests. The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords.</p>
+    <p>The purpose of this app is to compare the quality of tourist attractions in tourist cities worldwide, users can input the name of any city in the world that they are interested in researching, as well as keywords related to their specific interests. The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords which a user wants.</p> 
     <p>The app allows users to use a command line interface to scrape TripAdvisor.com for data on tourist attraction popularity in selected cities based on chosen keywords. The data provides insights into the most popular tourist destinations in a given city, allowing users to plan their travel itineraries more efficiently.</p>
-    <p>Additionally, the scraper provides relevant meteorological data for the destinations where attraction data is being collected.<p>  
-    <p>The web scraper will filter the scraped data to only include tourist attractions that have descriptions related to the specified keywords which a user wants.</p>
+    <p>Additionally, the scraper provides relevant meteorological data for the destinations where attraction data is being collected.<p>
 </div>
 
 <div style="background-color:#000000; color:white; text-align:center">
